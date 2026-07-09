@@ -7,31 +7,36 @@ interface LogoProps {
 }
 
 export function Logo({ className = '', variant = 'dark', showWordmark = true }: LogoProps) {
-  // On light backgrounds (scrolled/solid header) show dark wordmark
-  // On dark/transparent hero backgrounds show white wordmark
+  // On light/solid backgrounds — blue wordmark; on dark/hero — white wordmark
   const wordmarkColor = variant === 'light' ? '#FFFFFF' : '#0033A0'
-
-  // Switch brand mark between white (on dark bg) and dark (on light bg)
-  const markSrc = variant === 'light' ? '/images/logo-light.png' : '/images/logo-dark.png'
 
   return (
     <div className={`flex items-center gap-3 ${className}`} aria-label="Ezokhetho" role="img">
-      {/* Brand mark icon — switches variant with background */}
+      {/* Brand mark: white icon on blue circle — always visible, never stretched */}
       <div
-        className="relative flex-shrink-0 overflow-hidden"
-        style={{ width: 40, height: 40, borderRadius: '50%', background: variant === 'light' ? 'rgba(255,255,255,0.15)' : '#0033A0' }}
+        className="relative flex-shrink-0 overflow-hidden rounded-full"
+        style={{
+          width: 38,
+          height: 38,
+          background: '#0033A0',
+          padding: 6,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
         <Image
-          src={markSrc}
-          alt="Ezokhetho brand mark"
-          fill
-          className="object-cover"
-          sizes="40px"
+          src="/images/Icon-White.png"
+          alt="Ezokhetho icon"
+          width={26}
+          height={26}
+          className="object-contain"
+          style={{ width: 26, height: 26 }}
           priority
         />
       </div>
 
-      {/* Wordmark */}
+      {/* Wordmark — colour switches with header state */}
       {showWordmark && (
         <svg
           width="130"
@@ -57,3 +62,4 @@ export function Logo({ className = '', variant = 'dark', showWordmark = true }: 
     </div>
   )
 }
+
