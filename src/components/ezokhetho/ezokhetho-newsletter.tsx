@@ -19,9 +19,17 @@ export default function EzkoNewsletter() {
     <section
       id="newsletter"
       ref={ref}
-      className="bg-[#F8F6F3] py-24 sm:py-32"
+      className="relative overflow-hidden bg-[#0033A0] py-24 text-white sm:py-32"
     >
-      <div className="container flex flex-col items-center text-center">
+      {/* Decorative subtle background pattern */}
+      <div className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: 'repeating-linear-gradient(45deg, #fff 0px, #fff 1px, transparent 0, transparent 50%)',
+          backgroundSize: '15px 15px',
+        }}
+      />
+
+      <div className="container relative flex flex-col items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -38,13 +46,13 @@ export default function EzkoNewsletter() {
           </div>
 
           {/* Heading */}
-          <h2 className="font-butler text-4xl font-light leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+          <h2 className="font-butler text-4xl font-light leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Join the{' '}
-            <em className="font-extralight italic">Journey</em>
+            <em className="font-extralight italic text-white/70">Journey</em>
           </h2>
 
           {/* Subtext */}
-          <p className="max-w-md font-moderat text-[15px] leading-relaxed text-zinc-500">
+          <p className="max-w-md font-moderat text-[15px] leading-relaxed text-white/80">
             Receive exclusive collection launches, stories and behind-the-scenes updates from
             Ezokhetho.
           </p>
@@ -66,12 +74,12 @@ export default function EzkoNewsletter() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
                 required
-                className="flex-1 border border-zinc-300 bg-white px-5 py-4 font-moderat text-sm text-zinc-900 placeholder-zinc-400 outline-none transition-colors focus:border-[#0033A0] focus:ring-0"
+                className="flex-1 border border-white/20 bg-white/10 px-5 py-4 font-moderat text-sm text-white placeholder-white/40 outline-none transition-all focus:border-white focus:bg-white/20"
               />
               <button
                 id="newsletter-submit"
                 type="submit"
-                className="group flex items-center justify-center gap-2 bg-zinc-900 px-7 py-4 text-[11px] font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-[#FF6B00]"
+                className="group flex items-center justify-center gap-2 bg-[#FF6B00] px-7 py-4 text-[11px] font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-white hover:text-[#0033A0]"
               >
                 Subscribe
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -87,10 +95,10 @@ export default function EzkoNewsletter() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FF6B00]">
                 <Check className="h-5 w-5 text-white" />
               </div>
-              <p className="font-butler text-lg font-light text-zinc-900">
+              <p className="font-butler text-lg font-light text-white">
                 Welcome to the journey.
               </p>
-              <p className="text-sm text-zinc-400">We&apos;ll be in touch soon.</p>
+              <p className="text-sm text-white/60">We&apos;ll be in touch soon.</p>
             </motion.div>
           )}
         </motion.div>
@@ -101,10 +109,10 @@ export default function EzkoNewsletter() {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-5 text-[11px] text-zinc-400"
+            className="mt-5 text-[11px] text-white/50"
           >
             No spam. Unsubscribe anytime. View our{' '}
-            <a href="/privacy" className="underline transition-colors hover:text-[#FF6B00]">
+            <a href="/privacy" className="underline text-white/65 transition-colors hover:text-[#FF6B00]">
               Privacy Policy
             </a>
             .

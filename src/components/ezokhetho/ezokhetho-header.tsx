@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { ShoppingBag, Search, Menu, X } from 'lucide-react'
+import ThemeToggle from '@/components/theme-toggle'
 
 const navLinks = [
   { name: 'Shop', href: '/collections/all' },
@@ -131,6 +132,10 @@ export default function EzkoHeader() {
             >
               <Search className="h-4.5 w-4.5" />
             </button>
+            {/* Light / Dark toggle */}
+            <div className={isSolid ? '' : 'hidden lg:block'}>
+              <ThemeToggle />
+            </div>
             <Link
               href="/cart"
               id="header-cart"

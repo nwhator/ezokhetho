@@ -1,3 +1,6 @@
+import ezokhethoProductsData from './data/products.json'
+export const ezokhethoProducts = ezokhethoProductsData
+
 export async function getOrder(number: string) {
   return (await getOrders()).find((order) => order.number.toString() === number)
 }
@@ -751,25 +754,7 @@ export async function getGroupCollections(theme: 'fashion' | 'hijab' | 'skincare
   }
 }
 export async function getCollections(theme: 'fashion' | 'hijab' | 'skincare' | 'all') {
-  if (theme === 'fashion') {
-    return await getFashionCollections()
-  }
-  if (theme === 'hijab') {
-    return await getHijabCollections()
-  }
-  if (theme === 'skincare') {
-    return await getSkincareCollections()
-  }
-
-  if (theme === 'all') {
-    const fashionCollections = getFashionCollections()
-    const hijabCollections = getHijabCollections()
-    const skincareCollections = getSkincareCollections()
-
-    // use promises.all to get all collections
-    const collections = await Promise.all([fashionCollections, hijabCollections, skincareCollections])
-    return collections.flat()
-  }
+  return await getFashionCollections()
 }
 export async function getCollectionById(id: string) {
   const allCollections = await getCollections('all')
@@ -794,6 +779,9 @@ export async function getCollectionByHandle(handle: string) {
 }
 
 export async function getProducts() {
+  return ezokhethoProducts as any[]
+}
+export async function getProducts_old() {
   return [
     // Skincare Products 10 items
     {
@@ -1944,8 +1932,7 @@ export async function getProducts() {
     },
   ]
 }
-import ezokhethoProductsData from './data/products.json'
-export const ezokhethoProducts = ezokhethoProductsData
+
 
 export async function getSkincareProducts() {
   const allProducts = await getProducts()
