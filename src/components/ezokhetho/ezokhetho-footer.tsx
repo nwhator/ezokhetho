@@ -12,20 +12,20 @@ const footerLinks = {
     { name: 'About', href: '#brand-story' },
     { name: 'The Founder', href: '#founder' },
     { name: 'Sustainability', href: '#sustainability' },
-    { name: 'Journal', href: '/blog' },
+    { name: 'Contact', href: 'mailto:sales@ezokhetho.com' },
   ],
   help: [
-    { name: 'Contact', href: '/contact' },
     { name: 'Returns', href: '/returns' },
     { name: 'Terms', href: '/terms' },
     { name: 'Privacy', href: '/privacy' },
+    { name: 'Email Us', href: 'mailto:sales@ezokhetho.com' },
   ],
 }
 
 const socialLinks = [
   {
     name: 'Instagram',
-    href: 'https://instagram.com/ezokhetho',
+    href: 'https://www.instagram.com/ezokhetho?igsh=N2s4aTdmeGhxb2Z5&utm_source=qr',
     icon: (
       <svg fill="currentColor" viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
         <path
@@ -38,7 +38,7 @@ const socialLinks = [
   },
   {
     name: 'Facebook',
-    href: 'https://facebook.com/ezokhetho',
+    href: 'https://www.facebook.com/share/18HE7aHW5z/?mibextid=wwXIfr',
     icon: (
       <svg fill="currentColor" viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
         <path
@@ -50,11 +50,11 @@ const socialLinks = [
     ),
   },
   {
-    name: 'Pinterest',
-    href: 'https://pinterest.com/ezokhetho',
+    name: 'X / Twitter',
+    href: 'https://x.com/ezokhetho?s=11&t=kKw2pLUppuh3sXeGKoH6hg',
     icon: (
       <svg fill="currentColor" viewBox="0 0 24 24" className="h-4 w-4" aria-hidden>
-        <path d="M12 0C5.372 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
   },
@@ -62,7 +62,7 @@ const socialLinks = [
 
 export default function EzkoFooter() {
   return (
-    <footer className="border-t border-zinc-100 bg-white">
+    <footer className="border-t border-[#0033A0]/10 bg-white">
       {/* Main footer */}
       <div className="container py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-8">
@@ -73,8 +73,14 @@ export default function EzkoFooter() {
               Contemporary African luxury fashion. Every collection carries stories of heritage,
               identity and craftsmanship.
             </p>
+            <a
+              href="mailto:sales@ezokhetho.com"
+              className="text-[13px] text-[#0033A0] hover:text-[#FF6B00] transition-colors font-moderat"
+            >
+              sales@ezokhetho.com
+            </a>
             {/* Social links */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -82,7 +88,7 @@ export default function EzkoFooter() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.name}
-                  className="flex h-9 w-9 items-center justify-center border border-zinc-200 text-zinc-400 transition-colors hover:border-[#FF6B00] hover:text-[#FF6B00]"
+                  className="flex h-9 w-9 items-center justify-center border border-[#0033A0]/20 text-[#0033A0] transition-colors hover:bg-[#0033A0] hover:text-white hover:border-[#0033A0]"
                 >
                   {social.icon}
                 </a>
@@ -94,7 +100,7 @@ export default function EzkoFooter() {
           <div className="grid grid-cols-3 gap-8 lg:col-span-3">
             {Object.entries(footerLinks).map(([category, links]) => (
               <div key={category}>
-                <h3 className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-900">
+                <h3 className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#0033A0]">
                   {category}
                 </h3>
                 <ul className="flex flex-col gap-3">
@@ -102,7 +108,7 @@ export default function EzkoFooter() {
                     <li key={link.name}>
                       <Link
                         href={link.href}
-                        className="font-moderat text-[13px] text-zinc-500 transition-colors hover:text-[#FF6B00]"
+                        className="font-moderat text-[13px] text-zinc-500 transition-colors hover:text-[#0033A0]"
                       >
                         {link.name}
                       </Link>
@@ -116,12 +122,12 @@ export default function EzkoFooter() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-zinc-100">
-        <div className="container flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
-          <p className="font-moderat text-[11px] text-zinc-400">
+      <div className="border-t border-[#0033A0]/10 bg-[#0033A0]">
+        <div className="container flex flex-col items-center justify-between gap-4 py-5 sm:flex-row">
+          <p className="font-moderat text-[11px] text-white/70">
             &copy; {new Date().getFullYear()} Ezokhetho. All rights reserved.
           </p>
-          <p className="font-moderat text-[11px] italic text-zinc-300">
+          <p className="font-moderat text-[11px] italic text-white/40">
             Meticulously chosen by those who came before us.
           </p>
         </div>

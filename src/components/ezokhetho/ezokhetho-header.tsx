@@ -39,8 +39,8 @@ export default function EzkoHeader() {
         className="fixed inset-x-0 top-0 z-50 transition-all duration-500"
         animate={{
           backgroundColor: scrolled ? 'rgba(255,255,255,0.97)' : 'rgba(0,0,0,0)',
-          backdropFilter: scrolled ? 'blur(12px)' : 'blur(0px)',
-          borderBottomColor: scrolled ? 'rgba(0,0,0,0.08)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(16px)' : 'blur(0px)',
+          borderBottomColor: scrolled ? 'rgba(0,51,160,0.12)' : 'transparent',
           borderBottomWidth: '1px',
           borderBottomStyle: 'solid',
         }}
@@ -65,7 +65,7 @@ export default function EzkoHeader() {
                   >
                     <button
                       className={`text-[11px] font-medium uppercase tracking-[0.2em] transition-colors duration-300 ${
-                        scrolled ? 'text-zinc-700 hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
+                        scrolled ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
                       }`}
                     >
                       {link.name}
@@ -103,7 +103,7 @@ export default function EzkoHeader() {
                   key={link.name}
                   href={link.href}
                   className={`text-[11px] font-medium uppercase tracking-[0.2em] transition-colors duration-300 ${
-                    scrolled ? 'text-zinc-700 hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
+                    scrolled ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
                   }`}
                 >
                   {link.name}
@@ -117,7 +117,7 @@ export default function EzkoHeader() {
             <button
               aria-label="Search"
               className={`hidden transition-colors lg:flex ${
-                scrolled ? 'text-zinc-600 hover:text-[#FF6B00]' : 'text-white/70 hover:text-white'
+                scrolled ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/70 hover:text-white'
               }`}
             >
               <Search className="h-4.5 w-4.5" />
@@ -153,7 +153,7 @@ export default function EzkoHeader() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex flex-col bg-zinc-950"
+          className="fixed inset-0 z-[100] flex flex-col bg-[#0033A0]"
         >
           <div className="container flex items-center justify-between py-5">
             <Logo variant="light" />
