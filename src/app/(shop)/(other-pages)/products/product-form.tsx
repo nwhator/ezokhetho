@@ -30,8 +30,7 @@ export function ProductForm({ product }: { product: TProductItem }) {
   const [quantity, setQuantity] = useState(1)
   const [stateSelectedOption, setStateSelectedOption] = useState<{ name: string; value: string }[]>(selected_options)
 
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault()
+  const handleAddToCart = () => {
     const color = stateSelectedOption.find((opt) => opt.name === 'Color')?.value ?? ''
     const size = stateSelectedOption.find((opt) => opt.name === 'Size')?.value ?? ''
     addItem({
