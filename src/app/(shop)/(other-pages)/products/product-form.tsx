@@ -12,21 +12,40 @@ import { ShoppingBag03Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import clsx from 'clsx'
 import { useState } from 'react'
+import { useCart } from '@/lib/cart-context'
 
 import { formatZAR } from '@/lib/currency'
 
 export function ProductForm({ product }: { product: TProductItem }) {
   const { open: openAside } = useAside()
-  const { options, selected_options, collections, title, price } = product
+  const { addItem } = useCart()
+  const { options, selected_options, collections, title, price, id, images, handle } = product
   const status = 'in stock'
 
   const collection = collections[0]
-  const currentColor = selected_options.filter((option) => option.name === 'Color')?.[0].value
+  const currentColor = selected_options.filter((option: { name: string; value: string }) => option.name === 'Color')?.[0]?.value ?? ''
 
   // NOTE: this for demo ...
   // You need to recalculate according to your data structure and project
   const [quantity, setQuantity] = useState(1)
   const [stateSelectedOption, setStateSelectedOption] = useState<{ name: string; value: string }[]>(selected_options)
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault()
+    const color = stateSelectedOption.find((opt) => opt.name === 'Color')?.value ?? ''
+    const size = stateSelectedOption.find((opt) => opt.name === 'Size')?.value ?? ''
+    addItem({
+      id,
+      handle,
+      title,
+      price,
+      image: images?.[0]?.src ?? '/images/placeholder.webp',
+      color,
+      size,
+      quantity,
+    })
+    openAside('cart')
+  }
 
   const breadcrumbs = [
     { id: 1, name: 'Home', href: '/' },
@@ -75,7 +94,7 @@ export function ProductForm({ product }: { product: TProductItem }) {
       <form className="mt-10 block">
         {/* Variants */}
         <div className="flex flex-col gap-7">
-          {options?.map(({ name: optionName, optionValues }) => {
+          {options?.map(({ name: optionName, optionValues }: { name: string; optionValues: Array<{ name: string; swatch: TSwatch }> }) => {
             return (
               <div key={optionName}>
                 <Text>{optionName}</Text>
@@ -132,7 +151,7 @@ export function ProductForm({ product }: { product: TProductItem }) {
           <InputNumber className="gap-x-5" label="Qty" defaultValue={quantity} onChange={setQuantity} />
           <ButtonLargeWithIcon
             icon={<HugeiconsIcon icon={ShoppingBag03Icon} size={20} color="currentColor" strokeWidth={1.5} />}
-            onClick={() => openAside('cart')}
+            onClick={handleAddToCart}
           >
             Add to cart
           </ButtonLargeWithIcon>

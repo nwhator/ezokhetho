@@ -49,6 +49,8 @@ export const metadata: Metadata = {
   },
 }
 
+import { CartProvider } from '@/lib/cart-context'
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={clsx('text-zinc-950 antialiased')}>
@@ -61,7 +63,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body>
-        <Aside.Provider>{children}</Aside.Provider>
+        <CartProvider>
+          <Aside.Provider>{children}</Aside.Provider>
+        </CartProvider>
       </body>
     </html>
   )

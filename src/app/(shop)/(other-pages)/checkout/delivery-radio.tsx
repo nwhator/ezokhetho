@@ -5,8 +5,7 @@ import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 
 const deliveryMethods = [
-  { id: 1, title: 'Standard', turnaround: '4–10 business days', price: '$5.00' },
-  { id: 2, title: 'Express', turnaround: '2–5 business days', price: '$16.00' },
+  { id: 1, title: 'Standard Courier', turnaround: '3–5 business days', price: 'R150.00' },
 ]
 
 const DeliveryRadio = () => {
@@ -31,13 +30,13 @@ const DeliveryRadio = () => {
               <span className="flex flex-col">
                 <span className="block text-sm font-medium text-zinc-900">{deliveryMethod.title}</span>
                 <span className="mt-1 flex items-center text-sm text-zinc-500">{deliveryMethod.turnaround}</span>
-                <span className="mt-6 text-sm font-medium text-zinc-900">{deliveryMethod.price}</span>
+                <span className="mt-6 text-sm font-medium text-[#0033A0]">{deliveryMethod.price}</span>
               </span>
             </span>
-            <CheckCircleIcon aria-hidden="true" className="size-5 text-zinc-900 group-not-data-checked:hidden" />
+            <CheckCircleIcon aria-hidden="true" className="size-5 text-[#0033A0] group-not-data-checked:hidden" />
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent group-data-checked:border-zinc-900 group-data-focus:border"
+              className="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent group-data-checked:border-[#0033A0] group-data-focus:border"
             />
           </UIRadio>
         ))}

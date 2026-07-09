@@ -3,7 +3,28 @@
 import { useState, useEffect } from 'react'
 import { Logo } from '@/app/logo'
 import Link from 'next/link'
-import { ArrowLeft, Package, Plus, Edit2, Trash2, Tag, Loader2 } from 'lucide-react'
+import { ArrowLeft, Package, Plus, Edit2, Trash2, Tag, Loader2, CreditCard } from 'lucide-react'
+
+interface TransactionItem {
+  title: string
+  quantity: number
+  price: number
+  color: string
+  size: string
+}
+
+interface Transaction {
+  id: string
+  email: string
+  name: string
+  items: TransactionItem[]
+  subtotal: number
+  shipping: number
+  total: number
+  status: 'PENDING' | 'COMPLETE' | 'FAILED'
+  createdAt: string
+  paymentId?: string
+}
 
 interface Product {
   id: number
@@ -28,7 +49,9 @@ interface Product {
 
 export default function AdminPage() {
   const [products, setProducts] = useState<Product[]>([])
+  const [transactions, setTransactions] = useState<Transaction[]>([])
   const [loading, setLoading] = useState(true)
+  const [loadingTx, setLoadingTx] = useState(true)
   const [saving, setSaving] = useState(false)
   const [editing, setEditing] = useState<Product | null>(null)
   const [showForm, setShowForm] = useState(false)
@@ -45,10 +68,26 @@ export default function AdminPage() {
     sizes: 'S, M, L',
   })
 
-  // Load products from local products.json API on mount
+  // Load products and transactions from local products.json API on mount
   useEffect(() => {
     fetchProducts()
+    fetchTransactions()
   }, [])
+
+  const fetchTransactions = async () => {
+    try {
+      setLoadingTx(true)
+      const res = await fetch('/api/admin/transactions')
+      const data = await res.json()
+      if (Array.isArray(data)) {
+        setTransactions(data)
+      }
+    } catch (e) {
+      console.error('Failed to load transactions', e)
+    } finally {
+      setLoadingTx(false)
+    }
+  }
 
   const fetchProducts = async () => {
     try {
@@ -326,6 +365,78 @@ export default function AdminPage() {
         {/* Upload hint */}
         <div className="mt-6 border border-dashed border-zinc-300 p-4 text-xs font-moderat text-zinc-400 leading-relaxed">
           <strong>How to add custom images:</strong> Place the garment pictures into the <code>public/images/</code> folder of the project, then specify the path as <code>/images/filename.jpg</code> inside the form above.
+        </div>
+
+        {/* Transactions Panel */}
+        <div className="mt-12 bg-white border border-zinc-200 p-6 shadow-sm">
+          <div className="flex items-center gap-2 border-b border-zinc-100 pb-4 mb-6">
+            <CreditCard className="h-5 w-5 text-[#0033A0]" />
+            <h2 className="font-moderat text-lg font-bold tracking-tight text-zinc-900 uppercase">
+              Transaction &amp; PayFast Logs
+            </h2>
+          </div>
+
+          {loadingTx ? (
+            <div className="flex items-center justify-center py-12">
+              <Loader2 className="h-6 w-6 animate-spin text-[#0033A0]" />
+            </div>
+          ) : transactions.length === 0 ? (
+            <div className="text-center py-12 text-sm text-zinc-400 font-moderat">
+              No transactions recorded yet. Completed and pending test payments will appear here.
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-left font-moderat text-sm">
+                <thead>
+                  <tr className="border-b border-zinc-200 text-[11px] font-bold uppercase tracking-wider text-zinc-400">
+                    <th className="pb-3">Order Ref</th>
+                    <th className="pb-3">Date</th>
+                    <th className="pb-3">Customer</th>
+                    <th className="pb-3">Items</th>
+                    <th className="pb-3 text-right">Total Amount</th>
+                    <th className="pb-3 text-center">Status</th>
+                    <th className="pb-3">PayFast Ref</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-zinc-100">
+                  {transactions.map((tx) => (
+                    <tr key={tx.id} className="hover:bg-zinc-50/50">
+                      <td className="py-4 font-semibold text-zinc-900">{tx.id}</td>
+                      <td className="py-4 text-zinc-500 text-xs">
+                        {new Date(tx.createdAt).toLocaleString('en-ZA')}
+                      </td>
+                      <td className="py-4">
+                        <div className="font-medium text-zinc-900">{tx.name}</div>
+                        <div className="text-xs text-zinc-400">{tx.email}</div>
+                      </td>
+                      <td className="py-4 text-xs max-w-xs">
+                        {tx.items?.map((item, idx) => (
+                          <div key={idx} className="text-zinc-600 mb-0.5">
+                            {item.title} ({item.color} / {item.size}) x{item.quantity}
+                          </div>
+                        ))}
+                      </td>
+                      <td className="py-4 text-right font-semibold text-[#0033A0]">
+                        R {tx.total.toFixed(2)}
+                      </td>
+                      <td className="py-4 text-center">
+                        <span className={`inline-block px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider ${
+                          tx.status === 'COMPLETE' ? 'bg-green-100 text-green-800' :
+                          tx.status === 'FAILED' ? 'bg-red-100 text-red-800' :
+                          'bg-yellow-100 text-yellow-800'
+                        }`}>
+                          {tx.status}
+                        </span>
+                      </td>
+                      <td className="py-4 text-xs font-mono text-zinc-400">
+                        {tx.paymentId || '—'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       </main>
     </div>

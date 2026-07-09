@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { ShoppingBag, Search, Menu, X } from 'lucide-react'
 import ThemeToggle from '@/components/theme-toggle'
+import { useCart } from '@/lib/cart-context'
 
 const navLinks = [
   { name: 'Shop', href: '/collections/all' },
@@ -25,6 +26,7 @@ const collectionsMenu = [
 ]
 
 export default function EzkoHeader() {
+  const { count } = useCart()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [collectionsOpen, setCollectionsOpen] = useState(false)
@@ -140,11 +142,16 @@ export default function EzkoHeader() {
               href="/cart"
               id="header-cart"
               aria-label="Shopping cart"
-              className={`flex items-center gap-1.5 transition-colors ${
+              className={`flex items-center gap-1.5 transition-colors relative ${
                 isSolid ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/70 hover:text-white'
               }`}
             >
               <ShoppingBag className="h-4.5 w-4.5" />
+              {count > 0 && (
+                <span className="absolute -top-1.5 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-[#FF6B00] text-[9px] font-bold text-white">
+                  {count}
+                </span>
+              )}
             </Link>
             {/* Mobile hamburger */}
             <button
