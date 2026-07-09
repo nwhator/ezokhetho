@@ -19,10 +19,16 @@ const navLinks = [
 ]
 
 const collectionsMenu = [
-  { name: 'Ngithwale — Carry Me', href: '/collections/ngithwale', desc: 'Honouring mothers' },
-  { name: 'Izimbokodo', href: '/collections/izimbokodo', desc: 'Strength of stone' },
-  { name: 'Khumbulekhaya', href: '/collections/khumbulekhaya', desc: 'Remember home' },
   { name: 'All Collections', href: '/collections/all', desc: 'Browse everything' },
+  { name: "Entathakusa '26", href: '/collections/entathakusa', desc: 'Robb Report & SAMW' },
+  { name: "Zodwa '25", href: '/collections/zodwa', desc: 'Signature Tailoring' },
+  { name: "Ngithwale '24", href: '/collections/ngithwale', desc: 'Carry Me (SAFW)' },
+  { name: "Kwa-suka-sukela '24", href: '/collections/kwa-suka-sukela', desc: 'SAMW Show' },
+  { name: "Inganekwane '23", href: '/collections/inganekwane', desc: 'Woven Stories' },
+  { name: "Umkhathizwe '23", href: '/collections/umkhathizwe', desc: 'Lagos Fashion Week' },
+  { name: "Khumbulekhaya '22", href: '/collections/khumbulekhaya', desc: 'Remember Home' },
+  { name: "Izimbokodo '22", href: '/collections/izimbokodo', desc: 'Strength of Stone' },
+  { name: "Sophiatown '21", href: '/collections/sophiatown', desc: 'Golden Era Jazz' },
 ]
 
 export default function EzkoHeader() {

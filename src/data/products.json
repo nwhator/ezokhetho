@@ -1,20 +1,22 @@
 [
   {
-    "id": 5001,
-    "title": "Structural Coat",
-    "handle": "structural-coat",
+    "id": 6001,
+    "title": "Entathakusa Runway Gown",
+    "handle": "entathakusa-runway-gown",
     "vendor": "Ezokhetho",
-    "tags": ["Coat", "Ngithwale", "Outerwear"],
-    "price": 8500,
+    "tags": ["Dress", "Gown", "Entathakusa"],
+    "price": 14500,
     "images": [
-      { "src": "/images/fashion/coat.jpg", "width": 1200, "height": 1600, "alt": "Structural Coat by Ezokhetho" }
+      { "src": "/images/ezokhetho/entathakusa_1.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown by Ezokhetho" },
+      { "src": "/images/ezokhetho/entathakusa_2.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown Detail" }
     ],
-    "featured_image": { "src": "/images/fashion/coat.jpg", "width": 1200, "height": 1600, "alt": "Structural Coat by Ezokhetho" },
+    "featured_image": { "src": "/images/ezokhetho/entathakusa_1.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown by Ezokhetho" },
     "options": [
       {
         "name": "Color",
         "optionValues": [
-          { "name": "Midnight Blue", "swatch": { "color": "#0033A0", "image": null } }
+          { "name": "Sunrise Ochre", "swatch": { "color": "#FF8C00", "image": null } },
+          { "name": "Dawn Ivory", "swatch": { "color": "#FFFFF0", "image": null } }
         ]
       },
       {
@@ -27,28 +29,29 @@
       }
     ],
     "selected_options": [
-      { "name": "Color", "value": "Midnight Blue" },
+      { "name": "Color", "value": "Sunrise Ochre" },
       { "name": "Size", "value": "M" }
     ],
-    "collections": [{ "title": "Ngithwale — Carry Me", "id": "ngithwale", "handle": "ngithwale" }],
-    "description": "A masterfully tailored coat with architectural shoulders and clean lines. Part of the Ngithwale collection, celebrating maternal strength and resilience."
+    "collections": [{ "title": "Entathakusa '26", "id": "entathakusa", "handle": "entathakusa" }],
+    "description": "Featured runway look from the Entathakusa '26 showcase. An elegant high-neck draping detail celebrating morning dawn."
   },
   {
-    "id": 5002,
-    "title": "Draped Jacket",
-    "handle": "draped-jacket",
+    "id": 6002,
+    "title": "Zodwa Tailored Jacket",
+    "handle": "zodwa-tailored-jacket",
     "vendor": "Ezokhetho",
-    "tags": ["Jacket", "Izimbokodo", "Outerwear"],
-    "price": 6200,
+    "tags": ["Jacket", "Tailoring", "Zodwa"],
+    "price": 9800,
     "images": [
-      { "src": "/images/fashion/jacket.jpg", "width": 1200, "height": 1600, "alt": "Draped Jacket by Ezokhetho" }
+      { "src": "/images/ezokhetho/zodwa_1.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket by Ezokhetho" },
+      { "src": "/images/ezokhetho/zodwa_2.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket Detail" }
     ],
-    "featured_image": { "src": "/images/fashion/jacket.jpg", "width": 1200, "height": 1600, "alt": "Draped Jacket by Ezokhetho" },
+    "featured_image": { "src": "/images/ezokhetho/zodwa_1.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket by Ezokhetho" },
     "options": [
       {
         "name": "Color",
         "optionValues": [
-          { "name": "Charcoal Black", "swatch": { "color": "#2C2C2C", "image": null } }
+          { "name": "Classic Black", "swatch": { "color": "#000000", "image": null } }
         ]
       },
       {
@@ -61,150 +64,255 @@
       }
     ],
     "selected_options": [
-      { "name": "Color", "value": "Charcoal Black" },
+      { "name": "Color", "value": "Classic Black" },
       { "name": "Size", "value": "M" }
     ],
-    "collections": [{ "title": "Izimbokodo — Strength of Stone", "id": "izimbokodo", "handle": "izimbokodo" }],
-    "description": "An elegant draped jacket designed to celebrate the courage and strength of Black South African women. Features custom fold details."
+    "collections": [{ "title": "Zodwa '25", "id": "zodwa", "handle": "zodwa" }],
+    "description": "Signature tailoring jacket from Zodwa '25. Architectural structured shoulder lines combined with clean African heritage aesthetics."
   },
   {
-    "id": 5003,
-    "title": "Wide-leg Trousers",
-    "handle": "wide-leg-trousers",
+    "id": 6003,
+    "title": "Ngithwale Wrap Coat",
+    "handle": "ngithwale-wrap-coat",
     "vendor": "Ezokhetho",
-    "tags": ["Trousers", "Khumbulekhaya", "Pants"],
-    "price": 3800,
+    "tags": ["Coat", "Outerwear", "Ngithwale"],
+    "price": 12500,
     "images": [
-      { "src": "/images/fashion/jean.jpg", "width": 1200, "height": 1600, "alt": "Wide-leg Trousers by Ezokhetho" }
+      { "src": "/images/ezokhetho/ngithwale_1.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat by Ezokhetho" },
+      { "src": "/images/ezokhetho/ngithwale_2.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat Detail" }
     ],
-    "featured_image": { "src": "/images/fashion/jean.jpg", "width": 1200, "height": 1600, "alt": "Wide-leg Trousers by Ezokhetho" },
+    "featured_image": { "src": "/images/ezokhetho/ngithwale_1.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat by Ezokhetho" },
     "options": [
       {
         "name": "Color",
         "optionValues": [
-          { "name": "Earthy Sand", "swatch": { "color": "#D2B48C", "image": null } }
+          { "name": "Heritage Royal Blue", "swatch": { "color": "#0033A0", "image": null } }
         ]
       },
       {
         "name": "Size",
         "optionValues": [
-          { "swatch": null, "name": "28" },
-          { "swatch": null, "name": "30" },
-          { "swatch": null, "name": "32" },
-          { "swatch": null, "name": "34" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Earthy Sand" },
-      { "name": "Size", "value": "32" }
-    ],
-    "collections": [{ "title": "Khumbulekhaya — Remember Home", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
-    "description": "Flowing wide-leg trousers crafted from premium linen-blend fabric. Part of the Khumbulekhaya collection."
-  },
-  {
-    "id": 5004,
-    "title": "Signature Tee",
-    "handle": "signature-tee",
-    "vendor": "Ezokhetho",
-    "tags": ["T-Shirt", "Ngithwale", "Casual"],
-    "price": 1950,
-    "images": [
-      { "src": "/images/fashion/tshirt.jpg", "width": 1200, "height": 1600, "alt": "Signature Tee by Ezokhetho" }
-    ],
-    "featured_image": { "src": "/images/fashion/tshirt.jpg", "width": 1200, "height": 1600, "alt": "Signature Tee by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Optical White", "swatch": { "color": "#FFFFFF", "image": null } },
-          { "name": "Sleek Black", "swatch": { "color": "#000000", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "XS" },
           { "swatch": null, "name": "S" },
           { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" },
-          { "swatch": null, "name": "XL" }
+          { "swatch": null, "name": "L" }
         ]
       }
     ],
     "selected_options": [
-      { "name": "Color", "value": "Optical White" },
+      { "name": "Color", "value": "Heritage Royal Blue" },
       { "name": "Size", "value": "M" }
     ],
-    "collections": [{ "title": "Ngithwale — Carry Me", "id": "ngithwale", "handle": "ngithwale" }],
-    "description": "Premium heavy-weight cotton tee featuring Ezokhetho's signature wordmark print."
+    "collections": [{ "title": "Ngithwale — Carry Me '24", "id": "ngithwale", "handle": "ngithwale" }],
+    "description": "A luxury heavy-weave wrap coat honoring maternal protection and female lineage. Debuted at SAFW."
   },
   {
-    "id": 5005,
-    "title": "Editorial Piece",
-    "handle": "editorial-piece",
+    "id": 6004,
+    "title": "Kwa-suka-sukela Pattern Shirt",
+    "handle": "kwa-suka-sukela-pattern-shirt",
     "vendor": "Ezokhetho",
-    "tags": ["Couture", "Izimbokodo", "Limited Edition"],
-    "price": 7800,
-    "images": [
-      { "src": "/images/fashion/c1.jpg", "width": 1200, "height": 1600, "alt": "Editorial Piece by Ezokhetho" }
-    ],
-    "featured_image": { "src": "/images/fashion/c1.jpg", "width": 1200, "height": 1600, "alt": "Editorial Piece by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Heritage Blue", "swatch": { "color": "#0033A0", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Heritage Blue" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Izimbokodo — Strength of Stone", "id": "izimbokodo", "handle": "izimbokodo" }],
-    "description": "A striking editorial masterpiece blending sculptured structural forms with heritage textiles."
-  },
-  {
-    "id": 5006,
-    "title": "Heritage Shoes",
-    "handle": "heritage-shoes",
-    "vendor": "Ezokhetho",
-    "tags": ["Shoes", "Khumbulekhaya", "Footwear"],
+    "tags": ["Shirt", "Top", "Kwa-suka-sukela"],
     "price": 4500,
     "images": [
-      { "src": "/images/fashion/shoes.jpg", "width": 1200, "height": 1600, "alt": "Heritage Shoes by Ezokhetho" }
+      { "src": "/images/ezokhetho/kwa-suka-sukela_1.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt by Ezokhetho" },
+      { "src": "/images/ezokhetho/kwa-suka-sukela_2.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt Detail" }
     ],
-    "featured_image": { "src": "/images/fashion/shoes.jpg", "width": 1200, "height": 1600, "alt": "Heritage Shoes by Ezokhetho" },
+    "featured_image": { "src": "/images/ezokhetho/kwa-suka-sukela_1.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt by Ezokhetho" },
     "options": [
       {
         "name": "Color",
         "optionValues": [
-          { "name": "Earth Brown", "swatch": { "color": "#8B4513", "image": null } }
+          { "name": "Terracotta print", "swatch": { "color": "#C04000", "image": null } }
         ]
       },
       {
         "name": "Size",
         "optionValues": [
-          { "swatch": null, "name": "UK 6" },
-          { "swatch": null, "name": "UK 7" },
-          { "swatch": null, "name": "UK 8" },
-          { "swatch": null, "name": "UK 9" }
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
         ]
       }
     ],
     "selected_options": [
-      { "name": "Color", "value": "Earth Brown" },
-      { "name": "Size", "value": "UK 8" }
+      { "name": "Color", "value": "Terracotta print" },
+      { "name": "Size", "value": "M" }
     ],
-    "collections": [{ "title": "Khumbulekhaya — Remember Home", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
-    "description": "Handcrafted leather shoes honoring traditional South African detailing with a modern silhouette."
+    "collections": [{ "title": "Kwa-suka-sukela '24", "id": "kwa-suka-sukela", "handle": "kwa-suka-sukela" }],
+    "description": "A luxury statement printed button-up shirt inspired by oral storytelling traditions and legacy patterns."
+  },
+  {
+    "id": 6005,
+    "title": "Inganekwane Knit Pullover",
+    "handle": "inganekwane-knit-pullover",
+    "vendor": "Ezokhetho",
+    "tags": ["Knitwear", "Pullover", "Inganekwane"],
+    "price": 6800,
+    "images": [
+      { "src": "/images/ezokhetho/inganekwane_1.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover by Ezokhetho" },
+      { "src": "/images/ezokhetho/inganekwane_2.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover Detail" }
+    ],
+    "featured_image": { "src": "/images/ezhetho/inganekwane_1.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Desert Sand", "swatch": { "color": "#EDC9AF", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Desert Sand" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Inganekwane '23", "id": "inganekwane", "handle": "inganekwane" }],
+    "description": "A luxury woven knit pullover with playful proportions, combining soft spun wool with heritage craftsmanship."
+  },
+  {
+    "id": 6006,
+    "title": "Umkhathizwe Horizon Tunic",
+    "handle": "umkhathizwe-horizon-tunic",
+    "vendor": "Ezokhetho",
+    "tags": ["Tunic", "Top", "Umkhathizwe"],
+    "price": 5400,
+    "images": [
+      { "src": "/images/ezokhetho/umkhathizwe_1.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic by Ezokhetho" },
+      { "src": "/images/ezokhetho/umkhathizwe_2.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic Detail" }
+    ],
+    "featured_image": { "src": "/images/ezokhetho/umkhathizwe_1.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Dusk Blue", "swatch": { "color": "#588BAE", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Dusk Blue" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Umkhathizwe — The Horizon '23", "id": "umkhathizwe", "handle": "umkhathizwe" }],
+    "description": "Debuted at Lagos Fashion Week. A futuristic asymmetrical drape tunic exploring traditional silhouettes with modern proportions."
+  },
+  {
+    "id": 6007,
+    "title": "Khumbulekhaya Panel Shirt",
+    "handle": "khumbulekhaya-panel-shirt",
+    "vendor": "Ezokhetho",
+    "tags": ["Shirt", "Top", "Khumbulekhaya"],
+    "price": 4200,
+    "images": [
+      { "src": "/images/ezokhetho/khumbulekhaya_1.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt by Ezokhetho" },
+      { "src": "/images/ezokhetho/khumbulekhaya_2.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt Detail" }
+    ],
+    "featured_image": { "src": "/images/ezokhetho/khumbulekhaya_1.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Warm Sand", "swatch": { "color": "#E6D7C3", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Warm Sand" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Khumbulekhaya — Remember Home '22", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
+    "description": "Celebrating family, culture and heritage. Features hand-finished panel details with traditional South African aesthetics."
+  },
+  {
+    "id": 6008,
+    "title": "Izimbokodo Stone Dress",
+    "handle": "izimbokodo-stone-dress",
+    "vendor": "Ezokhetho",
+    "tags": ["Dress", "Izimbokodo"],
+    "price": 8200,
+    "images": [
+      { "src": "/images/ezokhetho/izimbokodo_1.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress by Ezokhetho" },
+      { "src": "/images/ezokhetho/izimbokodo_2.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress Detail" }
+    ],
+    "featured_image": { "src": "/images/ezokhetho/izimbokodo_1.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Stone Slate", "swatch": { "color": "#708090", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Stone Slate" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Izimbokodo — Strength of Stone '22", "id": "izimbokodo", "handle": "izimbokodo" }],
+    "description": "Inspired by the courage and resilience of Black South African women. Features an elegant architectural high-neck and custom pleating."
+  },
+  {
+    "id": 6009,
+    "title": "Sophiatown Jazz Jacket",
+    "handle": "sophiatown-jazz-jacket",
+    "vendor": "Ezokhetho",
+    "tags": ["Jacket", "Outerwear", "Sophiatown"],
+    "price": 8900,
+    "images": [
+      { "src": "/images/ezokhetho/sophiatown_1.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket by Ezokhetho" },
+      { "src": "/images/ezokhetho/sophiatown_2.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket Detail" }
+    ],
+    "featured_image": { "src": "/images/ezokhetho/sophiatown_1.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Jazz Indigo", "swatch": { "color": "#4B0082", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Jazz Indigo" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Sophiatown '21", "id": "sophiatown", "handle": "sophiatown" }],
+    "description": "A retro-themed tailored jacket honoring the cultural hub of Sophiatown during its golden age of jazz and style."
   }
 ]

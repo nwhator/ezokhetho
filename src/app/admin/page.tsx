@@ -136,9 +136,15 @@ export default function AdminPage() {
     if (!form.title || !form.price) return alert('Title and price are required.')
     const handle = form.handle || form.title.toLowerCase().replace(/\s+/g, '-')
     const collectionMeta: Record<string, { title: string; handle: string }> = {
-      ngithwale: { title: 'Ngithwale — Carry Me', handle: 'ngithwale' },
-      izimbokodo: { title: 'Izimbokodo — Strength of Stone', handle: 'izimbokodo' },
-      khumbulekhaya: { title: 'Khumbulekhaya — Remember Home', handle: 'khumbulekhaya' },
+      entathakusa: { title: "Entathakusa '26", handle: 'entathakusa' },
+      zodwa: { title: "Zodwa '25", handle: 'zodwa' },
+      ngithwale: { title: "Ngithwale '24", handle: 'ngithwale' },
+      'kwa-suka-sukela': { title: "Kwa-suka-sukela '24", handle: 'kwa-suka-sukela' },
+      inganekwane: { title: "Inganekwane '23", handle: 'inganekwane' },
+      umkhathizwe: { title: "Umkhathizwe '23", handle: 'umkhathizwe' },
+      khumbulekhaya: { title: "Khumbulekhaya '22", handle: 'khumbulekhaya' },
+      izimbokodo: { title: "Izimbokodo '22", handle: 'izimbokodo' },
+      sophiatown: { title: "Sophiatown '21", handle: 'sophiatown' },
     }
     const col = collectionMeta[form.collection]
     const sizeList = form.sizes.split(',').map(s => ({ swatch: null, name: s.trim() }))
@@ -265,9 +271,15 @@ export default function AdminPage() {
                   onChange={e => setForm(prev => ({ ...prev, collection: e.target.value }))}
                   className="w-full border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-[#0033A0]"
                 >
-                  <option value="ngithwale">Ngithwale — Carry Me</option>
-                  <option value="izimbokodo">Izimbokodo — Strength of Stone</option>
-                  <option value="khumbulekhaya">Khumbulekhaya — Remember Home</option>
+                  <option value="entathakusa">Entathakusa '26</option>
+                  <option value="zodwa">Zodwa '25</option>
+                  <option value="ngithwale">Ngithwale '24</option>
+                  <option value="kwa-suka-sukela">Kwa-suka-sukela '24</option>
+                  <option value="inganekwane">Inganekwane '23</option>
+                  <option value="umkhathizwe">Umkhathizwe '23</option>
+                  <option value="khumbulekhaya">Khumbulekhaya '22</option>
+                  <option value="izimbokodo">Izimbokodo '22</option>
+                  <option value="sophiatown">Sophiatown '21</option>
                 </select>
               </div>
               <div className="sm:col-span-2">
