@@ -1,15 +1,35 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Logo } from '@/app/logo'
 import Link from 'next/link'
-import { ezokhethoProducts } from '@/data'
-import { ArrowLeft, Package, Plus, Edit2, Trash2, Tag } from 'lucide-react'
+import { ArrowLeft, Package, Plus, Edit2, Trash2, Tag, Loader2 } from 'lucide-react'
 
-type Product = (typeof ezokhethoProducts)[0]
+interface Product {
+  id: number
+  title: string
+  handle: string
+  vendor: string
+  tags: string[]
+  price: number
+  images: Array<{ src: string; width: number; height: number; alt: string }>
+  featured_image: { src: string; width: number; height: number; alt: string }
+  options: Array<{
+    name: string
+    optionValues: Array<{
+      name: string
+      swatch: { color: string; image: string | null } | null
+    }>
+  }>
+  selected_options: Array<{ name: string; value: string }>
+  collections: Array<{ title: string; id: string | number; handle: string }>
+  description: string
+}
 
 export default function AdminPage() {
-  const [products, setProducts] = useState<Product[]>(ezokhethoProducts as Product[])
+  const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
   const [editing, setEditing] = useState<Product | null>(null)
   const [showForm, setShowForm] = useState(false)
 
@@ -25,13 +45,55 @@ export default function AdminPage() {
     sizes: 'S, M, L',
   })
 
+  // Load products from local products.json API on mount
+  useEffect(() => {
+    fetchProducts()
+  }, [])
+
+  const fetchProducts = async () => {
+    try {
+      setLoading(true)
+      const res = await fetch('/api/admin/products')
+      const data = await res.json()
+      if (Array.isArray(data)) {
+        setProducts(data)
+      }
+    } catch (err) {
+      console.error('Failed to load products:', err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   const resetForm = () => {
     setForm({ title: '', handle: '', price: '', collection: 'ngithwale', vendor: 'Ezokhetho', imageUrl: '', description: '', color: '', sizes: 'S, M, L' })
     setEditing(null)
     setShowForm(false)
   }
 
-  const handleSave = () => {
+  const saveProductsList = async (updatedList: Product[]) => {
+    setSaving(true)
+    try {
+      const res = await fetch('/api/admin/products', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedList),
+      })
+      if (res.ok) {
+        setProducts(updatedList)
+        resetForm()
+      } else {
+        alert('Failed to save changes.')
+      }
+    } catch (err) {
+      console.error(err)
+      alert('Error communicating with database.')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleSave = async () => {
     if (!form.title || !form.price) return alert('Title and price are required.')
     const handle = form.handle || form.title.toLowerCase().replace(/\s+/g, '-')
     const collectionMeta: Record<string, { title: string; handle: string }> = {
@@ -52,7 +114,7 @@ export default function AdminPage() {
       images: [{ src: form.imageUrl || '/images/placeholder.webp', width: 1200, height: 1600, alt: form.title }],
       featured_image: { src: form.imageUrl || '/images/placeholder.webp', width: 1200, height: 1600, alt: form.title },
       options: [
-        { name: 'Color', optionValues: [{ name: form.color || 'Black', swatch: { color: '#000000', image: null } }] },
+        { name: 'Color', optionValues: [{ name: form.color || 'Black', swatch: { color: '#0033A0', image: null } }] },
         { name: 'Size', optionValues: sizeList },
       ],
       selected_options: [
@@ -63,14 +125,11 @@ export default function AdminPage() {
       description: form.description,
     }
 
-    if (editing) {
-      setProducts(prev => prev.map(p => p.id === editing.id ? newProduct : p))
-    } else {
-      setProducts(prev => [...prev, newProduct])
-    }
+    const updatedList = editing
+      ? products.map(p => p.id === editing.id ? newProduct : p)
+      : [...products, newProduct]
 
-    resetForm()
-    alert(`✅ "${newProduct.title}" saved. To persist permanently, copy the product data below and update src/data.ts → ezokhethoProducts.`)
+    await saveProductsList(updatedList)
   }
 
   const handleEdit = (product: Product) => {
@@ -89,8 +148,11 @@ export default function AdminPage() {
     setShowForm(true)
   }
 
-  const handleDelete = (id: number) => {
-    if (confirm('Delete this product?')) setProducts(prev => prev.filter(p => p.id !== id))
+  const handleDelete = async (id: number) => {
+    if (confirm('Are you sure you want to delete this product? This will remove it permanently from the website.')) {
+      const updatedList = products.filter(p => p.id !== id)
+      await saveProductsList(updatedList)
+    }
   }
 
   const collectionColors: Record<string, string> = {
@@ -102,7 +164,7 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-zinc-50">
       {/* Admin Nav */}
-      <header className="border-b border-zinc-200 bg-white px-6 py-4">
+      <header className="border-b border-[#0033A0]/10 bg-white px-6 py-4">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-[#0033A0] transition-colors">
@@ -111,12 +173,12 @@ export default function AdminPage() {
             </Link>
             <div className="h-5 w-px bg-zinc-200" />
             <Logo variant="dark" showWordmark={false} />
-            <span className="font-butler text-lg text-[#0033A0]">Admin</span>
+            <span className="font-butler text-lg font-medium text-[#0033A0]">Admin Panel</span>
           </div>
           <button
             onClick={() => { resetForm(); setShowForm(true) }}
             id="add-product-btn"
-            className="flex items-center gap-2 bg-[#0033A0] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white hover:bg-[#FF6B00] transition-colors"
+            className="flex items-center gap-2 bg-[#0033A0] px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-white hover:bg-[#FF6B00] transition-all duration-300"
           >
             <Plus className="h-3.5 w-3.5" />
             Add Product
@@ -126,10 +188,8 @@ export default function AdminPage() {
 
       <main className="mx-auto max-w-6xl px-6 py-8">
         {/* Notice */}
-        <div className="mb-6 border border-[#0033A0]/20 bg-[#0033A0]/5 p-4 text-sm text-[#0033A0]">
-          <strong>Note:</strong> Products edited here are stored in memory (browser session only).
-          To persist product changes permanently, update the <code className="bg-white px-1">ezokhethoProducts</code> array in <code className="bg-white px-1">src/data.ts</code>.
-          Future versions will connect to a database.
+        <div className="mb-6 border border-[#0033A0]/20 bg-[#0033A0]/5 p-4 text-xs font-moderat text-[#0033A0] leading-relaxed">
+          <strong>Database Connected:</strong> Products added or removed here directly update the <code>src/data/products.json</code> file, updating the shop and collections pages instantly.
         </div>
 
         {/* Product Form */}
@@ -183,7 +243,12 @@ export default function AdminPage() {
               </div>
             </div>
             <div className="mt-6 flex gap-3">
-              <button onClick={handleSave} className="bg-[#0033A0] px-6 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-white hover:bg-[#FF6B00] transition-colors">
+              <button
+                disabled={saving}
+                onClick={handleSave}
+                className="flex items-center gap-2 bg-[#0033A0] px-6 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-white hover:bg-[#FF6B00] transition-colors disabled:opacity-50"
+              >
+                {saving && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
                 {editing ? 'Update Product' : 'Save Product'}
               </button>
               <button onClick={resetForm} className="border border-zinc-300 px-6 py-2.5 text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-500 hover:border-zinc-500 transition-colors">
@@ -201,53 +266,66 @@ export default function AdminPage() {
               <h2 className="font-butler text-xl text-[#0033A0]">Products ({products.length})</h2>
             </div>
           </div>
-          <div className="divide-y divide-zinc-100">
-            {products.map(product => {
-              const colHandle = product.collections[0]?.handle ?? 'ngithwale'
-              const imgSrc = typeof product.images[0] === 'object' ? (product.images[0] as any).src : product.images[0]
-              return (
-                <div key={product.id} className="flex items-center gap-4 px-6 py-4">
-                  {/* Thumb */}
-                  <div className="h-14 w-10 flex-shrink-0 overflow-hidden bg-zinc-100">
-                    <img src={imgSrc} alt={product.title} className="h-full w-full object-cover" />
-                  </div>
-                  {/* Info */}
-                  <div className="flex-1 min-w-0">
-                    <div className="font-moderat text-sm font-medium text-zinc-900">{product.title}</div>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span
-                        className="inline-block px-2 py-0.5 text-[10px] uppercase tracking-[0.1em] text-white"
-                        style={{ backgroundColor: collectionColors[colHandle] ?? '#0033A0' }}
-                      >
-                        <Tag className="inline h-2.5 w-2.5 mr-1" />
-                        {colHandle}
-                      </span>
-                      <span className="text-[11px] text-zinc-400">{product.handle}</span>
+
+          {loading ? (
+            <div className="flex flex-col items-center justify-center py-20 text-zinc-400">
+              <Loader2 className="h-8 w-8 animate-spin text-[#0033A0] mb-2" />
+              <span className="text-xs uppercase tracking-[0.15em]">Loading products database...</span>
+            </div>
+          ) : products.length === 0 ? (
+            <div className="py-20 text-center text-zinc-400">
+              <Package className="h-12 w-12 mx-auto mb-3 stroke-[1.2]" />
+              <p className="font-butler text-lg font-light text-zinc-700">No products found</p>
+              <p className="text-xs mt-1">Click &quot;Add Product&quot; to populate your store database.</p>
+            </div>
+          ) : (
+            <div className="divide-y divide-zinc-100">
+              {products.map(product => {
+                const colHandle = product.collections[0]?.handle ?? 'ngithwale'
+                const imgSrc = typeof product.images[0] === 'object' ? (product.images[0] as any).src : product.images[0]
+                return (
+                  <div key={product.id} className="flex items-center gap-4 px-6 py-4">
+                    {/* Thumb */}
+                    <div className="h-14 w-10 flex-shrink-0 overflow-hidden bg-zinc-100">
+                      <img src={imgSrc} alt={product.title} className="h-full w-full object-cover" />
+                    </div>
+                    {/* Info */}
+                    <div className="flex-1 min-w-0">
+                      <div className="font-moderat text-sm font-medium text-zinc-900">{product.title}</div>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span
+                          className="inline-block px-2 py-0.5 text-[9px] uppercase tracking-[0.1em] text-white"
+                          style={{ backgroundColor: collectionColors[colHandle] ?? '#0033A0' }}
+                        >
+                          <Tag className="inline h-2 w-2 mr-1" />
+                          {colHandle}
+                        </span>
+                        <span className="text-[11px] text-zinc-400">{product.handle}</span>
+                      </div>
+                    </div>
+                    {/* Price */}
+                    <div className="font-moderat text-sm font-medium text-[#0033A0] w-24 text-right">
+                      R {product.price.toLocaleString('en-ZA')}
+                    </div>
+                    {/* Actions */}
+                    <div className="flex items-center gap-2">
+                      <button onClick={() => handleEdit(product)} className="flex h-8 w-8 items-center justify-center border border-zinc-200 text-zinc-400 hover:border-[#0033A0] hover:text-[#0033A0] transition-all">
+                        <Edit2 className="h-3.5 w-3.5" />
+                      </button>
+                      <button onClick={() => handleDelete(product.id)} className="flex h-8 w-8 items-center justify-center border border-zinc-200 text-zinc-400 hover:border-red-400 hover:text-red-500 transition-all">
+                        <Trash2 className="h-3.5 w-3.5" />
+                      </button>
                     </div>
                   </div>
-                  {/* Price */}
-                  <div className="font-moderat text-sm font-medium text-[#0033A0] w-24 text-right">
-                    R {product.price.toLocaleString('en-ZA')}
-                  </div>
-                  {/* Actions */}
-                  <div className="flex items-center gap-2">
-                    <button onClick={() => handleEdit(product)} className="flex h-8 w-8 items-center justify-center border border-zinc-200 text-zinc-400 hover:border-[#0033A0] hover:text-[#0033A0] transition-colors">
-                      <Edit2 className="h-3.5 w-3.5" />
-                    </button>
-                    <button onClick={() => handleDelete(product.id)} className="flex h-8 w-8 items-center justify-center border border-zinc-200 text-zinc-400 hover:border-red-400 hover:text-red-500 transition-colors">
-                      <Trash2 className="h-3.5 w-3.5" />
-                    </button>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
+                )
+              })}
+            </div>
+          )}
         </div>
 
-        {/* Export hint */}
-        <div className="mt-6 border border-dashed border-zinc-300 p-4 text-xs text-zinc-400">
-          <strong>To add images:</strong> Place product images in <code>public/images/</code> and reference them as <code>/images/your-image.jpg</code> in the Image URL field above.
-          For production, connect a database (Supabase, PlanetScale) or headless CMS (Sanity, Contentful) to manage products dynamically.
+        {/* Upload hint */}
+        <div className="mt-6 border border-dashed border-zinc-300 p-4 text-xs font-moderat text-zinc-400 leading-relaxed">
+          <strong>How to add custom images:</strong> Place the garment pictures into the <code>public/images/</code> folder of the project, then specify the path as <code>/images/filename.jpg</code> inside the form above.
         </div>
       </main>
     </div>

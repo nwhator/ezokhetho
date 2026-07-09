@@ -55,8 +55,8 @@ const styles = {
   ],
   colors: {
     'dark/zinc': [
-      'text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10',
-      'dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5',
+      'text-white [--btn-bg:#0033A0] [--btn-border:#0033A0]/90 [--btn-hover-overlay:var(--color-white)]/10 data-hover:bg-[#FF6B00]',
+      'dark:text-white dark:[--btn-bg:#0033A0] dark:[--btn-hover-overlay:var(--color-white)]/5',
       '[--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)]',
     ],
     light: [
@@ -70,8 +70,8 @@ const styles = {
       '[--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] dark:[--btn-icon:var(--color-zinc-500)] dark:data-active:[--btn-icon:var(--color-zinc-400)] dark:data-hover:[--btn-icon:var(--color-zinc-400)]',
     ],
     dark: [
-      'text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10',
-      'dark:[--btn-hover-overlay:var(--color-white)]/5 dark:[--btn-bg:var(--color-zinc-800)]',
+      'text-white [--btn-bg:#0033A0] [--btn-border:#0033A0]/90 [--btn-hover-overlay:var(--color-white)]/10 data-hover:bg-[#FF6B00]',
+      'dark:[--btn-hover-overlay:var(--color-white)]/5 dark:[--btn-bg:#0033A0]',
       '[--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)]',
     ],
     white: [

@@ -13,6 +13,8 @@ import { HugeiconsIcon } from '@hugeicons/react'
 import clsx from 'clsx'
 import { useState } from 'react'
 
+import { formatZAR } from '@/lib/currency'
+
 export function ProductForm({ product }: { product: TProductItem }) {
   const { open: openAside } = useAside()
   const { options, selected_options, collections, title, price } = product
@@ -53,7 +55,7 @@ export function ProductForm({ product }: { product: TProductItem }) {
           <div className="rounded-full bg-zinc-900 px-5 py-2">
             <Text className="text-xs text-white">{product.vendor}</Text>
           </div>
-          <Text className="text-xl">${price.toFixed(2)}</Text>
+          <Text className="text-xl">{formatZAR(price)}</Text>
           <Text className="font-light text-zinc-400">/</Text>
 
           {/* Reviews */}

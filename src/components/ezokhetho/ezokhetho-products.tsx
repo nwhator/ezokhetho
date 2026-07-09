@@ -85,7 +85,7 @@ function ProductCard({ product, index }: { product: (typeof products)[0]; index:
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/0 opacity-0 transition-all duration-500 group-hover:bg-black/20 group-hover:opacity-100">
           <Link
             href={product.href}
-            className="flex items-center gap-2 bg-white px-5 py-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-900 transition-colors hover:bg-[#FF6B00] hover:text-white"
+            className="flex items-center gap-2 bg-white px-5 py-3 text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-900 transition-colors hover:bg-[#0033A0] hover:text-white"
           >
             <ZoomIn className="h-3.5 w-3.5" />
             Quick View
@@ -99,24 +99,24 @@ function ProductCard({ product, index }: { product: (typeof products)[0]; index:
           className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center bg-white/90 backdrop-blur-sm transition-colors hover:bg-white"
         >
           <Heart
-            className={`h-4 w-4 transition-colors ${wished ? 'fill-[#FF6B00] text-[#FF6B00]' : 'text-zinc-400'}`}
+            className={`h-4 w-4 transition-colors ${wished ? 'fill-[#0033A0] text-[#0033A0]' : 'text-zinc-400'}`}
           />
         </button>
 
-        {/* Orange bottom accent on hover */}
-        <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#FF6B00] transition-all duration-500 group-hover:w-full" />
+        {/* Blue bottom accent on hover */}
+        <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#0033A0] transition-all duration-500 group-hover:w-full" />
       </div>
 
       {/* Info */}
       <div className="flex flex-col gap-1">
-        <span className="text-[10px] uppercase tracking-[0.2em] text-[#FF6B00]">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-[#0033A0]">
           {product.collection}
         </span>
         <div className="flex items-start justify-between gap-2">
           <h3 className="font-butler text-sm font-medium text-zinc-900">
             {product.name}
           </h3>
-          <span className="shrink-0 font-moderat text-sm text-zinc-500">
+          <span className="shrink-0 font-moderat text-sm text-[#0033A0] font-medium">
             {product.price}
           </span>
         </div>
@@ -156,7 +156,7 @@ export default function EzkoFeaturedProducts() {
           <Link
             href="/collections/all"
             id="view-all-products"
-            className="group flex w-fit items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#FF6B00]"
+            className="group flex w-fit items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#0033A0]"
           >
             Shop all pieces
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />

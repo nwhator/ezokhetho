@@ -1,0 +1,210 @@
+[
+  {
+    "id": 5001,
+    "title": "Structural Coat",
+    "handle": "structural-coat",
+    "vendor": "Ezokhetho",
+    "tags": ["Coat", "Ngithwale", "Outerwear"],
+    "price": 8500,
+    "images": [
+      { "src": "/images/fashion/coat.jpg", "width": 1200, "height": 1600, "alt": "Structural Coat by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/coat.jpg", "width": 1200, "height": 1600, "alt": "Structural Coat by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Midnight Blue", "swatch": { "color": "#0033A0", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Midnight Blue" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Ngithwale — Carry Me", "id": "ngithwale", "handle": "ngithwale" }],
+    "description": "A masterfully tailored coat with architectural shoulders and clean lines. Part of the Ngithwale collection, celebrating maternal strength and resilience."
+  },
+  {
+    "id": 5002,
+    "title": "Draped Jacket",
+    "handle": "draped-jacket",
+    "vendor": "Ezokhetho",
+    "tags": ["Jacket", "Izimbokodo", "Outerwear"],
+    "price": 6200,
+    "images": [
+      { "src": "/images/fashion/jacket.jpg", "width": 1200, "height": 1600, "alt": "Draped Jacket by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/jacket.jpg", "width": 1200, "height": 1600, "alt": "Draped Jacket by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Charcoal Black", "swatch": { "color": "#2C2C2C", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Charcoal Black" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Izimbokodo — Strength of Stone", "id": "izimbokodo", "handle": "izimbokodo" }],
+    "description": "An elegant draped jacket designed to celebrate the courage and strength of Black South African women. Features custom fold details."
+  },
+  {
+    "id": 5003,
+    "title": "Wide-leg Trousers",
+    "handle": "wide-leg-trousers",
+    "vendor": "Ezokhetho",
+    "tags": ["Trousers", "Khumbulekhaya", "Pants"],
+    "price": 3800,
+    "images": [
+      { "src": "/images/fashion/jean.jpg", "width": 1200, "height": 1600, "alt": "Wide-leg Trousers by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/jean.jpg", "width": 1200, "height": 1600, "alt": "Wide-leg Trousers by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Earthy Sand", "swatch": { "color": "#D2B48C", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "28" },
+          { "swatch": null, "name": "30" },
+          { "swatch": null, "name": "32" },
+          { "swatch": null, "name": "34" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Earthy Sand" },
+      { "name": "Size", "value": "32" }
+    ],
+    "collections": [{ "title": "Khumbulekhaya — Remember Home", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
+    "description": "Flowing wide-leg trousers crafted from premium linen-blend fabric. Part of the Khumbulekhaya collection."
+  },
+  {
+    "id": 5004,
+    "title": "Signature Tee",
+    "handle": "signature-tee",
+    "vendor": "Ezokhetho",
+    "tags": ["T-Shirt", "Ngithwale", "Casual"],
+    "price": 1950,
+    "images": [
+      { "src": "/images/fashion/tshirt.jpg", "width": 1200, "height": 1600, "alt": "Signature Tee by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/tshirt.jpg", "width": 1200, "height": 1600, "alt": "Signature Tee by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Optical White", "swatch": { "color": "#FFFFFF", "image": null } },
+          { "name": "Sleek Black", "swatch": { "color": "#000000", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "XS" },
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" },
+          { "swatch": null, "name": "L" },
+          { "swatch": null, "name": "XL" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Optical White" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Ngithwale — Carry Me", "id": "ngithwale", "handle": "ngithwale" }],
+    "description": "Premium heavy-weight cotton tee featuring Ezokhetho's signature wordmark print."
+  },
+  {
+    "id": 5005,
+    "title": "Editorial Piece",
+    "handle": "editorial-piece",
+    "vendor": "Ezokhetho",
+    "tags": ["Couture", "Izimbokodo", "Limited Edition"],
+    "price": 7800,
+    "images": [
+      { "src": "/images/fashion/c1.jpg", "width": 1200, "height": 1600, "alt": "Editorial Piece by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/c1.jpg", "width": 1200, "height": 1600, "alt": "Editorial Piece by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Heritage Blue", "swatch": { "color": "#0033A0", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "S" },
+          { "swatch": null, "name": "M" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Heritage Blue" },
+      { "name": "Size", "value": "M" }
+    ],
+    "collections": [{ "title": "Izimbokodo — Strength of Stone", "id": "izimbokodo", "handle": "izimbokodo" }],
+    "description": "A striking editorial masterpiece blending sculptured structural forms with heritage textiles."
+  },
+  {
+    "id": 5006,
+    "title": "Heritage Shoes",
+    "handle": "heritage-shoes",
+    "vendor": "Ezokhetho",
+    "tags": ["Shoes", "Khumbulekhaya", "Footwear"],
+    "price": 4500,
+    "images": [
+      { "src": "/images/fashion/shoes.jpg", "width": 1200, "height": 1600, "alt": "Heritage Shoes by Ezokhetho" }
+    ],
+    "featured_image": { "src": "/images/fashion/shoes.jpg", "width": 1200, "height": 1600, "alt": "Heritage Shoes by Ezokhetho" },
+    "options": [
+      {
+        "name": "Color",
+        "optionValues": [
+          { "name": "Earth Brown", "swatch": { "color": "#8B4513", "image": null } }
+        ]
+      },
+      {
+        "name": "Size",
+        "optionValues": [
+          { "swatch": null, "name": "UK 6" },
+          { "swatch": null, "name": "UK 7" },
+          { "swatch": null, "name": "UK 8" },
+          { "swatch": null, "name": "UK 9" }
+        ]
+      }
+    ],
+    "selected_options": [
+      { "name": "Color", "value": "Earth Brown" },
+      { "name": "Size", "value": "UK 8" }
+    ],
+    "collections": [{ "title": "Khumbulekhaya — Remember Home", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
+    "description": "Handcrafted leather shoes honoring traditional South African detailing with a modern silhouette."
+  }
+]

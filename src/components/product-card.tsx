@@ -1,4 +1,5 @@
 import { TProductItem } from '@/data'
+import { formatZAR } from '@/lib/currency'
 import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -27,11 +28,6 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
   const color = selected_options.find((option) => option.name === 'Color')?.value
   const size = selected_options.find((option) => option.name === 'Size')?.value
 
-  // Format price — show as ZAR if >= 100, else $ for legacy data
-  const priceDisplay = price >= 100
-    ? `R ${price.toLocaleString('en-ZA')}`
-    : `$${Number(price).toFixed(2)}`
-
   return (
     <div className={clsx('group/prd relative w-full', className)}>
       {/* Product Image */}
@@ -40,7 +36,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
           src={img1}
           alt={title}
           fill
-          className="z-0 object-cover transition-transform duration-500 group-hover/prd:scale-105"
+          className="z-0 object-cover transition-transform duration-700 group-hover/prd:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 30vw"
           priority
         />
@@ -49,36 +45,36 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
             src={img2}
             alt={title}
             fill
-            className="z-0 object-cover opacity-0 transition-opacity duration-300 group-hover/prd:opacity-100"
+            className="z-0 object-cover opacity-0 transition-opacity duration-500 group-hover/prd:opacity-100"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 30vw"
           />
         )}
-        {/* Blue hover border */}
+        {/* Blue reveal line */}
         <div className="absolute inset-x-0 bottom-0 h-0.5 w-0 bg-[#0033A0] transition-all duration-500 group-hover/prd:w-full" />
       </div>
 
       {/* Vendor label */}
       <div className="absolute top-3 left-3">
-        <div className="bg-white px-3 py-1 text-[10px] uppercase tracking-[0.15em] text-[#0033A0]">
+        <div className="bg-white px-2.5 py-1 text-[9px] uppercase tracking-[0.2em] text-[#0033A0]">
           {vendor}
         </div>
       </div>
 
       {/* Cart icon */}
-      <div className="absolute top-3 right-3">
-        <div className="flex h-8 w-8 items-center justify-center bg-white text-[#0033A0] transition-colors hover:bg-[#0033A0] hover:text-white">
-          <ShoppingBagIcon className="h-4 w-4" />
+      <div className="absolute top-3 right-3 opacity-0 transition-opacity duration-300 group-hover/prd:opacity-100">
+        <div className="flex h-8 w-8 items-center justify-center bg-[#0033A0] text-white transition-colors hover:bg-[#FF6B00]">
+          <ShoppingBagIcon className="h-3.5 w-3.5" />
         </div>
       </div>
 
       {/* Product Info */}
       <div className="pt-3">
-        <div className="flex justify-between gap-2">
+        <div className="flex items-start justify-between gap-2">
           <TextLink href={`/products/${handle}`}>
             <span className="absolute inset-0" />
             {title}
           </TextLink>
-          <Text className="shrink-0 text-[#0033A0]">{priceDisplay}</Text>
+          <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>
         </div>
         <Text className="mt-0.5 text-xs text-zinc-400">{color ?? size ?? ''}</Text>
       </div>

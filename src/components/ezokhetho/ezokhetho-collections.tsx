@@ -126,7 +126,7 @@ function CollectionBlock({
         <Link
           href={`/collections/${collection.handle}`}
           id={`collection-cta-${collection.id}`}
-          className="group mt-2 flex w-fit items-center gap-3 border-b border-zinc-300 pb-2 text-sm font-medium uppercase tracking-[0.15em] text-zinc-900 transition-all duration-300 hover:border-[#FF6B00] hover:text-[#FF6B00]"
+          className="group mt-2 flex w-fit items-center gap-3 border-b border-zinc-300 pb-2 text-sm font-medium uppercase tracking-[0.15em] text-zinc-900 transition-all duration-300 hover:border-[#0033A0] hover:text-[#0033A0]"
         >
           Explore Collection
           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -166,7 +166,7 @@ export default function EzkoCollections() {
           <Link
             href="/collections/all"
             id="all-collections-link"
-            className="group hidden items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#FF6B00] lg:flex"
+            className="group hidden items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#0033A0] lg:flex"
           >
             View all collections
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
