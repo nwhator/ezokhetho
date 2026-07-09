@@ -25,8 +25,8 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
   const img1 = getImgSrc(images?.[0] ?? featured_image)
   const img2 = images?.[1] ? getImgSrc(images[1]) : null
 
-  const color = selected_options.find((option) => option.name === 'Color')?.value
-  const size = selected_options.find((option) => option.name === 'Size')?.value
+  const color = selected_options.find((option: { name: string; value: string }) => option.name === 'Color')?.value
+  const size = selected_options.find((option: { name: string; value: string }) => option.name === 'Size')?.value
 
   return (
     <div className={clsx('group/prd relative w-full', className)}>
