@@ -1,0 +1,121 @@
+{
+  "collections": {
+    "sophiatown": {
+      "id": "sophiatown",
+      "title": "Sophiatown '21",
+      "desc": "A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.",
+      "images": [
+        "/images/ezokhetho/sophiatown_1.jpg",
+        "/images/ezokhetho/sophiatown_2.jpg",
+        "/images/ezokhetho/sophiatown_3.jpg",
+        "/images/ezokhetho/sophiatown_4.jpg",
+        "/images/ezokhetho/sophiatown_5.jpg"
+      ]
+    },
+    "izimbokodo": {
+      "id": "izimbokodo",
+      "title": "Izimbokodo '22",
+      "desc": "Inspired by the courage and resilience of Black South African women, exploring femininity and traditional South African identity.",
+      "images": [
+        "/images/ezokhetho/izimbokodo_1.jpg",
+        "/images/ezokhetho/izimbokodo_2.jpg",
+        "/images/ezokhetho/izimbokodo_3.jpg",
+        "/images/ezokhetho/izimbokodo_4.jpg",
+        "/images/ezokhetho/izimbokodo_5.jpg"
+      ]
+    },
+    "khumbulekhaya": {
+      "id": "khumbulekhaya",
+      "title": "Khumbulekhaya '22",
+      "desc": "A celebration of reconnecting with family, culture and heritage. Home is not a place \u2014 it is a feeling carried within.",
+      "images": [
+        "/images/ezokhetho/khumbulekhaya_1.jpg",
+        "/images/ezokhetho/khumbulekhaya_2.jpg",
+        "/images/ezokhetho/khumbulekhaya_3.jpg",
+        "/images/ezokhetho/khumbulekhaya_4.jpg",
+        "/images/ezokhetho/khumbulekhaya_5.jpg"
+      ]
+    },
+    "umkhathizwe": {
+      "id": "umkhathizwe",
+      "title": "Umkhathizwe \u2014 The Horizon '23",
+      "desc": "Debuted at Lagos Fashion Week. A futuristic exploration of African fashion reaching beyond boundaries into the global horizon.",
+      "images": [
+        "/images/ezokhetho/umkhathizwe_1.jpg",
+        "/images/ezokhetho/umkhathizwe_2.jpg",
+        "/images/ezokhetho/umkhathizwe_3.jpg",
+        "/images/ezokhetho/umkhathizwe_4.jpg",
+        "/images/ezokhetho/umkhathizwe_5.jpg"
+      ]
+    },
+    "inganekwane": {
+      "id": "inganekwane",
+      "title": "Inganekwane '23",
+      "desc": "Inspired by traditional folklore and childhood stories, combining playful proportions with rich woven heritage textiles.",
+      "images": [
+        "/images/ezokhetho/inganekwane_1.jpg",
+        "/images/ezokhetho/inganekwane_2.jpg",
+        "/images/ezokhetho/inganekwane_3.jpg",
+        "/images/ezokhetho/inganekwane_4.jpg",
+        "/images/ezokhetho/inganekwane_5.jpg"
+      ]
+    },
+    "kwa-suka-sukela": {
+      "id": "kwa-suka-sukela",
+      "title": "Kwa-suka-sukela '24",
+      "desc": "A tribute to oral storytelling traditions, featuring bold silhouettes, structural details, and contemporary pattern work.",
+      "images": [
+        "/images/ezokhetho/kwa-suka-sukela_1.jpg",
+        "/images/ezokhetho/kwa-suka-sukela_2.jpg",
+        "/images/ezokhetho/kwa-suka-sukela_3.jpg",
+        "/images/ezokhetho/kwa-suka-sukela_4.jpg",
+        "/images/ezokhetho/kwa-suka-sukela_5.jpg"
+      ]
+    },
+    "ngithwale": {
+      "id": "ngithwale",
+      "title": "Ngithwale \u2014 Carry Me '24",
+      "desc": "This collection honours mothers and the generations of women whose sacrifices, prayers and strength continue to carry us.",
+      "images": [
+        "/images/ezokhetho/ngithwale_1.jpg",
+        "/images/ezokhetho/ngithwale_2.jpg",
+        "/images/ezokhetho/ngithwale_3.jpg",
+        "/images/ezokhetho/ngithwale_4.jpg",
+        "/images/ezokhetho/ngithwale_5.jpg"
+      ]
+    },
+    "zodwa": {
+      "id": "zodwa",
+      "title": "Zodwa '25",
+      "desc": "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
+      "images": [
+        "/images/ezokhetho/zodwa_1.jpg",
+        "/images/ezokhetho/zodwa_2.jpg",
+        "/images/ezokhetho/zodwa_3.jpg",
+        "/images/ezokhetho/zodwa_4.jpg",
+        "/images/ezokhetho/zodwa_5.jpg"
+      ]
+    },
+    "entathakusa": {
+      "id": "entathakusa",
+      "title": "Entathakusa '26",
+      "desc": "Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.",
+      "images": [
+        "/images/ezokhetho/entathakusa_1.jpg",
+        "/images/ezokhetho/entathakusa_2.jpg",
+        "/images/ezokhetho/entathakusa_3.jpg",
+        "/images/ezokhetho/entathakusa_4.jpg",
+        "/images/ezokhetho/entathakusa_5.jpg"
+      ]
+    }
+  },
+  "designer": [
+    "/images/ezokhetho/designer_1.jpg",
+    "/images/ezokhetho/designer_2.jpg",
+    "/images/ezokhetho/designer_3.jpg"
+  ],
+  "about": [
+    "/images/ezokhetho/about_1.jpg",
+    "/images/ezokhetho/about_2.jpg"
+  ]
+}

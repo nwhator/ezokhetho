@@ -5,41 +5,99 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
+import optimizedMappings from '@/data/optimized_mappings.json'
 
 const collections = [
+  {
+    id: 'entathakusa',
+    handle: 'entathakusa',
+    headline: 'Entathakusa',
+    subtitle: 'Robb Report Gala & SAMW \'26',
+    description: optimizedMappings.collections.entathakusa.desc,
+    image: optimizedMappings.collections.entathakusa.images[0] || '/images/ezokhetho/khumbulekhaya.jpg',
+    imageAlt: 'Entathakusa campaign by Ezokhetho',
+    accent: '#0033A0',
+  },
+  {
+    id: 'zodwa',
+    handle: 'zodwa',
+    headline: 'ZODWA',
+    subtitle: 'Signature Tailoring \'25',
+    description: optimizedMappings.collections.zodwa.desc,
+    image: optimizedMappings.collections.zodwa.images[0] || '/images/ezokhetho/ngithwale.jpg',
+    imageAlt: 'Zodwa collection by Ezokhetho',
+    accent: '#FF6B00',
+  },
   {
     id: 'ngithwale',
     handle: 'ngithwale',
     headline: 'Ngithwale',
-    subtitle: 'Carry Me',
-    description:
-      "This collection honours mothers and the generations of women whose sacrifices, prayers and strength continue to carry us. The collection debuted at South African Fashion Week after the brand's return following a two-year hiatus.",
-    image: '/images/ezokhetho/ngithwale.jpg',
+    subtitle: 'Carry Me \'24',
+    description: optimizedMappings.collections.ngithwale.desc,
+    image: optimizedMappings.collections.ngithwale.images[0] || '/images/ezokhetho/ngithwale.jpg',
     imageAlt: 'Ngithwale — Carry Me collection by Ezokhetho',
     accent: '#0033A0',
   },
   {
-    id: 'izimbokodo',
-    handle: 'izimbokodo',
-    headline: 'Izimbokodo',
-    subtitle: 'Strength of Stone',
-    description:
-      'Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs while celebrating traditional and contemporary identity.',
-    image: '/images/ezokhetho/izimbokodo.jpg',
-    imageAlt: 'Izimbokodo collection by Ezokhetho',
+    id: 'kwa-suka-sukela',
+    handle: 'kwa-suka-sukela',
+    headline: 'Kwa-suka-sukela',
+    subtitle: 'SAMW Show \'24',
+    description: optimizedMappings.collections['kwa-suka-sukela'].desc,
+    image: optimizedMappings.collections['kwa-suka-sukela'].images[0] || '/images/ezokhetho/izimbokodo.jpg',
+    imageAlt: 'Kwa-suka-sukela collection by Ezokhetho',
+    accent: '#FF6B00',
+  },
+  {
+    id: 'inganekwane',
+    handle: 'inganekwane',
+    headline: 'Inganekwane',
+    subtitle: 'Woven Stories \'23',
+    description: optimizedMappings.collections.inganekwane.desc,
+    image: optimizedMappings.collections.inganekwane.images[0] || '/images/ezokhetho/khumbulekhaya.jpg',
+    imageAlt: 'Inganekwane collection by Ezokhetho',
+    accent: '#0033A0',
+  },
+  {
+    id: 'umkhathizwe',
+    handle: 'umkhathizwe',
+    headline: 'Umkhathizwe',
+    subtitle: 'The Horizon \'23 (Lagos FW)',
+    description: optimizedMappings.collections.umkhathizwe.desc,
+    image: optimizedMappings.collections.umkhathizwe.images[0] || '/images/ezokhetho/ngithwale.jpg',
+    imageAlt: 'Umkhathizwe collection by Ezokhetho',
     accent: '#FF6B00',
   },
   {
     id: 'khumbulekhaya',
     handle: 'khumbulekhaya',
     headline: 'Khumbulekhaya',
-    subtitle: 'Remember Home',
-    description:
-      'A celebration of reconnecting with family, culture and heritage through contemporary South African aesthetics. Home is not a place — it is a feeling carried within.',
-    image: '/images/ezokhetho/khumbulekhaya.jpg',
+    subtitle: 'Remember Home \'22',
+    description: optimizedMappings.collections.khumbulekhaya.desc,
+    image: optimizedMappings.collections.khumbulekhaya.images[0] || '/images/ezokhetho/khumbulekhaya.jpg',
     imageAlt: 'Khumbulekhaya — Remember Home collection by Ezokhetho',
     accent: '#0033A0',
   },
+  {
+    id: 'izimbokodo',
+    handle: 'izimbokodo',
+    headline: 'Izimbokodo',
+    subtitle: 'Strength of Stone \'22',
+    description: optimizedMappings.collections.izimbokodo.desc,
+    image: optimizedMappings.collections.izimbokodo.images[0] || '/images/ezokhetho/izimbokodo.jpg',
+    imageAlt: 'Izimbokodo collection by Ezokhetho',
+    accent: '#FF6B00',
+  },
+  {
+    id: 'sophiatown',
+    handle: 'sophiatown',
+    headline: 'Sophiatown',
+    subtitle: 'Golden Era \'21',
+    description: optimizedMappings.collections.sophiatown.desc,
+    image: optimizedMappings.collections.sophiatown.images[0] || '/images/ezokhetho/ngithwale.jpg',
+    imageAlt: 'Sophiatown collection by Ezokhetho',
+    accent: '#0033A0',
+  }
 ]
 
 function CollectionBlock({
@@ -93,7 +151,7 @@ function CollectionBlock({
           className="font-butler text-[80px] font-light leading-none text-zinc-100"
           aria-hidden
         >
-          0{index + 1}
+          {index + 1 < 10 ? `0${index + 1}` : index + 1}
         </span>
 
         {/* Label */}

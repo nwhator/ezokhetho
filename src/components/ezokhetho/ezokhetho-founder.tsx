@@ -47,7 +47,7 @@ export default function EzkoFounder() {
           >
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/images/ezokhetho/founder.jpg"
+                src="/images/ezokhetho/designer_1.jpg"
                 alt="Mpumelelo Dhlamini — Founder & Creative Director, Ezokhetho"
                 fill
                 className="object-cover object-top"
