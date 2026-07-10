@@ -34,8 +34,7 @@ export function generatePayFastSignature(
     queryString += `&passphrase=${encodeURIComponent(passphrase).replace(/%20/g, '+')}`
   }
 
-  return crypto.createHash('md5').update(queryString).digest('hex')
-}
+  return crypto.createHash('md5').update(queryString).digest('he
 
 /**
  * Build a complete set of PayFast payment fields ready for form submission.
@@ -54,7 +53,7 @@ export function buildPayFastPayment({
   customer: {
     firstName: string
     lastName: string
-    email: string
+    emai
   }
 }): { fields: Record<string, string>; actionUrl: string } {
   const isSandbox = process.env.PAYFAST_SANDBOX === 'true'

@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import EzokhethoHero from '@/components/ezokhetho/ezokhetho-hero'
-import EzkoBrandStory from '@/components/ezokhetho/ezokhetho-brand-story'
-import EzkoFounder from '@/components/ezokhetho/ezokhetho-founder'
-import EzkoCollections from '@/components/ezokhetho/ezokhetho-collections'
-import EzkoSustainability from '@/components/ezokhetho/ezokhetho-sustainability'
-import EzkoPhilosophy from '@/components/ezokhetho/ezokhetho-philosophy'
-import EzkoFeaturedProducts from '@/components/ezokhetho/ezokhetho-products'
-import EzkoNewsletter from '@/components/ezokhetho/ezokhetho-newsletter'
-import EzkoHeader from '@/components/ezokhetho/ezokhetho-header'
-import EzkoFooter from '@/components/ezokhetho/ezokhetho-footer'
+import EzokhethoBrandStory from '@/components/ezokhetho/ezokhetho-brand-story'
+import EzokhethoFounder from '@/components/ezokhetho/ezokhetho-founder'
+import EzokhethoCollections from '@/components/ezokhetho/ezokhetho-collections'
+import EzokhethoSustainability from '@/components/ezokhetho/ezokhetho-sustainability'
+import EzokhethoPhilosophy from '@/components/ezokhetho/ezokhetho-philosophy'
+import EzokhethoFeaturedProducts from '@/components/ezokhetho/ezokhetho-products'
+import EzokhethoNewsletter from '@/components/ezokhetho/ezokhetho-newsletter'
+import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
+import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
+import EzokhethoServices from '@/components/ezokhetho/ezokhetho-services'
 
 export const metadata: Metadata = {
   title: 'Ezokhetho | Contemporary African Luxury Fashion',
@@ -47,7 +48,10 @@ export default function HomePage() {
         {/* 7. Featured Products — editorial grid */}
         <EzkoFeaturedProducts />
 
-        {/* 8. Newsletter — join the journey */}
+        {/* 8. Ezokhetho Services — 3 columns */}
+        <EzokhethoServices />
+
+        {/* 9. Newsletter — join the journey */}
         <EzkoNewsletter />
       </main>
 

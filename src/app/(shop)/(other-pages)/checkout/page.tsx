@@ -11,14 +11,17 @@ import { Select } from '@/components/select'
 import Image from 'next/image'
 import Link from 'next/link'
 import DeliveryRadio from './delivery-radio'
-import { useState, useEffect, useRef } from 'react'
+import PayFastForm from '@/components/payfast-form'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+
+const PAYFAST_SANDBOX_URL = 'https://sandbox.payfast.co.za/eng/process'
+const PAYFAST_PRODUCTION_URL = 'https://www.payfast.co.za/eng/process'
 
 export default function Page() {
   const { items, subtotal, shipping, total, clearCart } = useCart()
   const router = useRouter()
   const [mounted, setMounted] = useState(false)
-  const payfastFormRef = useRef<HTMLFormElement>(null)
 
   // Form Fields
   const [email, setEmail] = useState('')
@@ -29,30 +32,13 @@ export default function Page() {
   const [postalCode, setPostalCode] = useState('')
   const [phone, setPhone] = useState('')
 
-  // PayFast Form Fields State
-  const [payfastData, setPayfastData] = useState({
-    merchant_id: '10000100', // PayFast Sandbox Sandbox Credentials
-    merchant_key: '46f0z43gja9aw',
-    return_url: '',
-    cancel_url: '',
-    notify_url: '',
-    name_first: '',
-    name_last: '',
-    email_address: '',
-    m_payment_id: '',
-    amount: '0.00',
-    item_name: 'Ezokhetho Order Checkout',
-  })
+  // PayFast Form State
+  const [payfastFields, setPayfastFields] = useState<Record<string, string> | null>(null)
+  const [actionUrl, setActionUrl] = useState<string>(PAYFAST_PRODUCTION_URL)
+  const [isProcessing, setIsProcessing] = useState(false)
 
   useEffect(() => {
     setMounted(true)
-    const host = window.location.origin
-    setPayfastData((prev) => ({
-      ...prev,
-      return_url: `${host}/order-successful`,
-      cancel_url: `${host}/cart`,
-      notify_url: `${host}/api/payfast/notify`,
-    }))
   }, [])
 
   if (!mounted) {
@@ -71,11 +57,18 @@ export default function Page() {
       return
     }
 
+    if (items.length === 0) {
+      alert('Your cart is empty.')
+      return
+    }
+
+    setIsProcessing(true)
+
     const mPaymentId = `EZ-${Date.now()}`
 
-    // 1. Save Pending Transaction to API
     try {
-      const response = await fetch('/api/checkout', {
+      // 1. Save Pending Transaction to API
+      const checkoutResponse = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -95,35 +88,42 @@ export default function Page() {
         }),
       })
 
-      if (!response.ok) {
+      if (!checkoutResponse.ok) {
         throw new Error('Failed to record transaction')
       }
 
-      // 2. Set fields and submit to PayFast sandbox form
-      setPayfastData((prev) => {
-        const next = {
-          ...prev,
+      // 2. Get signed PayFast payment fields
+      const payfastResponse = await fetch('/api/payfast/payment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          return_url: `${window.location.origin}/order-successful`,
+          cancel_url: `${window.location.origin}/cart`,
+          notify_url: `${window.location.origin}/api/payfast/notify`,
           name_first: firstName,
           name_last: lastName,
           email_address: email,
           m_payment_id: mPaymentId,
           amount: total.toFixed(2),
-        }
-
-        // Trigger PayFast Form Submission after state updates
-        setTimeout(() => {
-          if (payfastFormRef.current) {
-            clearCart() // clear cart now that redirecting
-            payfastFormRef.current.submit()
-          }
-        }, 150)
-
-        return next
+          item_name: 'Ezokhetho Order Checkout',
+        }),
       })
+
+      if (!payfastResponse.ok) {
+        throw new Error('Failed to generate PayFast payment data')
+      }
+
+      const { data, actionUrl: returnedActionUrl } = await payfastResponse.json()
+
+      // 3. Set fields and trigger PayFast form submission
+      setPayfastFields(data)
+      setActionUrl(returnedActionUrl)
+      clearCart()
 
     } catch (err) {
       console.error(err)
       alert('Something went wrong during checkout. Please try again.')
+      setIsProcessing(false)
     }
   }
 
@@ -295,33 +295,17 @@ export default function Page() {
               </dl>
 
               <div className="border-t border-zinc-200 px-4 py-6 sm:px-6">
-                <Button className="w-full font-medium" type="submit" disabled={items.length === 0}>
-                  Pay with PayFast
+                <Button className="w-full font-medium" type="submit" disabled={items.length === 0 || isProcessing}>
+                  {isProcessing ? 'Processing...' : 'Pay with PayFast'}
                 </Button>
               </div>
             </div>
           </div>
         </form>
 
-        {/* Hidden PayFast Form redirecting to sandbox */}
-        <form 
-          ref={payfastFormRef} 
-          action="https://payfast.co.za/eng/process" 
-          method="POST"
-          className="hidden"
-        >
-          <input type="hidden" name="merchant_id" value={payfastData.merchant_id} />
-          <input type="hidden" name="merchant_key" value={payfastData.merchant_key} />
-          <input type="hidden" name="return_url" value={payfastData.return_url} />
-          <input type="hidden" name="cancel_url" value={payfastData.cancel_url} />
-          <input type="hidden" name="notify_url" value={payfastData.notify_url} />
-          <input type="hidden" name="name_first" value={payfastData.name_first} />
-          <input type="hidden" name="name_last" value={payfastData.name_last} />
-          <input type="hidden" name="email_address" value={payfastData.email_address} />
-          <input type="hidden" name="m_payment_id" value={payfastData.m_payment_id} />
-          <input type="hidden" name="amount" value={payfastData.amount} />
-          <input type="hidden" name="item_name" value={payfastData.item_name} />
-        </form>
+        {payfastFields && (
+          <PayFastForm fields={payfastFields} actionUrl={actionUrl} autoSubmit />
+        )}
       </div>
     </div>
   )

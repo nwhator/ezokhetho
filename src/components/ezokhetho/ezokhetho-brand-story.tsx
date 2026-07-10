@@ -51,7 +51,7 @@ export default function EzkoBrandStory() {
         >
           <div className="relative aspect-[3/4] overflow-hidden">
             <Image
-              src="/images/ezokhetho/about_1.jpg"
+              src="/icon.jpg"
               alt="Ezokhetho craftsmanship — African fabric artisanship"
               fill
               className="object-cover"
