@@ -1,318 +1,1017 @@
-[
-  {
-    "id": 6001,
-    "title": "Entathakusa Runway Gown",
-    "handle": "entathakusa-runway-gown",
-    "vendor": "Ezokhetho",
-    "tags": ["Dress", "Gown", "Entathakusa"],
-    "price": 14500,
-    "images": [
-      { "src": "/images/ezokhetho/entathakusa_1.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown by Ezokhetho" },
-      { "src": "/images/ezokhetho/entathakusa_2.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/entathakusa_1.jpg", "width": 1200, "height": 1600, "alt": "Entathakusa Runway Gown by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Sunrise Ochre", "swatch": { "color": "#FF8C00", "image": null } },
-          { "name": "Dawn Ivory", "swatch": { "color": "#FFFFF0", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Sunrise Ochre" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Entathakusa '26", "id": "entathakusa", "handle": "entathakusa" }],
-    "description": "Featured runway look from the Entathakusa '26 showcase. An elegant high-neck draping detail celebrating morning dawn."
-  },
-  {
-    "id": 6002,
-    "title": "Zodwa Tailored Jacket",
-    "handle": "zodwa-tailored-jacket",
-    "vendor": "Ezokhetho",
-    "tags": ["Jacket", "Tailoring", "Zodwa"],
-    "price": 9800,
-    "images": [
-      { "src": "/images/ezokhetho/zodwa_1.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket by Ezokhetho" },
-      { "src": "/images/ezokhetho/zodwa_2.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/zodwa_1.jpg", "width": 1200, "height": 1600, "alt": "Zodwa Tailored Jacket by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Classic Black", "swatch": { "color": "#000000", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Classic Black" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Zodwa '25", "id": "zodwa", "handle": "zodwa" }],
-    "description": "Signature tailoring jacket from Zodwa '25. Architectural structured shoulder lines combined with clean African heritage aesthetics."
-  },
-  {
-    "id": 6003,
-    "title": "Ngithwale Wrap Coat",
-    "handle": "ngithwale-wrap-coat",
-    "vendor": "Ezokhetho",
-    "tags": ["Coat", "Outerwear", "Ngithwale"],
-    "price": 12500,
-    "images": [
-      { "src": "/images/ezokhetho/ngithwale_1.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat by Ezokhetho" },
-      { "src": "/images/ezokhetho/ngithwale_2.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/ngithwale_1.jpg", "width": 1200, "height": 1600, "alt": "Ngithwale Wrap Coat by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Heritage Royal Blue", "swatch": { "color": "#0033A0", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Heritage Royal Blue" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Ngithwale — Carry Me '24", "id": "ngithwale", "handle": "ngithwale" }],
-    "description": "A luxury heavy-weave wrap coat honoring maternal protection and female lineage. Debuted at SAFW."
-  },
-  {
-    "id": 6004,
-    "title": "Kwa-suka-sukela Pattern Shirt",
-    "handle": "kwa-suka-sukela-pattern-shirt",
-    "vendor": "Ezokhetho",
-    "tags": ["Shirt", "Top", "Kwa-suka-sukela"],
-    "price": 4500,
-    "images": [
-      { "src": "/images/ezokhetho/kwa-suka-sukela_1.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt by Ezokhetho" },
-      { "src": "/images/ezokhetho/kwa-suka-sukela_2.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/kwa-suka-sukela_1.jpg", "width": 1200, "height": 1600, "alt": "Kwa-suka-sukela Pattern Shirt by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Terracotta print", "swatch": { "color": "#C04000", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Terracotta print" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Kwa-suka-sukela '24", "id": "kwa-suka-sukela", "handle": "kwa-suka-sukela" }],
-    "description": "A luxury statement printed button-up shirt inspired by oral storytelling traditions and legacy patterns."
-  },
-  {
-    "id": 6005,
-    "title": "Inganekwane Knit Pullover",
-    "handle": "inganekwane-knit-pullover",
-    "vendor": "Ezokhetho",
-    "tags": ["Knitwear", "Pullover", "Inganekwane"],
-    "price": 6800,
-    "images": [
-      { "src": "/images/ezokhetho/inganekwane_1.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover by Ezokhetho" },
-      { "src": "/images/ezokhetho/inganekwane_2.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover Detail" }
-    ],
-    "featured_image": { "src": "/images/ezhetho/inganekwane_1.jpg", "width": 1200, "height": 1600, "alt": "Inganekwane Knit Pullover by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Desert Sand", "swatch": { "color": "#EDC9AF", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Desert Sand" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Inganekwane '23", "id": "inganekwane", "handle": "inganekwane" }],
-    "description": "A luxury woven knit pullover with playful proportions, combining soft spun wool with heritage craftsmanship."
-  },
-  {
-    "id": 6006,
-    "title": "Umkhathizwe Horizon Tunic",
-    "handle": "umkhathizwe-horizon-tunic",
-    "vendor": "Ezokhetho",
-    "tags": ["Tunic", "Top", "Umkhathizwe"],
-    "price": 5400,
-    "images": [
-      { "src": "/images/ezokhetho/umkhathizwe_1.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic by Ezokhetho" },
-      { "src": "/images/ezokhetho/umkhathizwe_2.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/umkhathizwe_1.jpg", "width": 1200, "height": 1600, "alt": "Umkhathizwe Horizon Tunic by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Dusk Blue", "swatch": { "color": "#588BAE", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Dusk Blue" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Umkhathizwe — The Horizon '23", "id": "umkhathizwe", "handle": "umkhathizwe" }],
-    "description": "Debuted at Lagos Fashion Week. A futuristic asymmetrical drape tunic exploring traditional silhouettes with modern proportions."
-  },
-  {
-    "id": 6007,
-    "title": "Khumbulekhaya Panel Shirt",
-    "handle": "khumbulekhaya-panel-shirt",
-    "vendor": "Ezokhetho",
-    "tags": ["Shirt", "Top", "Khumbulekhaya"],
-    "price": 4200,
-    "images": [
-      { "src": "/images/ezokhetho/khumbulekhaya_1.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt by Ezokhetho" },
-      { "src": "/images/ezokhetho/khumbulekhaya_2.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/khumbulekhaya_1.jpg", "width": 1200, "height": 1600, "alt": "Khumbulekhaya Panel Shirt by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Warm Sand", "swatch": { "color": "#E6D7C3", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Warm Sand" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Khumbulekhaya — Remember Home '22", "id": "khumbulekhaya", "handle": "khumbulekhaya" }],
-    "description": "Celebrating family, culture and heritage. Features hand-finished panel details with traditional South African aesthetics."
-  },
-  {
-    "id": 6008,
-    "title": "Izimbokodo Stone Dress",
-    "handle": "izimbokodo-stone-dress",
-    "vendor": "Ezokhetho",
-    "tags": ["Dress", "Izimbokodo"],
-    "price": 8200,
-    "images": [
-      { "src": "/images/ezokhetho/izimbokodo_1.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress by Ezokhetho" },
-      { "src": "/images/ezokhetho/izimbokodo_2.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/izimbokodo_1.jpg", "width": 1200, "height": 1600, "alt": "Izimbokodo Stone Dress by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Stone Slate", "swatch": { "color": "#708090", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Stone Slate" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Izimbokodo — Strength of Stone '22", "id": "izimbokodo", "handle": "izimbokodo" }],
-    "description": "Inspired by the courage and resilience of Black South African women. Features an elegant architectural high-neck and custom pleating."
-  },
-  {
-    "id": 6009,
-    "title": "Sophiatown Jazz Jacket",
-    "handle": "sophiatown-jazz-jacket",
-    "vendor": "Ezokhetho",
-    "tags": ["Jacket", "Outerwear", "Sophiatown"],
-    "price": 8900,
-    "images": [
-      { "src": "/images/ezokhetho/sophiatown_1.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket by Ezokhetho" },
-      { "src": "/images/ezokhetho/sophiatown_2.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket Detail" }
-    ],
-    "featured_image": { "src": "/images/ezokhetho/sophiatown_1.jpg", "width": 1200, "height": 1600, "alt": "Sophiatown Jazz Jacket by Ezokhetho" },
-    "options": [
-      {
-        "name": "Color",
-        "optionValues": [
-          { "name": "Jazz Indigo", "swatch": { "color": "#4B0082", "image": null } }
-        ]
-      },
-      {
-        "name": "Size",
-        "optionValues": [
-          { "swatch": null, "name": "S" },
-          { "swatch": null, "name": "M" },
-          { "swatch": null, "name": "L" }
-        ]
-      }
-    ],
-    "selected_options": [
-      { "name": "Color", "value": "Jazz Indigo" },
-      { "name": "Size", "value": "M" }
-    ],
-    "collections": [{ "title": "Sophiatown '21", "id": "sophiatown", "handle": "sophiatown" }],
-    "description": "A retro-themed tailored jacket honoring the cultural hub of Sophiatown during its golden age of jazz and style."
-  }
+﻿[
+    {
+        "id":  6001,
+        "title":  "Entathakusa Runway Gown",
+        "handle":  "entathakusa-runway-gown",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Gown",
+                     "Entathakusa"
+                 ],
+        "price":  14500,
+        "images":  [
+                       {
+                           "alt":  "Entathakusa Runway Gown View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/entathakusa_1.jpg"
+                       },
+                       {
+                           "alt":  "Entathakusa Runway Gown View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/entathakusa_2.jpg"
+                       },
+                       {
+                           "alt":  "Entathakusa Runway Gown View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/entathakusa_3.jpg"
+                       },
+                       {
+                           "alt":  "Entathakusa Runway Gown View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/entathakusa_4.jpg"
+                       },
+                       {
+                           "alt":  "Entathakusa Runway Gown View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/entathakusa_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Entathakusa Runway Gown View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/entathakusa_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Sunrise Ochre",
+                                                     "swatch":  {
+                                                                    "color":  "#FF8C00",
+                                                                    "image":  null
+                                                                }
+                                                 },
+                                                 {
+                                                     "name":  "Dawn Ivory",
+                                                     "swatch":  {
+                                                                    "color":  "#FFFFF0",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Sunrise Ochre"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Entathakusa \u002726",
+                                "id":  "entathakusa",
+                                "handle":  "entathakusa"
+                            }
+                        ],
+        "description":  "Featured runway look from the Entathakusa \u002726 showcase. An elegant high-neck draping detail celebrating morning dawn."
+    },
+    {
+        "id":  6002,
+        "title":  "Zodwa Tailored Jacket",
+        "handle":  "zodwa-tailored-jacket",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Jacket",
+                     "Tailoring",
+                     "Zodwa"
+                 ],
+        "price":  9800,
+        "images":  [
+                       {
+                           "alt":  "Zodwa Tailored Jacket View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/zodwa_1.jpg"
+                       },
+                       {
+                           "alt":  "Zodwa Tailored Jacket View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/zodwa_2.jpg"
+                       },
+                       {
+                           "alt":  "Zodwa Tailored Jacket View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/zodwa_3.jpg"
+                       },
+                       {
+                           "alt":  "Zodwa Tailored Jacket View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/zodwa_4.jpg"
+                       },
+                       {
+                           "alt":  "Zodwa Tailored Jacket View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/zodwa_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Zodwa Tailored Jacket View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/zodwa_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Classic Black",
+                                                     "swatch":  {
+                                                                    "color":  "#000000",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Classic Black"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Zodwa \u002725",
+                                "id":  "zodwa",
+                                "handle":  "zodwa"
+                            }
+                        ],
+        "description":  "Signature tailoring jacket from Zodwa \u002725. Architectural structured shoulder lines combined with clean African heritage aesthetics."
+    },
+    {
+        "id":  6003,
+        "title":  "Ngithwale Wrap Coat",
+        "handle":  "ngithwale-wrap-coat",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Coat",
+                     "Outerwear",
+                     "Ngithwale"
+                 ],
+        "price":  12500,
+        "images":  [
+                       {
+                           "alt":  "Ngithwale Wrap Coat View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/ngithwale_1.jpg"
+                       },
+                       {
+                           "alt":  "Ngithwale Wrap Coat View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/ngithwale_2.jpg"
+                       },
+                       {
+                           "alt":  "Ngithwale Wrap Coat View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/ngithwale_3.jpg"
+                       },
+                       {
+                           "alt":  "Ngithwale Wrap Coat View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/ngithwale_4.jpg"
+                       },
+                       {
+                           "alt":  "Ngithwale Wrap Coat View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/ngithwale_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Ngithwale Wrap Coat View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/ngithwale_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Heritage Royal Blue",
+                                                     "swatch":  {
+                                                                    "color":  "#0033A0",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Heritage Royal Blue"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Ngithwale â€” Carry Me \u002724",
+                                "id":  "ngithwale",
+                                "handle":  "ngithwale"
+                            }
+                        ],
+        "description":  "A luxury heavy-weave wrap coat honoring maternal protection and female lineage. Debuted at SAFW."
+    },
+    {
+        "id":  6004,
+        "title":  "Kwa-suka-sukela Pattern Shirt",
+        "handle":  "kwa-suka-sukela-pattern-shirt",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Shirt",
+                     "Top",
+                     "Kwa-suka-sukela"
+                 ],
+        "price":  4500,
+        "images":  [
+                       {
+                           "alt":  "Kwa-suka-sukela Pattern Shirt View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/kwa-suka-sukela_1.jpg"
+                       },
+                       {
+                           "alt":  "Kwa-suka-sukela Pattern Shirt View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/kwa-suka-sukela_2.jpg"
+                       },
+                       {
+                           "alt":  "Kwa-suka-sukela Pattern Shirt View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/kwa-suka-sukela_3.jpg"
+                       },
+                       {
+                           "alt":  "Kwa-suka-sukela Pattern Shirt View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/kwa-suka-sukela_4.jpg"
+                       },
+                       {
+                           "alt":  "Kwa-suka-sukela Pattern Shirt View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/kwa-suka-sukela_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Kwa-suka-sukela Pattern Shirt View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/kwa-suka-sukela_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Terracotta print",
+                                                     "swatch":  {
+                                                                    "color":  "#C04000",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Terracotta print"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Kwa-suka-sukela \u002724",
+                                "id":  "kwa-suka-sukela",
+                                "handle":  "kwa-suka-sukela"
+                            }
+                        ],
+        "description":  "A luxury statement printed button-up shirt inspired by oral storytelling traditions and legacy patterns."
+    },
+    {
+        "id":  6005,
+        "title":  "Inganekwane Knit Pullover",
+        "handle":  "inganekwane-knit-pullover",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Knitwear",
+                     "Pullover",
+                     "Inganekwane"
+                 ],
+        "price":  6800,
+        "images":  [
+                       {
+                           "alt":  "Inganekwane Knit Pullover View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/inganekwane_1.jpg"
+                       },
+                       {
+                           "alt":  "Inganekwane Knit Pullover View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/inganekwane_2.jpg"
+                       },
+                       {
+                           "alt":  "Inganekwane Knit Pullover View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/inganekwane_3.jpg"
+                       },
+                       {
+                           "alt":  "Inganekwane Knit Pullover View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/inganekwane_4.jpg"
+                       },
+                       {
+                           "alt":  "Inganekwane Knit Pullover View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/inganekwane_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Inganekwane Knit Pullover View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/inganekwane_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Desert Sand",
+                                                     "swatch":  {
+                                                                    "color":  "#EDC9AF",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Desert Sand"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Inganekwane \u002723",
+                                "id":  "inganekwane",
+                                "handle":  "inganekwane"
+                            }
+                        ],
+        "description":  "A luxury woven knit pullover with playful proportions, combining soft spun wool with heritage craftsmanship."
+    },
+    {
+        "id":  6006,
+        "title":  "Umkhathizwe Horizon Tunic",
+        "handle":  "umkhathizwe-horizon-tunic",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Tunic",
+                     "Top",
+                     "Umkhathizwe"
+                 ],
+        "price":  5400,
+        "images":  [
+                       {
+                           "alt":  "Umkhathizwe Horizon Tunic View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/umkhathizwe_1.jpg"
+                       },
+                       {
+                           "alt":  "Umkhathizwe Horizon Tunic View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/umkhathizwe_2.jpg"
+                       },
+                       {
+                           "alt":  "Umkhathizwe Horizon Tunic View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/umkhathizwe_3.jpg"
+                       },
+                       {
+                           "alt":  "Umkhathizwe Horizon Tunic View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/umkhathizwe_4.jpg"
+                       },
+                       {
+                           "alt":  "Umkhathizwe Horizon Tunic View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/umkhathizwe_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Umkhathizwe Horizon Tunic View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/umkhathizwe_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Dusk Blue",
+                                                     "swatch":  {
+                                                                    "color":  "#588BAE",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Dusk Blue"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Umkhathizwe â€” The Horizon \u002723",
+                                "id":  "umkhathizwe",
+                                "handle":  "umkhathizwe"
+                            }
+                        ],
+        "description":  "Debuted at Lagos Fashion Week. A futuristic asymmetrical drape tunic exploring traditional silhouettes with modern proportions."
+    },
+    {
+        "id":  6007,
+        "title":  "Khumbulekhaya Panel Shirt",
+        "handle":  "khumbulekhaya-panel-shirt",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Shirt",
+                     "Top",
+                     "Khumbulekhaya"
+                 ],
+        "price":  4200,
+        "images":  [
+                       {
+                           "alt":  "Khumbulekhaya Panel Shirt View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/khumbulekhaya_1.jpg"
+                       },
+                       {
+                           "alt":  "Khumbulekhaya Panel Shirt View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/khumbulekhaya_2.jpg"
+                       },
+                       {
+                           "alt":  "Khumbulekhaya Panel Shirt View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/khumbulekhaya_3.jpg"
+                       },
+                       {
+                           "alt":  "Khumbulekhaya Panel Shirt View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/khumbulekhaya_4.jpg"
+                       },
+                       {
+                           "alt":  "Khumbulekhaya Panel Shirt View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/khumbulekhaya_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Khumbulekhaya Panel Shirt View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/khumbulekhaya_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Warm Sand",
+                                                     "swatch":  {
+                                                                    "color":  "#E6D7C3",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Warm Sand"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Khumbulekhaya â€” Remember Home \u002722",
+                                "id":  "khumbulekhaya",
+                                "handle":  "khumbulekhaya"
+                            }
+                        ],
+        "description":  "Celebrating family, culture and heritage. Features hand-finished panel details with traditional South African aesthetics."
+    },
+    {
+        "id":  6008,
+        "title":  "Izimbokodo Stone Dress",
+        "handle":  "izimbokodo-stone-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Izimbokodo"
+                 ],
+        "price":  8200,
+        "images":  [
+                       {
+                           "alt":  "Izimbokodo Stone Dress View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/izimbokodo_1.jpg"
+                       },
+                       {
+                           "alt":  "Izimbokodo Stone Dress View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/izimbokodo_2.jpg"
+                       },
+                       {
+                           "alt":  "Izimbokodo Stone Dress View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/izimbokodo_3.jpg"
+                       },
+                       {
+                           "alt":  "Izimbokodo Stone Dress View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/izimbokodo_4.jpg"
+                       },
+                       {
+                           "alt":  "Izimbokodo Stone Dress View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/izimbokodo_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Izimbokodo Stone Dress View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/izimbokodo_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Stone Slate",
+                                                     "swatch":  {
+                                                                    "color":  "#708090",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Stone Slate"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Izimbokodo â€” Strength of Stone \u002722",
+                                "id":  "izimbokodo",
+                                "handle":  "izimbokodo"
+                            }
+                        ],
+        "description":  "Inspired by the courage and resilience of Black South African women. Features an elegant architectural high-neck and custom pleating."
+    },
+    {
+        "id":  6009,
+        "title":  "Sophiatown Jazz Jacket",
+        "handle":  "sophiatown-jazz-jacket",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Jacket",
+                     "Outerwear",
+                     "Sophiatown"
+                 ],
+        "price":  8900,
+        "images":  [
+                       {
+                           "alt":  "Sophiatown Jazz Jacket View 1",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/sophiatown_1.jpg"
+                       },
+                       {
+                           "alt":  "Sophiatown Jazz Jacket View 2",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/sophiatown_2.jpg"
+                       },
+                       {
+                           "alt":  "Sophiatown Jazz Jacket View 3",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/sophiatown_3.jpg"
+                       },
+                       {
+                           "alt":  "Sophiatown Jazz Jacket View 4",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/sophiatown_4.jpg"
+                       },
+                       {
+                           "alt":  "Sophiatown Jazz Jacket View 5",
+                           "width":  1200,
+                           "height":  1600,
+                           "src":  "/images/ezokhetho/sophiatown_5.jpg"
+                       }
+                   ],
+        "featured_image":  {
+                               "alt":  "Sophiatown Jazz Jacket View 1",
+                               "width":  1200,
+                               "height":  1600,
+                               "src":  "/images/ezokhetho/sophiatown_1.jpg"
+                           },
+        "options":  [
+                        {
+                            "name":  "Color",
+                            "optionValues":  [
+                                                 {
+                                                     "name":  "Jazz Indigo",
+                                                     "swatch":  {
+                                                                    "color":  "#4B0082",
+                                                                    "image":  null
+                                                                }
+                                                 }
+                                             ]
+                        },
+                        {
+                            "name":  "Size",
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 }
+                                             ]
+                        }
+                    ],
+        "selected_options":  [
+                                 {
+                                     "name":  "Color",
+                                     "value":  "Jazz Indigo"
+                                 },
+                                 {
+                                     "name":  "Size",
+                                     "value":  "M"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Sophiatown \u002721",
+                                "id":  "sophiatown",
+                                "handle":  "sophiatown"
+                            }
+                        ],
+        "description":  "A retro-themed tailored jacket honoring the cultural hub of Sophiatown during its golden age of jazz and style."
+    },
+    {
+        "id":  6010,
+        "featured_image":  {
+                               "alt":  "Mapetla \u002726 Editorial Set by Ezokhetho",
+                               "width":  3000,
+                               "height":  4000,
+                               "src":  "/images/ezokhetho/mapetla_1.jpg"
+                           },
+        "cost":  6800,
+        "title":  "Mapetla \u002726 Editorial Set",
+        "tags":  [
+                     "Editorial",
+                     "Set",
+                     "Mapetla"
+                 ],
+        "options":  [
+                        {
+                            "optionValues":  [
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "S"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "M"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "L"
+                                                 },
+                                                 {
+                                                     "swatch":  null,
+                                                     "name":  "XL"
+                                                 }
+                                             ],
+                            "name":  "Size"
+                        }
+                    ],
+        "price":  11500,
+        "description":  "The latest chapter from Ezokhetho. The Mapetla \u002726 editorial collection — a bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.",
+        "handle":  "mapetla-26-editorial-set",
+        "images":  [
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 1",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_1.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 2",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_2.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 3",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_3.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 4",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_4.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 5",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_5.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 6",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_6.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 7",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_7.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 8",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_8.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 9",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_9.jpg"
+                       },
+                       {
+                           "alt":  "Mapetla \u002726 Editorial — Look 10",
+                           "width":  3000,
+                           "height":  4000,
+                           "src":  "/images/ezokhetho/mapetla_10.jpg"
+                       }
+                   ],
+        "vendor":  "Ezokhetho",
+        "selected_options":  [
+                                 {
+                                     "value":  "M",
+                                     "name":  "Size"
+                                 }
+                             ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "handle":  "mapetla",
+                                "id":  "mapetla"
+                            }
+                        ]
+    }
 ]

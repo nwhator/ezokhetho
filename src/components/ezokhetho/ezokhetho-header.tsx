@@ -29,6 +29,13 @@ const collectionsMenu = [
     year: '',
   },
   {
+    name: "Mapetla",
+    href: '/collections/mapetla',
+    desc: 'Latest Chapter',
+    thumb: '/images/ezokhetho/mapetla_1.jpg',
+    year: "'26",
+  },
+  {
     name: "Entathakusa",
     href: '/collections/entathakusa',
     desc: 'Robb Report & SAMW',

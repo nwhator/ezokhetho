@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
@@ -20,15 +19,18 @@ export default function EzokhethoHero() {
       id="hero"
       className="relative flex min-h-dvh w-full items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
-      <Image
-        src="/images/ezokhetho/hero.jpg"
-        alt="Ezokhetho — Contemporary African Luxury Fashion"
-        fill
-        className="object-cover object-center"
-        priority
-        quality={90}
-      />
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/images/ezokhetho/hero.jpg"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+        aria-hidden
+      >
+        <source src="/videos/hero_video.mp4" type="video/mp4" />
+      </video>
 
       {/* Multi-layer overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
@@ -123,3 +125,4 @@ export default function EzokhethoHero() {
     </section>
   )
 }
+

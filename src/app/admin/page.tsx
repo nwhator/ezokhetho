@@ -136,6 +136,7 @@ export default function AdminPage() {
     if (!form.title || !form.price) return alert('Title and price are required.')
     const handle = form.handle || form.title.toLowerCase().replace(/\s+/g, '-')
     const collectionMeta: Record<string, { title: string; handle: string }> = {
+      mapetla: { title: "Mapetla '26", handle: 'mapetla' },
       entathakusa: { title: "Entathakusa '26", handle: 'entathakusa' },
       zodwa: { title: "Zodwa '25", handle: 'zodwa' },
       ngithwale: { title: "Ngithwale '24", handle: 'ngithwale' },
@@ -271,6 +272,7 @@ export default function AdminPage() {
                   onChange={e => setForm(prev => ({ ...prev, collection: e.target.value }))}
                   className="w-full border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-[#0033A0]"
                 >
+                  <option value="mapetla">Mapetla '26</option>
                   <option value="entathakusa">Entathakusa '26</option>
                   <option value="zodwa">Zodwa '25</option>
                   <option value="ngithwale">Ngithwale '24</option>

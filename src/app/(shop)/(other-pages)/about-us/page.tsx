@@ -1,119 +1,195 @@
-import { Heading } from '@/components/heading'
-import { Text } from '@/components/text'
-import { VectorArrowDown2 } from '@/components/vector-arrow-down'
 import { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Ezokhetho | Contemporary African Luxury Fashion',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Founded by Mpumelelo Dhlamini after graduating from the Villioti Fashion Institute, Ezokhetho is a vehicle for storytelling through African luxury fashion — honouring those who came before us.',
 }
 
-const Page = () => {
+export default function AboutPage() {
   return (
-    <div className="container mt-16 pb-16 sm:mt-24 lg:mt-28">
-      {/* SECTION1 */}
-      <div className="flex flex-col justify-between gap-8 overflow-hidden lg:flex-row lg:gap-6 xl:gap-2.5">
-        <div className="flex flex-2/3 flex-col gap-20 md:gap-24 lg:gap-28 xl:gap-32">
+    <main className="pb-24">
+
+      {/* ── HERO BANNER ── */}
+      <section className="relative flex min-h-[60vh] items-end justify-start overflow-hidden bg-zinc-950">
+        <Image
+          src="/images/ezokhetho/about_1.jpg"
+          alt="Ezokhetho — About Us"
+          fill
+          className="object-cover object-top opacity-80"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="relative container pb-16 pt-40">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-[#FF6B00]">
+            Est. Johannesburg
+          </p>
+          <h1 className="font-butler text-5xl font-light leading-[1.1] text-white sm:text-6xl lg:text-7xl">
+            About <em className="font-extralight italic">Ezokhetho</em>
+          </h1>
+        </div>
+      </section>
+
+      {/* ── BRAND STORY ── */}
+      <section className="container py-20 sm:py-28">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           <div className="relative">
-            <Heading level={1} fontSize="text-7xl lg:text-8xl 2xl:text-9xl font-medium" className="relative w-fit">
-              <span>About </span>
-              <span data-slot="italic">US</span>
-
-              <VectorArrowDown2 className="absolute -end-32 top-1/2 hidden h-20 sm:block sm:h-32 lg:-end-16 2xl:top-2/3" />
-            </Heading>
-          </div>
-
-          <div className="mt-auto flex flex-col gap-8 sm:flex-row lg:gap-6 xl:gap-2.5">
-            <div className="flex-1/2 xl:flex-1/3">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <Image
-                src={'/images/skincare/face-3-3.webp'}
-                width={494}
-                height={529}
-                alt={'feature-1-2'}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                src="/images/ezokhetho/designer_1.jpg"
+                alt="Mpumelelo Dhlamini — Founder & Creative Director"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
+            <div className="absolute -bottom-4 -right-4 h-20 w-20 border-b-2 border-r-2 border-[#FF6B00]" />
+            <div className="absolute -left-4 -top-4 h-20 w-20 border-l-2 border-t-2 border-[#0033A0]" />
+          </div>
 
-            <div className="flex flex-1/2 sm:justify-center xl:flex-2/3">
-              <div className="max-w-sm self-end">
-                <Text>
-                  Our simple philosophy in all that we do. We are passionate about skin care, we are truekind.
-                </Text>
-                <br />
-                <Text>
-                  We are a team of passionate individuals who believe in the power of natural ingredients and their
-                  ability to transform your skin. Our mission is to provide you with the best products that are not only
-                  effective but also safe for you and the environment.
-                </Text>
-              </div>
+          <div className="flex flex-col justify-center gap-8">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-8 bg-[#FF6B00]" />
+              <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#FF6B00]">
+                Our Story
+              </span>
+            </div>
+
+            <h2 className="font-butler text-4xl font-light leading-[1.15] tracking-tight text-zinc-900 sm:text-5xl">
+              A Vehicle for{' '}
+              <em className="font-extralight italic">Storytelling</em>
+            </h2>
+
+            <div className="flex flex-col gap-5 text-[15px] leading-relaxed text-zinc-600">
+              <p>
+                <strong className="font-medium text-zinc-900">Ezokhetho</strong> is derived from
+                the isiZulu language by founder Mpumelelo Dhlamini and his mother. The name means
+                &ldquo;meticulously chosen as being the best or most suitable by those who came
+                before us.&rdquo;
+              </p>
+              <p>
+                Founded after graduating from The Villioti Fashion Institute in Johannesburg, the
+                brand was created as a vehicle for storytelling through clothing — weaving African
+                identity, culture, and heritage into every stitch.
+              </p>
+              <p>
+                From Dean&apos;s Merit Award recognition to showcasing at SA Fashion Week, Milan
+                Fashion Week, and Lagos Fashion Week, Ezokhetho has grown into a contemporary
+                African luxury house.
+              </p>
+            </div>
+
+            <blockquote className="relative pl-6">
+              <div className="absolute left-0 top-0 h-full w-0.5 bg-[#FF6B00]" />
+              <p className="font-butler text-xl font-light italic leading-snug text-zinc-900">
+                &ldquo;Meticulously chosen by those who came before us.&rdquo;
+              </p>
+              <cite className="mt-3 block text-xs font-medium uppercase tracking-[0.2em] text-zinc-400 not-italic">
+                — Mpumelelo Dhlamini, Founder
+              </cite>
+            </blockquote>
+
+            <div className="grid grid-cols-3 gap-4 border-t border-zinc-100 pt-8">
+              {[
+                { stat: '9', label: 'Collections' },
+                { stat: '6+', label: 'Years' },
+                { stat: '3', label: 'Continents' },
+              ].map(({ stat, label }) => (
+                <div key={label} className="text-center">
+                  <p className="font-butler text-3xl font-light text-zinc-900">{stat}</p>
+                  <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-zinc-400">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="flex flex-1/3">
-          <Image
-            src={'/images/skincare/hero.png'}
-            width={494}
-            height={529}
-            alt={'feature-1-2'}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      </div>
+      {/* ── SUSTAINABLE COMMITMENT ── */}
+      <section className="bg-[#F8F6F3] py-20 sm:py-28">
+        <div className="container">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+            <div className="flex flex-col justify-center gap-8 lg:order-2">
+              <div className="flex items-center gap-3">
+                <div className="h-px w-8 bg-[#0033A0]" />
+                <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#0033A0]">
+                  Our Commitment
+                </span>
+              </div>
 
-      {/* SECTION 2 */}
-      <div className="mt-24 sm:mt-28 lg:mt-40">
-        <Heading level={2} bigger>
-          Some interesting information <br />
-          about the <span data-slot="italic">Bitpan store!</span>
-        </Heading>
-        <div className="mt-14 flex flex-col justify-between gap-10 lg:flex-row">
-          <div className="flex-4/9">
-            <div className="">
-              <Image
-                src={'/images/skincare/feature-1.webp'}
-                width={700}
-                height={440}
-                alt={'feature-1-2'}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+              <h2 className="font-butler text-4xl font-light leading-[1.15] tracking-tight text-zinc-900 sm:text-5xl">
+                Craft with <em className="font-extralight italic">Purpose</em>
+              </h2>
+
+              <div className="flex flex-col gap-5 text-[15px] leading-relaxed text-zinc-600">
+                <p>
+                  At Ezokhetho, sustainability is not a trend — it&apos;s woven into our philosophy.
+                  We champion quality over quantity, creating garments built to last for generations.
+                </p>
+                <p>
+                  Every collection is produced in limited runs with intentional craftsmanship,
+                  honouring both the planet and the artisans behind each piece.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-4">
+                {[
+                  'Limited-run, intentional collections',
+                  'Quality materials that endure',
+                  'Honouring African artisanship',
+                  'Conscious production practices',
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-[#FF6B00]" />
+                    <span className="text-[14px] text-zinc-600">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="flex-5/9 self-end">
-            <div className="mx-auto max-w-sm">
-              <Text className="mt-8">
-                Drawing from our rich ayurvedic legacy of over 30 years and embracing dermal science, we aim to create
-                transparent skincare that is incredibly effective.
-              </Text>
-
-              <div className="mt-24">
-                <Heading bigger>
-                  <span>+40</span>
-                  {` `}
-                  <span data-slot="dim">years</span>
-                </Heading>
-                <Text className="mt-8">
-                  Our simple philosophy in all that we do. We are passionate about skin care, we are truekind.
-                </Text>
+            <div className="relative lg:order-1">
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src="/images/ezokhetho/sustainable.jpg"
+                  alt="Ezokhetho — Sustainable luxury fashion craftsmanship"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
-
-              <div className="mt-11">
-                <Heading bigger>
-                  <span>+5000</span>
-                  {` `}
-                  <span data-slot="dim">clients</span>
-                </Heading>
-                <Text className="mt-8">We aim to create, safe and without harming the environment or the planet.</Text>
-              </div>
+              <div className="absolute -bottom-4 -left-4 h-20 w-20 border-b-2 border-l-2 border-[#0033A0]" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* ── COLLECTIONS CTA ── */}
+      <section className="container py-20 sm:py-28 text-center">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="h-px w-8 bg-[#FF6B00]" />
+          <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#FF6B00]">
+            The Work
+          </span>
+          <div className="h-px w-8 bg-[#FF6B00]" />
+        </div>
+        <h2 className="font-butler text-4xl font-light leading-[1.15] tracking-tight text-zinc-900 sm:text-5xl mb-6">
+          Explore the <em className="font-extralight italic">Collections</em>
+        </h2>
+        <p className="max-w-md mx-auto text-[15px] leading-relaxed text-zinc-500 mb-10">
+          From Sophiatown &apos;21 to Mapetla &apos;26 — nine collections, each a chapter of African
+          storytelling through luxury fashion.
+        </p>
+        <Link
+          href="/collections/all"
+          className="inline-flex items-center gap-3 bg-zinc-900 px-10 py-4 text-sm font-medium uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#0033A0]"
+        >
+          View All Collections
+        </Link>
+      </section>
+
+    </main>
   )
 }
-
-export default Page

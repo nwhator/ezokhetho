@@ -673,6 +673,15 @@ export async function getFashionCollections() {
   const products = await getFashionProducts()
   return [
     {
+      id: 'mapetla',
+      title: "Mapetla '26",
+      handle: 'mapetla',
+      description: "The latest chapter from Ezokhetho. A bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.",
+      updatedAt: '2026-07-10T00:00:00-04:00',
+      image: '/images/ezokhetho/mapetla_1.jpg',
+      products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
+    },
+    {
       id: 'entathakusa',
       title: "Entathakusa '26",
       handle: 'entathakusa',
