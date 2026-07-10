@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Logo } from '@/app/logo'
 
 export const metadata: Metadata = {
   title: 'About Ezokhetho | Contemporary African Luxury Fashion',
@@ -38,13 +39,9 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           <div className="relative">
             <div className="relative aspect-[3/4] overflow-hidden">
-              <Image
-                src="/images/ezokhetho/designer_1.jpg"
-                alt="Mpumelelo Dhlamini — Founder & Creative Director"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+              <div className="flex items-center justify-center h-full w-full bg-white">
+                <Logo variant="dark" className="scale-150" />
+              </div>
             </div>
             <div className="absolute -bottom-4 -right-4 h-20 w-20 border-b-2 border-r-2 border-[#FF6B00]" />
             <div className="absolute -left-4 -top-4 h-20 w-20 border-l-2 border-t-2 border-[#0033A0]" />
