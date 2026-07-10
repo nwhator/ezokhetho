@@ -24,39 +24,39 @@ export default function HomePage() {
   return (
     <>
       {/* Fixed transparent-to-white header */}
-      <EzkoHeader />
+      <EzokhethoHeader />
 
       <main id="main-content">
         {/* 1. Hero — full-screen cinematic */}
         <EzokhethoHero />
 
         {/* 2. Brand Story — split layout */}
-        <EzkoBrandStory />
+        <EzokhethoBrandStory />
 
         {/* 3. Founder — portrait + timeline */}
-        <EzkoFounder />
+        <EzokhethoFounder />
 
         {/* 4. Collections — Ngithwale, Izimbokodo, Khumbulekhaya */}
-        <EzkoCollections />
+        <EzokhethoCollections />
 
         {/* 5. Sustainability — 4 pillars */}
-        <EzkoSustainability />
+        <EzokhethoSustainability />
 
         {/* 6. Philosophy — full-width quote */}
-        <EzkoPhilosophy />
+        <EzokhethoPhilosophy />
 
         {/* 7. Featured Products — editorial grid */}
-        <EzkoFeaturedProducts />
+        <EzokhethoFeaturedProducts />
 
         {/* 8. Ezokhetho Services — 3 columns */}
         <EzokhethoServices />
 
         {/* 9. Newsletter — join the journey */}
-        <EzkoNewsletter />
+        <EzokhethoNewsletter />
       </main>
 
       {/* Footer */}
-      <EzkoFooter />
+      <EzokhethoFooter />
     </>
   )
 }

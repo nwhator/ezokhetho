@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, PenTool, Gem, Sparkles, Threads, Heart, ArrowRight, Check, Mail } from 'lucide-react'
+import { Calendar, PenTool, Gem, Sparkles, Heart, ArrowRight, Check, Mail } from 'lucide-react'
 
 const services = [
   {
@@ -200,7 +200,7 @@ export default function ServicesPage() {
                   transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.6 + index * 0.1 }}
                   className={`relative flex gap-8 pb-12 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}
                 >
-                  <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'pl-8'} max-w-md`>
+                  <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'pl-8'} max-w-md`}>
                     <div className="flex items-center justify-between gap-4">
                       <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#FF6B00] shrink-0">
                         {item.step}

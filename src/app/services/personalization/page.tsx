@@ -11,7 +11,7 @@ import { Description, Field, Label } from '@/components/fieldset'
 import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
 import { Checkbox } from '@/components/checkbox'
-import { Mail, Sparkles, Threads, Tag, ArrowLeft, Image as ImageIcon } from 'lucide-react'
+import { Mail, Sparkles, Tag, ArrowLeft, Image as ImageIcon } from 'lucide-react'
 
 const personalizationTypes = [
   { value: 'monogram', label: 'Monogramming', description: 'Initials or name embroidered on garment', basePrice: 'R350' },
@@ -141,7 +141,7 @@ export default function PersonalizationPage() {
 
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0033A0]/10 text-[#0033A0]">
-                      <Threads className="h-5 w-5" />
+                      <Sparkles className="h-5 w-5" />
                     </div>
                     <div>
                       <h3 className="font-butler text-lg font-medium text-zinc-900">Premium Threads</h3>

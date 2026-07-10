@@ -37,8 +37,13 @@ export default function CommissionsPage() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value, type } = e.target
-    setFormData((prev) => ({ ...prev, [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value }))
+    const { name, type } = e.target
+    const value = type === 'checkbox' ? (e.target as HTMLInputElement).checked : (e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement).value
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleCheckboxChange = (checked: boolean, name: string) => {
+    setFormData((prev) => ({ ...prev, [name]: checked }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -392,7 +397,7 @@ export default function CommissionsPage() {
                         id="hasInspiration"
                         name="hasInspiration"
                         checked={formData.hasInspiration}
-                        onChange={handleChange}
+                        onChange={(checked) => handleCheckboxChange(checked, 'hasInspiration')}
                         disabled={isSubmitting}
                       />
                       <Label htmlFor="hasInspiration" className="mt-1 font-moderat text-sm text-zinc-700">
