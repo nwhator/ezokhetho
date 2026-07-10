@@ -63,9 +63,7 @@ export function buildPayFastPayment({
   const passphrase = process.env.PAYFAST_PASSPHRASE ?? undefined
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://www.ezokhetho.com'
 
-  const actionUrl = isSandbox
-    ? 'https://sandbox.payfast.co.za/eng/process'
-    : 'https://www.payfast.co.za/eng/process'
+  const actionUrl = 'https://www.payfast.co.za/eng/process';
 
   const fields: Record<string, string> = {
     merchant_id: merchantId,
