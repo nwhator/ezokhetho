@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, PenTool, Gem, Sparkles, Thread, Heart, ArrowRight, Check } from 'lucide-react'
+import { Calendar, PenTool, Gem, Sparkles, Threads, Heart, ArrowRight, Check, Mail } from 'lucide-react'
 
 const services = [
   {
