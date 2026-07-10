@@ -189,7 +189,7 @@ export default function ServicesPage() {
               {[
                 { step: '01', title: 'Discover', desc: 'Browse our services and choose the experience that fits your vision', icon: Sparkles },
                 { step: '02', title: 'Connect', desc: 'Submit your request — we\'ll respond within 24 hours to schedule', icon: Mail },
-                { step: '03', title: 'Consult', desc: 'Meet with Mpumelelo to refine designs, select fabrics, and finalize details', icon: Thread },
+                { step: '03', title: 'Consult', desc: 'Meet with Mpumelelo to refine designs, select fabrics, and finalize details', icon: Threads },
                 { step: '04', title: 'Create', desc: 'Your piece is handcrafted in our atelier with meticulous attention', icon: Heart },
                 { step: '05', title: 'Deliver', desc: 'Receive your one-of-a-kind garment — made exclusively for you', icon: Gem },
               ].map((item, index) => (
