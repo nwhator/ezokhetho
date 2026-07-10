@@ -371,7 +371,7 @@ export default function PersonalizationPage() {
                       </div>
                     )}
 
-                    <Button type="submit" className="w-full" disabled={isSubmitting} size="lg">
+                    <Button type="submit" className="w-full py-5" disabled={isSubmitting}>
                       {isSubmitting ? 'Submitting...' : 'Submit Request'}
                     </Button>
 
