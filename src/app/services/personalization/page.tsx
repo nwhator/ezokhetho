@@ -10,7 +10,7 @@ import { Input } from '@/components/input'
 import { Description, Field, Label } from '@/components/fieldset'
 import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
-import { Checkbox } from '@/components/checkbox'
+import { Checkbox, CheckboxField } from '@/components/checkbox'
 import { Mail, Sparkles, Tag, ArrowLeft, Image as ImageIcon } from 'lucide-react'
 
 const personalizationTypes = [
@@ -327,7 +327,7 @@ export default function PersonalizationPage() {
                       </Field>
                     </div>
 
-                    <div className="flex items-start gap-3">
+                    <CheckboxField className="flex items-start gap-3">
                       <Checkbox
                         id="hasGarment"
                         name="hasGarment"
@@ -338,7 +338,7 @@ export default function PersonalizationPage() {
                       <Label htmlFor="hasGarment" className="mt-1 font-moderat text-sm text-zinc-700">
                         I have the garment and will ship it to your atelier
                       </Label>
-                    </div>
+                    </CheckboxField>
 
                     <Field>
                       <Label>Details / Design Brief <span className="text-[#FF6B00]">*</span></Label>
@@ -356,7 +356,7 @@ export default function PersonalizationPage() {
                       </Description>
                     </Field>
 
-                    <div className="flex items-start gap-3">
+                    <CheckboxField className="flex items-start gap-3">
                       <Checkbox
                         id="attachImages"
                         name="attachImages"
@@ -367,7 +367,7 @@ export default function PersonalizationPage() {
                       <Label htmlFor="attachImages" className="mt-1 font-moderat text-sm text-zinc-700">
                         I have reference images/sketches to share (we'll request these via email)
                       </Label>
-                    </div>
+                    </CheckboxField>
 
                     {submitStatus === 'error' && (
                       <div className="p-4 rounded bg-red-50 border border-red-200 text-red-700 text-sm">

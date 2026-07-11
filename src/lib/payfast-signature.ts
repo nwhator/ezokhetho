@@ -40,11 +40,17 @@ function urlEncode(value: string): string {
 }
 
 export function generatePayFastSignature(data: PayFastPaymentData, passphrase = PAYFAST_PASSPHRASE): string {
-  const orderedKeys = PAYFAST_FIELD_ORDER.filter((key) => data[key as keyof PayFastPaymentData] !== '')
+  const orderedKeys = PAYFAST_FIELD_ORDER.filter((key) => {
+    const value = data[key];
+    return value !== undefined && value !== '';
+  });
 
-  const paramString = orderedKeys
-    .map((key) => `${key}=${urlEncode(data[key as keyof PayFastPaymentData])}`)
-    .join('&')
+const paramString = orderedKeys
+  .map((key) => {
+    const value = data[key] ?? '';
+    return `${key}=${urlEncode(value)}`;
+  })
+  .join('&');
 
   const stringToHash = passphrase ? `${paramString}&passphrase=${urlEncode(passphrase)}` : paramString
 

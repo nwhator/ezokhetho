@@ -10,7 +10,7 @@ import { Input } from '@/components/input'
 import { Description, Field, Label } from '@/components/fieldset'
 import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
-import { Checkbox } from '@/components/checkbox'
+import { Checkbox, CheckboxField } from '@/components/checkbox'
 import { ArrowLeft, Gem, Sparkles, Users, Clock, Mail, Heart, Shield } from 'lucide-react'
 
 const commissionTypes = [
@@ -392,7 +392,7 @@ export default function CommissionsPage() {
                       </Field>
                     </div>
 
-                    <div className="flex items-start gap-3">
+                    <CheckboxField className="flex items-start gap-3">
                       <Checkbox
                         id="hasInspiration"
                         name="hasInspiration"
@@ -400,10 +400,13 @@ export default function CommissionsPage() {
                         onChange={(checked) => handleCheckboxChange(checked, 'hasInspiration')}
                         disabled={isSubmitting}
                       />
-                      <Label htmlFor="hasInspiration" className="mt-1 font-moderat text-sm text-zinc-700">
+                      <Label
+                        htmlFor="hasInspiration"
+                        className="mt-1 font-moderat text-sm text-zinc-700"
+                      >
                         I have inspiration images, sketches, or mood boards to share (we'll request these via email)
                       </Label>
-                    </div>
+                    </CheckboxField>
 
                     {submitStatus === 'error' && (
                       <div className="p-4 rounded bg-red-50 border border-red-200 text-red-700 text-sm">
