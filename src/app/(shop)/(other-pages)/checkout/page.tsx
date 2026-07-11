@@ -113,11 +113,11 @@ export default function Page() {
         throw new Error('Failed to generate PayFast payment data')
       }
 
-      const { data, actionUrl: returnedActionUrl } = await payfastResponse.json()
+      const { data } = await payfastResponse.json()
 
       // 3. Set fields and trigger PayFast form submission
       setPayfastFields(data)
-      setActionUrl(returnedActionUrl)
+      setActionUrl(PAYFAST_PRODUCTION_URL)
       clearCart()
 
     } catch (err) {

@@ -45,12 +45,12 @@ export function generatePayFastSignature(data: PayFastPaymentData, passphrase = 
     return value !== undefined && value !== '';
   });
 
-const paramString = orderedKeys
-  .map((key) => {
-    const value = data[key] ?? '';
-    return `${key}=${urlEncode(value)}`;
-  })
-  .join('&');
+  const paramString = orderedKeys
+      .map((key) => {
+        const value = data[key] ?? '';
+        return `${key}=${urlEncode(value)}`;
+      })
+      .join('&');
 
   const stringToHash = passphrase ? `${paramString}&passphrase=${urlEncode(passphrase)}` : paramString
 

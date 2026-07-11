@@ -43,7 +43,11 @@ export async function POST(request: NextRequest) {
 
     const signedData = createPayFastPaymentData(paymentData)
 
-    return NextResponse.json({ success: true, data: signedData })
+    return NextResponse.json({
+      success: true,
+      data: signedData,
+      actionUrl: 'https://www.payfast.co.za/eng/process',
+    })
   } catch (error) {
     console.error('Failed to generate PayFast payment data:', error)
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
