@@ -43,6 +43,10 @@ export default function PersonalizationPage() {
     setFormData((prev) => ({ ...prev, [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value }))
   }
 
+  const handleCheckboxChange = (checked: boolean, name: string) => {
+    setFormData((prev) => ({ ...prev, [name]: checked }))
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -328,7 +332,7 @@ export default function PersonalizationPage() {
                         id="hasGarment"
                         name="hasGarment"
                         checked={formData.hasGarment}
-                        onChange={handleChange}
+                        onChange={(checked) => handleCheckboxChange(checked, 'hasGarment')}
                         disabled={isSubmitting}
                       />
                       <Label htmlFor="hasGarment" className="mt-1 font-moderat text-sm text-zinc-700">
@@ -357,7 +361,7 @@ export default function PersonalizationPage() {
                         id="attachImages"
                         name="attachImages"
                         checked={formData.attachImages}
-                        onChange={handleChange}
+                        onChange={(checked) => handleCheckboxChange(checked, 'attachImages')}
                         disabled={isSubmitting}
                       />
                       <Label htmlFor="attachImages" className="mt-1 font-moderat text-sm text-zinc-700">
