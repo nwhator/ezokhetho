@@ -26,7 +26,7 @@ export default function EzokhethoHero() {
         loop
         playsInline
         poster="/images/ezokhetho/hero.jpg"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-contain object-center"
         aria-hidden
       >
         <source src="/videos/hero_video.mp4" type="video/mp4" />
