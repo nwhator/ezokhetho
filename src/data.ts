@@ -761,6 +761,15 @@ export async function getFashionCollections() {
       updatedAt: '2026-07-09T00:00:00-04:00',
       image: '/images/ezokhetho/sophiatown_1.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'sophiatown')),
+    },
+    {
+      id: 'shop',
+      title: 'Shop',
+      handle: 'shop',
+      description: 'Discover the full Ezokhetho range. Timeless design celebrating contemporary African luxury, heritage and storytelling.',
+      updatedAt: '2026-07-14T00:00:00-04:00',
+      image: '/images/cover/Mapetla Ext. \'27.jpg',
+      products: products.filter(p => p.collections.some((c: any) => c.handle === 'shop')),
     }
   ]
 }

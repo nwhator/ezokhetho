@@ -1314,8 +1314,423 @@
                                 "title":  "Shop",
                                 "handle":  "shop",
                                 "id":  "shop"
+}
+    ],
+        "description":  "Ezokhetho Inqina Unisex Shirt Blouse. 100% Polyester with centre front press studs. Cold hand wash. Made to order. Limited stock: 1 item available per size."
+    },
+    {
+        "id":  7004,
+        "title":  "Ezokhetho You People Tote Bag",
+        "handle":  "ezokhetho-you-people-tote-bag",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Tote Bag",
+                     "Bag",
+                     "Accessories",
+                     "Shop"
+                 ],
+        "price":  2850,
+        "cost":  1425,
+        "madeToOrder":  true,
+        "images":  [
+                      {
+                          "alt":  "Ezokhetho You People Tote Bag View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezokhetho_You People Tote Bag.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                              "alt":  "Ezokhetho You People Tote Bag View 1",
+                              "width":  1200,
+                              "height":  1600,
+                              "src":  "/images/online/Ezokhetho_You People Tote Bag.jpg"
+                          },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print Black",
+                                                  "swatch":  {
+                                                                     "color":  "#000000",
+                                                                     "image":  null
+                                                                 }
+                                              },
+                                              {
+                                                  "name":  "Print White",
+                                                  "swatch":  {
+                                                                     "color":  "#FFFFFF",
+                                                                     "image":  null
+                                                                 }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "One Size"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print Black"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "One Size"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Shop",
+                                "handle":  "shop",
+                                "id":  "shop"
                             }
                         ],
-        "description":  "Ezokhetho Inqina Unisex Shirt Blouse. 100% Polyester with centre front press studs. Cold hand wash. Made to order. Limited stock: 1 item available per size."
+        "description":  "Ezokhetho You People Tote Bag. Canvas/leather with leather binding and heat press detailing. Dry clean only. One size. Available in Print Black or Print White."
+    },
+    {
+        "id":  7005,
+        "title":  "Inkosazana Denim Ostrich Dress",
+        "handle":  "inkosazana-denim-ostrich-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Denim",
+                     "Ostrich Feather",
+                     "Inkosazana",
+                     "Shop"
+                 ],
+        "price":  12500,
+        "cost":  6250,
+        "madeToOrder":  true,
+        "images":  [
+                      {
+                          "alt":  "Inkosazana Denim Ostrich Dress View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                              "alt":  "Inkosazana Denim Ostrich Dress View 1",
+                              "width":  1200,
+                              "height":  1600,
+                              "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                          },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                     "color":  "#4A4A4A",
+                                                                     "image":  null
+                                                                 }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "S"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "M"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "L"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "XL"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "M"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Shop",
+                                "handle":  "shop",
+                                "id":  "shop"
+                            }
+                        ],
+        "description":  "Ezokhetho Inkosazana Denim Ostrich Dress. Denim with ostrich feather detailing. Dry clean only. Made to order."
+    },
+    {
+        "id":  7006,
+        "title":  "Menswear Ingonyama Printed Suit",
+        "handle":  "menswear-ingonyama-printed-suit",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Suit",
+                     "Menswear",
+                     "Printed",
+                     "Ingonyama",
+                     "Shop"
+                 ],
+        "price":  15500,
+        "cost":  7750,
+        "madeToOrder":  true,
+        "images":  [
+                      {
+                          "alt":  "Menswear Ingonyama Printed Suit View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The menswear Ingonyama Printed Suit-5.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                              "alt":  "Menswear Ingonyama Printed Suit View 1",
+                              "width":  1200,
+                              "height":  1600,
+                              "src":  "/images/online/The menswear Ingonyama Printed Suit-5.jpg"
+                          },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                     "color":  "#2D2D2D",
+                                                                     "image":  null
+                                                                 }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "46"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "42"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Shop",
+                                "handle":  "shop",
+                                "id":  "shop"
+                            }
+                        ],
+        "description":  "Ezokhetho Menswear Ingonyama Printed Suit. Printed suit with structured tailoring. Dry clean only. Made to order."
+    },
+    {
+        "id":  7007,
+        "title":  "Ntombizonke Blue & Pink Polka Stripe Dress",
+        "handle":  "ntombizonke-blue-pink-polka-stripe-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Polka Stripe",
+                     "Ntombizonke",
+                     "Shop"
+                 ],
+        "price":  8950,
+        "cost":  4475,
+        "madeToOrder":  true,
+        "images":  [
+                      {
+                          "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                              "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
+                              "width":  1200,
+                              "height":  1600,
+                              "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
+                          },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Blue & Pink Polka Stripe",
+                                                  "swatch":  {
+                                                                     "color":  "#4A90D9",
+                                                                     "image":  null
+                                                                 }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "S"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "M"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "L"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "XL"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Blue & Pink Polka Stripe"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "M"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Shop",
+                                "handle":  "shop",
+                                "id":  "shop"
+                            }
+                        ],
+        "description":  "Ezokhetho Ntombizonke Blue & Pink Polka Stripe Dress. Bold polka stripe print. Made to order."
+    },
+    {
+        "id":  7008,
+        "title":  "The Protest Bodysuit",
+        "handle":  "the-protest-bodysuit",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Bodysuit",
+                     "Protest",
+                     "Statement",
+                     "Shop"
+                 ],
+        "price":  5850,
+        "cost":  2925,
+        "madeToOrder":  true,
+        "images":  [
+                      {
+                          "alt":  "The Protest Bodysuit View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The protest bodysuit-1.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                              "alt":  "The Protest Bodysuit View 1",
+                              "width":  1200,
+                              "height":  1600,
+                              "src":  "/images/online/The protest bodysuit-1.jpg"
+                          },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                     "color":  "#1A1A1A",
+                                                                     "image":  null
+                                                                 }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "S"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "M"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "L"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "XL"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "XXL"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "M"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Shop",
+                                "handle":  "shop",
+                                "id":  "shop"
+                            }
+                        ],
+        "description":  "Ezokhetho The Protest Bodysuit. Statement piece with bold messaging. Made to order."
     }
 ]
