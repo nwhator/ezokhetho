@@ -15,6 +15,7 @@ import PayFastForm from '@/components/payfast-form'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
+const PAYFAST_SANDBOX_URL = 'https://sandbox.payfast.co.za/eng/process'
 const PAYFAST_PRODUCTION_URL = 'https://www.payfast.co.za/eng/process'
 
 export default function Page() {

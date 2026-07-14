@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createPayFastPaymentData, PayFastPaymentData } from '@/lib/payfast-signature'
 
-const PAYFAST_ACTION_URL = 'https://www.payfast.co.za/eng/process'
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -45,15 +43,11 @@ export async function POST(request: NextRequest) {
 
     const signedData = createPayFastPaymentData(paymentData)
 
-<<<<<<< HEAD
-    return NextResponse.json({ success: true, data: signedData, actionUrl: PAYFAST_ACTION_URL })
-=======
     return NextResponse.json({
       success: true,
       data: signedData,
       actionUrl: 'https://www.payfast.co.za/eng/process',
     })
->>>>>>> 181daf269f01d55423a78f9af9ddb508dad0a12b
   } catch (error) {
     console.error('Failed to generate PayFast payment data:', error)
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
