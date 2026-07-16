@@ -12,6 +12,8 @@ import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
 import { Checkbox, CheckboxField } from '@/components/checkbox'
 import { ArrowLeft, Gem, Sparkles, Users, Clock, Mail, Heart, Shield } from 'lucide-react'
+import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
+import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 const commissionTypes = [
   { value: 'modify', label: 'Modify Existing Design', description: 'Adjust silhouette, neckline, sleeves, length of a current collection piece' },
@@ -84,6 +86,7 @@ export default function CommissionsPage() {
 
   return (
     <>
+      <EzokhethoHeader />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-zinc-950" />
@@ -430,6 +433,8 @@ export default function CommissionsPage() {
           </div>
         </div>
       </section>
+
+      <EzokhethoFooter />
     </>
   )
 }

@@ -12,6 +12,8 @@ import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
 import { Checkbox, CheckboxField } from '@/components/checkbox'
 import { Mail, Sparkles, Tag, ArrowLeft, Image as ImageIcon } from 'lucide-react'
+import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
+import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 const personalizationTypes = [
   { value: 'monogram', label: 'Monogramming', description: 'Initials or name embroidered on garment', basePrice: 'R350' },
@@ -85,6 +87,7 @@ export default function PersonalizationPage() {
 
   return (
     <>
+      <EzokhethoHeader />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-zinc-950" />
@@ -391,6 +394,8 @@ export default function PersonalizationPage() {
           </div>
         </div>
       </section>
+
+      <EzokhethoFooter />
     </>
   )
 }

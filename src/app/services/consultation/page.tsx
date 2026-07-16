@@ -11,6 +11,8 @@ import { Description, Field, Label } from '@/components/fieldset'
 import { Select } from '@/components/select'
 import { Textarea } from '@/components/textarea'
 import { Calendar, Clock, Mail, Phone, MapPin, ArrowLeft } from 'lucide-react'
+import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
+import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 export default function ConsultationPage() {
   const [formData, setFormData] = useState({
@@ -66,6 +68,7 @@ export default function ConsultationPage() {
 
   return (
     <>
+      <EzokhethoHeader />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-zinc-950" />
@@ -328,6 +331,8 @@ export default function ConsultationPage() {
           </div>
         </div>
       </section>
+
+      <EzokhethoFooter />
     </>
   )
 }

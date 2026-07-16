@@ -10,6 +10,7 @@ import EzokhethoNewsletter from '@/components/ezokhetho/ezokhetho-newsletter'
 import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
 import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 import EzokhethoServices from '@/components/ezokhetho/ezokhetho-services'
+import EzokhethoJournal from '@/components/ezokhetho/ezokhetho-journal'
 
 export const metadata: Metadata = {
   title: 'Ezokhetho | Contemporary African Luxury Fashion',
@@ -51,7 +52,10 @@ export default function HomePage() {
         {/* 8. Ezokhetho Services — 3 columns */}
         <EzokhethoServices />
 
-        {/* 9. Newsletter — join the journey */}
+        {/* 9. In the Journal — press & media */}
+        <EzokhethoJournal />
+
+        {/* 10. Newsletter — join the journey */}
         <EzokhethoNewsletter />
       </main>
 

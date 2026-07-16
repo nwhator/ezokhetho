@@ -5,6 +5,8 @@ import { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, PenTool, Gem, Sparkles, Heart, ArrowRight, Check, Mail } from 'lucide-react'
+import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
+import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 const services = [
   {
@@ -60,6 +62,7 @@ export default function ServicesPage() {
 
   return (
     <>
+      <EzokhethoHeader />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-zinc-950" />
@@ -259,6 +262,8 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+
+      <EzokhethoFooter />
     </>
   )
 }
