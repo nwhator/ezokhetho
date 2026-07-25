@@ -48,7 +48,7 @@ const BlogPostCart = ({ post, className }: BlogPostCartProps) => {
       <div className="max-w-xl">
         <div className="group">
           <h3 className="mt-6 text-base font-semibold text-zinc-900 uppercase group-hover:text-zinc-600">
-            <Link href={'/blog/' + post.handle}>
+            <Link href={'/journal/' + post.handle}>
               <span className="absolute inset-0" />
               {post.title}
             </Link>

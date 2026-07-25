@@ -16,7 +16,7 @@ const navLinks = [
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/#brand-story' },
   { name: 'Sustainability', href: '/#sustainability' },
-  { name: 'Journal', href: '/blog' },
+  { name: 'Journal', href: '/journal' },
   { name: 'Contact', href: '/contact' },
 ]
 

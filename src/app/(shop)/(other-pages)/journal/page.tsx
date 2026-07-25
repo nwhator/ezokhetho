@@ -1,8 +1,14 @@
-'use client'
-
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { Divider } from '@/components/divider'
+import { Heading } from '@/components/heading'
+import { Text } from '@/components/text'
+import { Metadata } from 'next'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+  title: 'Journal',
+  description:
+    'Discover what the world is saying about Ezokhetho — from international features to local milestones.',
+}
 
 const articles = [
   {
@@ -116,52 +122,41 @@ const publicationColors: Record<string, string> = {
   'The Citizen': 'from-sky-900 to-sky-800',
 }
 
-export default function EzokhethoJournal() {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
-
+export default function Page() {
   return (
-    <section
-      id="journal"
-      ref={ref}
-      className="py-24 sm:py-32 lg:py-40 bg-zinc-50"
-    >
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-16 max-w-2xl text-center mx-auto"
-        >
-          <div className="mb-5 flex items-center justify-center gap-3">
-            <div className="h-px w-8 bg-[#FF6B00]" />
-            <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#FF6B00]">
-              Press & Media
-            </span>
-            <div className="h-px w-8 bg-[#FF6B00]" />
-          </div>
-          <h2 className="font-butler text-4xl font-light leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
-            In the{' '}
-            <em className="font-extralight italic">Journal</em>
-          </h2>
-          <p className="mt-6 font-moderat text-[15px] leading-relaxed text-zinc-500">
-            Discover what the world is saying about Ezokhetho — from
-            international features to local milestones.
-          </p>
-        </motion.div>
+    <div className="container">
+      <div className="flex flex-col items-center py-14 text-center lg:py-20">
+        <div className="mb-5 flex items-center justify-center gap-3">
+          <div className="h-px w-8 bg-[#FF6B00]" />
+          <span className="text-xs font-medium uppercase tracking-[0.25em] text-[#FF6B00]">
+            Press & Media
+          </span>
+          <div className="h-px w-8 bg-[#FF6B00]" />
+        </div>
+        <Heading bigger level={1} className="mt-5">
+          <span>In the</span>
+          <br />
+          <span data-slot="italic" className="underline">
+            Journal.
+          </span>
+        </Heading>
+        <Text className="mt-5 max-w-xl">
+          Discover what the world is saying about Ezokhetho — from
+          international features to local milestones.
+        </Text>
+      </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article, index) => (
-            <motion.article
-              key={article.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{
-                duration: 0.8,
-                ease: [0.22, 1, 0.36, 1],
-                delay: 0.15 + (index % 9) * 0.05,
-              }}
-              className="group flex flex-col bg-white border border-zinc-100 hover:border-zinc-200 transition-all duration-300 overflow-hidden"
+      <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mx-0 xl:grid-cols-3">
+        {articles.map((article) => (
+          <article
+            key={article.id}
+            className="group flex flex-col bg-white border border-zinc-100 hover:border-zinc-200 transition-all duration-300 overflow-hidden"
+          >
+            <a
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
             >
               <div className="relative aspect-square overflow-hidden bg-zinc-100">
                 <Image
@@ -172,50 +167,52 @@ export default function EzokhethoJournal() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
+            </a>
 
-              <div className="flex flex-col flex-1 p-6">
-                <div
-                  className={`mb-3 inline-block bg-gradient-to-r ${publicationColors[article.publication] ?? 'from-zinc-700 to-zinc-600'} px-3 py-1`}
-                >
-                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white">
-                    {article.publication}
-                  </span>
-                </div>
-
-                <h3 className="font-butler text-lg font-medium leading-snug text-zinc-900 mb-2">
-                  {article.title}
-                </h3>
-
-                <p className="font-moderat text-[13px] leading-relaxed text-zinc-500 flex-1 mb-5">
-                  {article.excerpt}
-                </p>
-
-                <a
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[#0033A0] hover:text-[#FF6B00] transition-colors duration-300"
-                >
-                  Read Full Article
-                  <svg
-                    className="h-3.5 w-3.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
-                </a>
+            <div className="flex flex-col flex-1 p-6">
+              <div
+                className={`mb-3 inline-block bg-gradient-to-r ${publicationColors[article.publication] ?? 'from-zinc-700 to-zinc-600'} px-3 py-1`}
+              >
+                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white">
+                  {article.publication}
+                </span>
               </div>
-            </motion.article>
-          ))}
-        </div>
+
+              <h3 className="font-butler text-lg font-medium leading-snug text-zinc-900 mb-2">
+                {article.title}
+              </h3>
+
+              <p className="font-moderat text-[13px] leading-relaxed text-zinc-500 flex-1 mb-5">
+                {article.excerpt}
+              </p>
+
+              <a
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[#0033A0] hover:text-[#FF6B00] transition-colors duration-300"
+              >
+                Read Full Article
+                <svg
+                  className="h-3.5 w-3.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
-    </section>
+
+      <Divider className="mt-16 sm:mt-24 lg:mt-28" />
+    </div>
   )
 }

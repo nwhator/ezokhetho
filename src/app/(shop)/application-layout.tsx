@@ -2,6 +2,7 @@ import AsideSidebarCart from '@/components/aside-sidebar-cart'
 import AsideSidebarNavigation from '@/components/aside-sidebar-navigation'
 import EzkoFooter from '@/components/ezokhetho/ezokhetho-footer'
 import EzkoHeader from '@/components/ezokhetho/ezokhetho-header'
+import NewsletterPopup from '@/components/newsletter-popup'
 import React, { ReactNode } from 'react'
 interface ComponentProps {
   children: ReactNode
@@ -24,6 +25,7 @@ const ApplicationLayout: React.FC<ComponentProps> = ({ children, header, footer 
       {/* ASIDES */}
       <AsideSidebarNavigation />
       <AsideSidebarCart />
+      <NewsletterPopup />
     </div>
   )
 }

@@ -315,8 +315,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1640625695572-7289bd767f59?q=80&w=3874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-
+        src: '/images/journal/BONA 2.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,
@@ -332,7 +331,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1615165558255-519ba3990ac1?q=80&w=3854&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        src: '/images/journal/BONA 3.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,
@@ -348,7 +347,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1600634999635-f1f334b8e931?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        src: '/images/journal/CLIENT MAGAZINE UK 1.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,
@@ -364,7 +363,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1600634999625-b98a8ff6cd1b?q=80&w=3893&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        src: '/images/journal/CLIENT MAGAZINE UK 2.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,
@@ -380,7 +379,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1640625695572-7289bd767f59?q=80&w=3874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        src: '/images/journal/GLAMOUR 2026 2.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,
@@ -396,7 +395,7 @@ export function getBlogPosts() {
       excerpt:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       featuredImage: {
-        src: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=3008&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        src: '/images/journal/GLAMOUR 2026 3.JPG',
         alt: 'Graduation Dresses: A Style Guide',
         width: 3000,
         height: 2000,

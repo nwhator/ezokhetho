@@ -40,7 +40,7 @@ const mega_menus = [
     chidren: [
       { name: 'Contact us', href: '/contact' },
       { name: 'About us', href: '/about-us' },
-      { name: 'Journal / Blog', href: '/blog' },
+      { name: 'Journal', href: '/journal' },
       { name: 'Login / Sign up', href: '/login' },
       { name: 'Shopping Cart', href: '/cart' },
       { name: 'Orders', href: '/orders' },
