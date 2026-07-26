@@ -7,7 +7,19 @@ import { useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
 import optimizedMappings from '@/data/optimized_mappings.json'
 
-const collections = [
+type CollectionCard = {
+  id: string
+  handle: string
+  headline: string
+  subtitle: string
+  description: string
+  image: string
+  imageAlt: string
+  accent: string
+  imagePosition?: 'left' | 'right'
+}
+
+const collections: CollectionCard[] = [
   {
     id: 'entathakusa',
     handle: 'entathakusa',
@@ -97,6 +109,17 @@ const collections = [
     image: optimizedMappings.collections.sophiatown.images[0] || '/images/ezokhetho/ngithwale.jpg',
     imageAlt: 'Sophiatown collection by Ezokhetho',
     accent: '#0033A0',
+  },
+  {
+    id: 'mapetla-ext-27',
+    handle: 'mapetla-ext-27',
+    headline: 'Mapetla Ext.',
+    subtitle: 'Ext. \'27',
+    description: optimizedMappings.collections['mapetla-ext-27']?.desc || 'A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.',
+    image: optimizedMappings.collections['mapetla-ext-27']?.images?.[0] || '/images/cover/Mapetla Ext. \'27.jpg',
+    imageAlt: 'Mapetla Ext. \'27 collection by Ezokhetho',
+    accent: '#FF6B00',
+    imagePosition: 'right' as const,
   }
 ]
 
@@ -112,7 +135,12 @@ function CollectionBlock({
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], ['4%', '-4%'])
 
-  const isEven = index % 2 === 0
+  const isEven =
+    collection.imagePosition === 'left'
+      ? true
+      : collection.imagePosition === 'right'
+        ? false
+        : index % 2 === 0
 
   return (
     <div

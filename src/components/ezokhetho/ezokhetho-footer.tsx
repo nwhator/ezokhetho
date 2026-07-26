@@ -7,6 +7,7 @@ const footerLinks = {
     { name: 'Ngithwale', href: '/collections/ngithwale' },
     { name: 'Izimbokodo', href: '/collections/izimbokodo' },
     { name: 'Khumbulekhaya', href: '/collections/khumbulekhaya' },
+    { name: 'Mapetla Ext. \'27', href: '/collections/mapetla-ext-27' },
   ],
   explore: [
     { name: 'About', href: '#brand-story' },
