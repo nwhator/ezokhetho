@@ -17,9 +17,7 @@ export default async function ShopPage() {
     notFound()
   }
 
-  const shopProducts = products.filter(p => 
-    p.collections?.some((c: any) => c.handle === 'shop')
-  )
+  const shopProducts = products
 
   return (
     <main className="pb-24">

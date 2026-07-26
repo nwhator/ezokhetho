@@ -673,9 +673,9 @@ export async function getFashionCollections() {
   return [
     {
       id: 'mapetla',
-      title: "Mapetla '26",
+      title: 'Mapetla',
       handle: 'mapetla',
-      description: "The latest chapter from Ezokhetho. A bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.",
+      description: 'A bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.',
       updatedAt: '2026-07-10T00:00:00-04:00',
       image: '/images/ezokhetho/mapetla_1.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
@@ -686,7 +686,7 @@ export async function getFashionCollections() {
       handle: 'entathakusa',
       description: 'Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/entathakusa_1.jpg',
+      image: '/images/ezokhetho/entathakusa_2.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'entathakusa')),
     },
     {
@@ -695,7 +695,7 @@ export async function getFashionCollections() {
       handle: 'zodwa',
       description: "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/zodwa_1.jpg',
+      image: '/images/cover/ZODWA \'25.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'zodwa')),
     },
     {
@@ -704,7 +704,7 @@ export async function getFashionCollections() {
       handle: 'ngithwale',
       description: "This collection honours mothers and the generations of women whose sacrifices, prayers and strength continue to carry us. Debuted at South African Fashion Week.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/ngithwale_1.jpg',
+      image: '/images/cover/Ngithwale - Carry Me \'24.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'ngithwale')),
     },
     {
@@ -713,7 +713,7 @@ export async function getFashionCollections() {
       handle: 'kwa-suka-sukela',
       description: 'A tribute to oral storytelling traditions, featuring bold silhouettes, structural details, and contemporary pattern work.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/kwa-suka-sukela_1.jpg',
+      image: '/images/cover/Kwa-suka-sukela \'24.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'kwa-suka-sukela')),
     },
     {
@@ -722,7 +722,7 @@ export async function getFashionCollections() {
       handle: 'inganekwane',
       description: 'Inspired by traditional folklore and childhood stories, combining playful proportions with rich woven heritage textiles.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/inganekwane_1.jpg',
+      image: '/images/cover/Inganekwane- Inqina le nkukhu \'23.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'inganekwane')),
     },
     {
@@ -740,7 +740,7 @@ export async function getFashionCollections() {
       handle: 'khumbulekhaya',
       description: "A celebration of reconnecting with family, culture and heritage through contemporary South African aesthetics.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/khumbulekhaya_1.jpg',
+      image: '/images/cover/Khumbulekhaya \'22.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'khumbulekhaya')),
     },
     {
@@ -749,7 +749,7 @@ export async function getFashionCollections() {
       handle: 'izimbokodo',
       description: "Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/izimbokodo_1.jpg',
+      image: '/images/cover/Izmibokodo \'22.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'izimbokodo')),
     },
     {
@@ -758,8 +758,25 @@ export async function getFashionCollections() {
       handle: 'sophiatown',
       description: 'A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/sophiatown_1.jpg',
+      image: '/images/cover/Sophiatown \'21.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'sophiatown')),
+    },
+    {
+      id: 'mapetla-ext-27',
+      title: "Mapetla Ext. '27",
+      handle: 'mapetla-ext-27',
+      description: 'A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.',
+      updatedAt: '2026-07-14T00:00:00-04:00',
+      image: '/images/cover/Mapetla Ext. \'27.jpg',
+      galleryImages: [
+        '/images/ezokhetho/mapetla/mapetla_1.jpg',
+        '/images/ezokhetho/mapetla/mapetla_2.jpg',
+        '/images/ezokhetho/mapetla/mapetla_3.jpg',
+        '/images/ezokhetho/mapetla/mapetla_4.jpg',
+        '/images/ezokhetho/mapetla/mapetla_5.jpg',
+        '/images/ezokhetho/mapetla/mapetla_6.jpg',
+      ],
+      products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
     },
     {
       id: 'shop',
@@ -768,7 +785,7 @@ export async function getFashionCollections() {
       description: 'Discover the full Ezokhetho range. Timeless design celebrating contemporary African luxury, heritage and storytelling.',
       updatedAt: '2026-07-14T00:00:00-04:00',
       image: '/images/cover/Mapetla Ext. \'27.jpg',
-      products: products.filter(p => p.collections.some((c: any) => c.handle === 'shop')),
+      products,
     }
   ]
 }

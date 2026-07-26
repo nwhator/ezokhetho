@@ -1,6 +1,7 @@
 import ProductCard from '@/components/product-card'
 import { getCollectionByHandle } from '@/data'
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
@@ -55,6 +56,24 @@ export default async function Collection({ params }: { params: Promise<{ handle:
           </p>
         </div>
       </div>
+
+      {collection.galleryImages?.length ? (
+        <div className="container pt-14">
+          <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {collection.galleryImages.map((src: string, index: number) => (
+              <div key={`${collection.handle}-${index}`} className="relative aspect-[3/4] overflow-hidden rounded-sm">
+                <Image
+                  src={src}
+                  alt={`${collection.title} gallery ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       {/* Products grid */}
       <div className="container pt-14">

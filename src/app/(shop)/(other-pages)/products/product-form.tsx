@@ -23,7 +23,10 @@ export function ProductForm({ product }: { product: TProductItem }) {
   const status = 'in stock'
 
   const collection = collections[0]
-  const currentColor = selected_options.filter((option: { name: string; value: string }) => option.name === 'Color')?.[0]?.value ?? ''
+  const currentColor =
+    selected_options.find((option: { name: string; value: string }) => option.name === 'Color')?.value ??
+    selected_options.find((option: { name: string; value: string }) => option.name === 'Colour')?.value ??
+    ''
 
   // NOTE: this for demo ...
   // You need to recalculate according to your data structure and project
@@ -143,6 +146,41 @@ export function ProductForm({ product }: { product: TProductItem }) {
               </div>
             )
           })}
+        </div>
+
+        {/* Product details */}
+        <div className="mt-10 rounded-lg border border-zinc-200 p-6">
+          <div className="grid gap-4 text-sm text-zinc-600 sm:grid-cols-2">
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Collection</p>
+              <p className="mt-1 font-medium text-zinc-900">{collection?.title ?? 'Ezokhetho'}</p>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Category</p>
+              <p className="mt-1 font-medium text-zinc-900">{product.category ?? 'Collection piece'}</p>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Fabric Composition</p>
+              <p className="mt-1 font-medium text-zinc-900">{product.fabricComposition ?? '—'}</p>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Detail Composition</p>
+              <p className="mt-1 font-medium text-zinc-900">{product.detailComposition ?? '—'}</p>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Wash Care</p>
+              <p className="mt-1 font-medium text-zinc-900">{product.washCare ?? '—'}</p>
+            </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Availability</p>
+              <p className="mt-1 font-medium text-zinc-900">{product.availability ?? 'In Stock'}</p>
+            </div>
+          </div>
+          {product.madeToOrder ? (
+            <div className="mt-4 inline-flex rounded-full bg-[#FF6B00] px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white">
+              Made to Order
+            </div>
+          ) : null}
         </div>
 
         {/* Add to cart button */}
