@@ -2049,6 +2049,12 @@ export async function getProductByHandle(handle: string) {
   }
 }
 
+// The 10 main fashion runway collection handles (not "shop")
+export const MAIN_COLLECTION_HANDLES = [
+  'mapetla', 'entathakusa', 'zodwa', 'ngithwale', 'kwa-suka-sukela',
+  'inganekwane', 'umkhathizwe', 'khumbulekhaya', 'izimbokodo', 'sophiatown',
+]
+
 // COMMON Types ------------------------------------------------------------------------
 export type TCollection = Awaited<ReturnType<typeof getSkincareCollections>>[number]
 export type TProductItem = Awaited<ReturnType<typeof getProducts>>[number]

@@ -1,5 +1,5 @@
 import ProductCard from '@/components/product-card'
-import { getCollectionByHandle } from '@/data'
+import { getCollectionByHandle, MAIN_COLLECTION_HANDLES } from '@/data'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
@@ -28,6 +28,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
     return redirect('/collections/all')
   }
   const products = collection.products
+  const hidePrice = MAIN_COLLECTION_HANDLES.includes(handle)
 
   return (
     <div className="min-h-screen bg-white pt-28 pb-24">
@@ -93,7 +94,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
         ) : (
           <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} hidePrice={hidePrice} />
             ))}
           </div>
         )}

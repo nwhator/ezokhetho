@@ -5,7 +5,7 @@ import { Pagination, PaginationList, PaginationNext, PaginationPage, PaginationP
 import ProductCard from '@/components/product-card'
 import StarSvg from '@/components/star-svg'
 import { Text } from '@/components/text'
-import { getCollectionByHandle } from '@/data'
+import { getCollectionByHandle, MAIN_COLLECTION_HANDLES } from '@/data'
 import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import CategoryFilters1 from '../../category-filters-1'
@@ -31,6 +31,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
     return redirect('/collections/all')
   }
   const products = collection.products.slice(0, 6)
+  const hidePrice = MAIN_COLLECTION_HANDLES.includes(handle)
   const breadcrumbs = [{ id: 1, name: 'Home', href: '/' }]
 
   return (
@@ -71,7 +72,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
 
                 <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-7 xl:grid-cols-3">
                   {products.map((product) => (
-                    <ProductCard key={product.id} product={product} />
+                    <ProductCard key={product.id} product={product} hidePrice={hidePrice} />
                   ))}
                 </div>
 

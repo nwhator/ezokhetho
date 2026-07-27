@@ -2,6 +2,7 @@ import { Divider } from '@/components/divider'
 import {
   getFashionProducts,
   getProductByHandle,
+  MAIN_COLLECTION_HANDLES,
   TProductItem,
 } from '@/data'
 import { Metadata } from 'next'
@@ -37,6 +38,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
   // Fetch other products from the same collection for related section
   const allProducts = await getFashionProducts()
   const collectionHandle = product.collections?.find((c: any) => c?.handle)?.handle
+  const hidePrice = MAIN_COLLECTION_HANDLES.includes(collectionHandle)
   const relatedProducts = allProducts.filter((p) => {
     if (p.id === product.id) return false
     if (!collectionHandle) return false
@@ -62,7 +64,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
           <div className="w-full pt-10 lg:w-1/2 lg:pt-16 lg:pl-10 xl:pl-14 2xl:pl-16">
             <div className="sticky top-16">
               {/* Heading, Price, Options, Add to cart */}
-              <ProductForm product={product} />
+              <ProductForm product={product} hidePrice={hidePrice} />
             </div>
           </div>
         </div>

@@ -9,9 +9,10 @@ interface ProductCardProps {
   product: TProductItem
   className?: string
   imageRatio?: string
+  hidePrice?: boolean
 }
 
-export default function ProductCard({ product, className, imageRatio = 'aspect-3/4' }: ProductCardProps) {
+export default function ProductCard({ product, className, imageRatio = 'aspect-3/4', hidePrice }: ProductCardProps) {
   const { title, price, featured_image, handle, images, selected_options, vendor } = product
 
   // Safely get image src — handles both string and object formats
@@ -74,7 +75,11 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
             <span className="absolute inset-0" />
             {title}
           </TextLink>
-          <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>
+          {hidePrice ? (
+            <span className="shrink-0 text-[11px] font-medium uppercase tracking-[0.15em] text-[#FF6B00]">Contact us</span>
+          ) : (
+            <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>
+          )}
         </div>
         <Text className="mt-0.5 text-xs text-zinc-400">{color ?? size ?? ''}</Text>
       </div>
