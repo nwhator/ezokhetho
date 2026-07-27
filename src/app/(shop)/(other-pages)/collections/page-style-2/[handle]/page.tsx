@@ -72,7 +72,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
 
                 <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-7 xl:grid-cols-3">
                   {products.map((product) => (
-                    <ProductCard key={product.id} product={product} hidePrice={hidePrice} />
+                    <ProductCard key={product.id} product={product} {...(hidePrice ? { hidePrice: true } : {})} />
                   ))}
                 </div>
 
