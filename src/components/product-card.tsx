@@ -1,4 +1,4 @@
-import { MAIN_COLLECTION_HANDLES, TProductItem } from '@/data'
+import { COLLECTION_COVER_IMAGES, MAIN_COLLECTION_HANDLES, TProductItem } from '@/data'
 import { formatZAR } from '@/lib/currency'
 import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
@@ -16,6 +16,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
   const { title, price, featured_image, handle, images, selected_options, vendor, collections } = product
   const isMainCollection = collections?.some?.((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))
   const shouldHidePrice = hidePrice ?? isMainCollection
+  const collectionHandle = collections?.find?.((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))?.handle
 
   // Safely get image src — handles both string and object formats
   const getImgSrc = (img: unknown): string => {
@@ -25,7 +26,8 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
     return '/images/placeholder.webp'
   }
 
-  const img1 = getImgSrc(images?.[0] ?? featured_image)
+  const coverSrc = collectionHandle ? COLLECTION_COVER_IMAGES[collectionHandle] : null
+  const img1 = coverSrc || getImgSrc(images?.[0] ?? featured_image)
   const img2 = images?.[1] ? getImgSrc(images[1]) : null
 
   const color = selected_options.find((option: { name: string; value: string }) => option.name === 'Color')?.value

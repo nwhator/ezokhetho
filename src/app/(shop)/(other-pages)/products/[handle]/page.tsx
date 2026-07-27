@@ -2,6 +2,7 @@ import { Divider } from '@/components/divider'
 import {
   getFashionProducts,
   getProductByHandle,
+  COLLECTION_COVER_IMAGES,
   MAIN_COLLECTION_HANDLES,
   TProductItem,
 } from '@/data'
@@ -45,7 +46,11 @@ export default async function Product({ params }: { params: Promise<{ handle: st
     return p.collections?.some((c: any) => c?.handle === collectionHandle)
   }).slice(0, 5)
 
-  const { images } = product
+  let { images } = product
+  const coverSrc = collectionHandle ? COLLECTION_COVER_IMAGES[collectionHandle] : null
+  if (coverSrc && images?.[0]?.src !== coverSrc) {
+    images = [{ src: coverSrc, alt: product.title, width: 2000, height: 2500 }, ...(images || [])]
+  }
 
   return (
     <div className="product-page relative space-y-12 sm:space-y-16">

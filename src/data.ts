@@ -2055,6 +2055,21 @@ export const MAIN_COLLECTION_HANDLES = [
   'inganekwane', 'umkhathizwe', 'khumbulekhaya', 'izimbokodo', 'sophiatown',
 ]
 
+// Cover images for main fashion collections (from /images/cover/)
+export const COLLECTION_COVER_IMAGES: Record<string, string> = {
+  entathakusa: "/images/cover/Entathakusa '26.jpg",
+  zodwa: "/images/cover/ZODWA '25.jpg",
+  ngithwale: "/images/cover/Ngithwale - Carry Me '24.jpg",
+  'kwa-suka-sukela': "/images/cover/Kwa-suka-sukela '24.jpg",
+  inganekwane: "/images/cover/Inganekwane- Inqina le nkukhu '23.jpg",
+  umkhathizwe: "/images/cover/Umkhathizwe - The Horizon '23.jpg",
+  khumbulekhaya: "/images/cover/Khumbulekhaya '22.jpg",
+  izimbokodo: "/images/cover/Izmibokodo '22.jpg",
+  sophiatown: "/images/cover/SophiaTown '21.jpg",
+  mapetla: "/images/cover/Mapetla Ext. '27.jpg",
+  'mapetla-ext-27': "/images/cover/Mapetla Ext. '27.jpg",
+}
+
 // COMMON Types ------------------------------------------------------------------------
 export type TCollection = Awaited<ReturnType<typeof getSkincareCollections>>[number]
 export type TProductItem = Awaited<ReturnType<typeof getProducts>>[number]
