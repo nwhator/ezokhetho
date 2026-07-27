@@ -106,7 +106,7 @@ const collections: CollectionCard[] = [
     headline: 'Sophiatown',
     subtitle: 'Golden Era \'21',
     description: optimizedMappings.collections.sophiatown.desc,
-    image: optimizedMappings.collections.sophiatown.images[0] || '/images/ezokhetho/ngithwale.jpg',
+    image: '/images/ezokhetho/sophiatown_5.jpg',
     imageAlt: 'Sophiatown collection by Ezokhetho',
     accent: '#0033A0',
   },
