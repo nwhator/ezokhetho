@@ -1,4 +1,4 @@
-import { TProductItem } from '@/data'
+import { MAIN_COLLECTION_HANDLES, TProductItem } from '@/data'
 import { formatZAR } from '@/lib/currency'
 import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
@@ -13,7 +13,9 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, className, imageRatio = 'aspect-3/4', hidePrice }: ProductCardProps) {
-  const { title, price, featured_image, handle, images, selected_options, vendor } = product
+  const { title, price, featured_image, handle, images, selected_options, vendor, collections } = product
+  const isMainCollection = collections?.some?.((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))
+  const shouldHidePrice = hidePrice ?? isMainCollection
 
   // Safely get image src — handles both string and object formats
   const getImgSrc = (img: unknown): string => {
@@ -75,7 +77,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
             <span className="absolute inset-0" />
             {title}
           </TextLink>
-          {hidePrice ? (
+          {shouldHidePrice ? (
             <span className="shrink-0 text-[11px] font-medium uppercase tracking-[0.15em] text-[#FF6B00]">Contact us</span>
           ) : (
             <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>

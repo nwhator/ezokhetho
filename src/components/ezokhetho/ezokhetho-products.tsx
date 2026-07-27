@@ -7,6 +7,11 @@ import { Heart, ArrowRight } from 'lucide-react'
 import { useRef, useState, useEffect } from 'react'
 import { formatZAR } from '@/lib/currency'
 
+const MAIN_COLLECTION_HANDLES = [
+  'mapetla', 'entathakusa', 'zodwa', 'ngithwale', 'kwa-suka-sukela',
+  'inganekwane', 'umkhathizwe', 'khumbulekhaya', 'izimbokodo', 'sophiatown',
+]
+
 type Product = {
   id: number
   title: string
@@ -23,6 +28,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 
   const image = product.images?.[0]
   const collection = product.collections?.[0]
+  const isMainCollection = product.collections?.some?.((c) => MAIN_COLLECTION_HANDLES.includes(c.handle))
 
   return (
     <motion.div
@@ -82,9 +88,13 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
               {product.title}
             </h3>
           </Link>
-          <span className="shrink-0 font-moderat text-sm text-[#0033A0] font-medium">
-            {formatZAR(product.price)}
-          </span>
+          {isMainCollection ? (
+            <span className="shrink-0 text-[11px] font-medium uppercase tracking-[0.15em] text-[#FF6B00]">Contact us</span>
+          ) : (
+            <span className="shrink-0 font-moderat text-sm text-[#0033A0] font-medium">
+              {formatZAR(product.price)}
+            </span>
+          )}
         </div>
       </div>
     </motion.div>
