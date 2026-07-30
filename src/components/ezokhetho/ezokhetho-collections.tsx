@@ -24,7 +24,7 @@ const collections: CollectionCard[] = [
     id: 'mapetla-ext-27',
     handle: 'mapetla-ext-27',
     headline: 'Mapetla Ext.',
-    subtitle: 'Ext. \'27',
+    subtitle: '\'27',
     description: optimizedMappings.collections['mapetla-ext-27']?.desc || 'A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.',
     image: '/images/cover/Mapetla Ext. \'27.jpg',
     imageAlt: 'Mapetla Ext. \'27 collection by Ezokhetho',
@@ -35,7 +35,7 @@ const collections: CollectionCard[] = [
     id: 'entathakusa',
     handle: 'entathakusa',
     headline: 'Entathakusa',
-    subtitle: 'Robb Report Gala & SAMW \'26',
+    subtitle: '\'26',
     description: optimizedMappings.collections.entathakusa.desc,
     image: '/images/cover/Entathakusa \'26.jpg',
     imageAlt: 'Entathakusa campaign by Ezokhetho',
@@ -44,8 +44,8 @@ const collections: CollectionCard[] = [
   {
     id: 'zodwa',
     handle: 'zodwa',
-    headline: 'ZODWA',
-    subtitle: 'Signature Tailoring \'25',
+    headline: 'Zodwa',
+    subtitle: '\'25',
     description: optimizedMappings.collections.zodwa.desc,
     image: '/images/cover/ZODWA \'25.jpg',
     imageAlt: 'Zodwa collection by Ezokhetho',
@@ -55,7 +55,7 @@ const collections: CollectionCard[] = [
     id: 'ngithwale',
     handle: 'ngithwale',
     headline: 'Ngithwale',
-    subtitle: 'Carry Me \'24',
+    subtitle: '— Carry Me \'24',
     description: optimizedMappings.collections.ngithwale.desc,
     image: '/images/cover/Ngithwale - Carry Me \'24.jpg',
     imageAlt: 'Ngithwale — Carry Me collection by Ezokhetho',
@@ -65,7 +65,7 @@ const collections: CollectionCard[] = [
     id: 'kwa-suka-sukela',
     handle: 'kwa-suka-sukela',
     headline: 'Kwa-suka-sukela',
-    subtitle: 'SAMW Show \'24',
+    subtitle: '\'24',
     description: optimizedMappings.collections['kwa-suka-sukela'].desc,
     image: '/images/cover/Kwa-suka-sukela \'24.jpg',
     imageAlt: 'Kwa-suka-sukela collection by Ezokhetho',
@@ -75,7 +75,7 @@ const collections: CollectionCard[] = [
     id: 'inganekwane',
     handle: 'inganekwane',
     headline: 'Inganekwane',
-    subtitle: 'Woven Stories \'23',
+    subtitle: '\'23',
     description: optimizedMappings.collections.inganekwane.desc,
     image: '/images/cover/Inganekwane- Inqina le nkukhu \'23.jpg',
     imageAlt: 'Inganekwane collection by Ezokhetho',
@@ -85,7 +85,7 @@ const collections: CollectionCard[] = [
     id: 'umkhathizwe',
     handle: 'umkhathizwe',
     headline: 'Umkhathizwe',
-    subtitle: 'The Horizon \'23 (Lagos FW)',
+    subtitle: '— The Horizon \'23',
     description: optimizedMappings.collections.umkhathizwe.desc,
     image: '/images/cover/Umkhathizwe - The Horizon \'23.jpg',
     imageAlt: 'Umkhathizwe collection by Ezokhetho',
@@ -95,7 +95,7 @@ const collections: CollectionCard[] = [
     id: 'khumbulekhaya',
     handle: 'khumbulekhaya',
     headline: 'Khumbulekhaya',
-    subtitle: 'Remember Home \'22',
+    subtitle: '— Remember Home \'22',
     description: optimizedMappings.collections.khumbulekhaya.desc,
     image: '/images/cover/Khumbulekhaya \'22.jpg',
     imageAlt: 'Khumbulekhaya — Remember Home collection by Ezokhetho',
@@ -105,7 +105,7 @@ const collections: CollectionCard[] = [
     id: 'izimbokodo',
     handle: 'izimbokodo',
     headline: 'Izimbokodo',
-    subtitle: 'Strength of Stone \'22',
+    subtitle: '— Strength of Stone \'22',
     description: optimizedMappings.collections.izimbokodo.desc,
     image: '/images/cover/Izmibokodo \'22.jpg',
     imageAlt: 'Izimbokodo collection by Ezokhetho',
@@ -115,7 +115,7 @@ const collections: CollectionCard[] = [
     id: 'sophiatown',
     handle: 'sophiatown',
     headline: 'Sophiatown',
-    subtitle: 'Golden Era \'21',
+    subtitle: '\'21',
     description: optimizedMappings.collections.sophiatown.desc,
     image: '/images/cover/SophiaTown \'21.jpg',
     imageAlt: 'Sophiatown collection by Ezokhetho',
@@ -159,7 +159,7 @@ function CollectionBlock({
             src={collection.image}
             alt={collection.imageAlt}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.div>
