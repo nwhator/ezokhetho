@@ -13,13 +13,13 @@ const footerLinks = {
     { name: 'About', href: '#brand-story' },
     { name: 'The Founder', href: '#founder' },
     { name: 'Sustainability', href: '#sustainability' },
-    { name: 'Contact', href: 'mailto:sales@ezokhetho.com' },
+    { name: 'Contact', href: 'mailto:info@ezokhetho.com' },
   ],
   help: [
     { name: 'Returns', href: '/returns' },
     { name: 'Terms', href: '/terms' },
     { name: 'Privacy', href: '/privacy' },
-    { name: 'Email Us', href: 'mailto:sales@ezokhetho.com' },
+    { name: 'Email Us', href: 'mailto:info@ezokhetho.com' },
   ],
 }
 
@@ -75,10 +75,10 @@ export default function EzkoFooter() {
               identity and craftsmanship.
             </p>
             <a
-              href="mailto:sales@ezokhetho.com"
+              href="mailto:info@ezokhetho.com"
               className="text-[13px] text-[#0033A0] hover:text-[#FF6B00] transition-colors font-moderat"
             >
-              sales@ezokhetho.com
+              info@ezokhetho.com
             </a>
             {/* Social links */}
             <div className="flex items-center gap-3">

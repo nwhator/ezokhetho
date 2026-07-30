@@ -45,14 +45,14 @@ export default function ReturnsPage() {
 
             <p className="leading-relaxed text-zinc-600">
               To initiate a return, please contact us at{' '}
-              <a href="mailto:sales@ezokhetho.com">sales@ezokhetho.com</a>. If your return is
+              <a href="mailto:info@ezokhetho.com">info@ezokhetho.com</a>. If your return is
               approved, we will provide instructions on how and where to send your item.{' '}
               <strong>Returns sent without prior approval will not be accepted.</strong>
             </p>
 
             <p className="leading-relaxed text-zinc-600">
               For any questions regarding returns, please contact{' '}
-              <a href="mailto:sales@ezokhetho.com">sales@ezokhetho.com</a>.
+              <a href="mailto:info@ezokhetho.com">info@ezokhetho.com</a>.
             </p>
 
             <h2>Damages and Issues</h2>
@@ -113,7 +113,7 @@ export default function ReturnsPage() {
               Our team is available to assist with any queries.
             </p>
             <a
-              href="mailto:sales@ezokhetho.com"
+              href="mailto:info@ezokhetho.com"
               className="mt-5 inline-flex items-center gap-2 bg-[#0033A0] px-6 py-3 text-[11px] font-medium uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#FF6B00]"
             >
               Contact Us

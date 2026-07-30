@@ -44,8 +44,8 @@ const fadeUp = {
 const contactDetails = [
   {
     label: 'Email',
-    value: 'sales@ezokhetho.com',
-    href: 'mailto:sales@ezokhetho.com',
+    value: 'info@ezokhetho.com',
+    href: 'mailto:info@ezokhetho.com',
     icon: Mail,
   },
   {
@@ -77,7 +77,7 @@ export default function ContactPage() {
     e.preventDefault()
     setSending(true)
     // Send via mailto as fallback (replace with email service like Resend/Formspree later)
-    const mailto = `mailto:sales@ezokhetho.com?subject=${encodeURIComponent(form.subject || 'Enquiry from website')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`
+    const mailto = `mailto:info@ezokhetho.com?subject=${encodeURIComponent(form.subject || 'Enquiry from website')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`
     window.location.href = mailto
     setTimeout(() => { setSending(false); setSent(true) }, 600)
   }
@@ -251,8 +251,8 @@ export default function ContactPage() {
 
                 <p className="text-[11px] text-zinc-400">
                   Or email us directly:{' '}
-                  <a href="mailto:sales@ezokhetho.com" className="text-[#0033A0] hover:text-[#FF6B00] transition-colors">
-                    sales@ezokhetho.com
+                  <a href="mailto:info@ezokhetho.com" className="text-[#0033A0] hover:text-[#FF6B00] transition-colors">
+                    info@ezokhetho.com
                   </a>
                 </p>
               </form>
