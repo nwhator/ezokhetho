@@ -33,14 +33,14 @@ const collectionsMenu = [
     name: "Mapetla",
     href: '/collections/mapetla',
     desc: 'Latest Chapter',
-    thumb: '/images/ezokhetho/mapetla_1.jpg',
+    thumb: '/images/cover/Mapetla Ext. \'27.jpg',
     year: "'26",
   },
   {
     name: "Entathakusa",
     href: '/collections/entathakusa',
     desc: 'Robb Report & SAMW',
-    thumb: '/images/ezokhetho/entathakusa_2.jpg',
+    thumb: '/images/cover/Entathakusa \'26.jpg',
     year: "'26",
   },
   {
@@ -75,7 +75,7 @@ const collectionsMenu = [
     name: "Umkhathizwe",
     href: '/collections/umkhathizwe',
     desc: 'Lagos Fashion Week',
-    thumb: '/images/ezokhetho/umkhathizwe_2.jpg',
+    thumb: '/images/cover/Umkhathizwe - The Horizon \'23.jpg',
     year: "'23",
   },
   {

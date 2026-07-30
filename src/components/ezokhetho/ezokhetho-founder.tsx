@@ -9,8 +9,10 @@ const timeline = [
   { year: '2020', title: "Dean's Merit Award", sub: 'Excellence in Design & Innovation' },
   { year: '2021', title: 'Edcon Challenge', sub: 'Edcon Design Innovation Challenge Winner' },
   { year: '2022', title: 'SA Fashion Week', sub: '21 Steps Retail Programme' },
+  { year: '2022', title: 'FIASA Emerging Talent of the Year Award', sub: '' },
   { year: '2023', title: 'Milan Fashion Week', sub: 'International Debut' },
   { year: '2024', title: 'Ezokhetho', sub: 'Contemporary African Luxury House' },
+  { year: '2026', title: 'Africa Fashion Up PRIX DU JURY Award', sub: '' },
 ]
 
 export default function EzkoFounder() {

@@ -677,7 +677,7 @@ export async function getFashionCollections() {
       handle: 'mapetla',
       description: 'A bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.',
       updatedAt: '2026-07-10T00:00:00-04:00',
-      image: '/images/ezokhetho/mapetla_1.jpg',
+      image: '/images/cover/Mapetla Ext. \'27.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
     },
     {
@@ -686,7 +686,7 @@ export async function getFashionCollections() {
       handle: 'entathakusa',
       description: 'Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/entathakusa_2.jpg',
+      image: '/images/cover/Entathakusa \'26.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'entathakusa')),
     },
     {
@@ -731,7 +731,7 @@ export async function getFashionCollections() {
       handle: 'umkhathizwe',
       description: 'Debuted at Lagos Fashion Week. A futuristic exploration of African fashion reaching beyond boundaries into the global horizon.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/ezokhetho/umkhathizwe_1.jpg',
+      image: '/images/cover/Umkhathizwe - The Horizon \'23.jpg',
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'umkhathizwe')),
     },
     {
