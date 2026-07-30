@@ -61,7 +61,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
       {/* Vendor label */}
       <div className="absolute top-3 left-3">
         <div className="bg-white px-2.5 py-1 text-[9px] uppercase tracking-[0.2em] text-[#0033A0]">
-          {vendor}
+          {isMainCollection ? 'Collections' : 'Online Store'}
         </div>
       </div>
 

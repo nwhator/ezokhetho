@@ -94,11 +94,9 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 
       {/* Info */}
       <div className="flex flex-col gap-1">
-        {collection && (
           <span className="text-[10px] uppercase tracking-[0.2em] text-[#0033A0]">
-            {collection.title}
+            {isMainCollection ? 'Collections' : 'Online Store'}
           </span>
-        )}
         <div className="flex items-start justify-between gap-2">
           <Link href={`/products/${product.handle}`}>
             <h3 className="font-butler text-sm font-medium text-zinc-900 hover:text-[#0033A0] transition-colors">
