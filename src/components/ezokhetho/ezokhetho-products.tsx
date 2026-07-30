@@ -59,10 +59,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       {/* Image */}
       <Link href={`/products/${product.handle}`}>
         <div className="relative aspect-[3/4] overflow-hidden bg-zinc-50">
-          {image && (
+          {imageSrc && (
             <Image
-              src={image.src}
-              alt={image.alt || product.title}
+              src={imageSrc}
+              alt={imageAlt}
               fill
               className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-95"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
