@@ -29,7 +29,7 @@ const collections: CollectionCard[] = [
     image: '/images/cover/Mapetla Ext. \'27.jpg',
     imageAlt: 'Mapetla Ext. \'27 collection by Ezokhetho',
     accent: '#FF6B00',
-    imagePosition: 'right' as const,
+    imagePosition: 'left' as const,
   },
   {
     id: 'entathakusa',
@@ -159,7 +159,7 @@ function CollectionBlock({
             src={collection.image}
             alt={collection.imageAlt}
             fill
-            className="object-cover object-top"
+            className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.div>

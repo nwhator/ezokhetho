@@ -1,4 +1,5 @@
 import Aside from '@/components/aside'
+import NewsletterPopup from '@/components/newsletter-popup'
 import '@/styles/tailwind.css'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
@@ -64,7 +65,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
       <body>
         <CartProvider>
-          <Aside.Provider>{children}</Aside.Provider>
+          <Aside.Provider>
+            {children}
+            <NewsletterPopup />
+          </Aside.Provider>
         </CartProvider>
       </body>
     </html>
