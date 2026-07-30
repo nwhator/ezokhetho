@@ -26,7 +26,7 @@ export default function CollectionCard({
           src={image || '/placeholder.webp'}
           alt={title}
           fill
-          className="z-0 rounded-lg object-cover"
+          className="z-0 rounded-lg object-cover object-top"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 30vw"
           priority
         />

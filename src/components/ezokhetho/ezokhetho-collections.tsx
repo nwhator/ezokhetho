@@ -21,6 +21,17 @@ type CollectionCard = {
 
 const collections: CollectionCard[] = [
   {
+    id: 'mapetla-ext-27',
+    handle: 'mapetla-ext-27',
+    headline: 'Mapetla Ext.',
+    subtitle: 'Ext. \'27',
+    description: optimizedMappings.collections['mapetla-ext-27']?.desc || 'A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.',
+    image: '/images/cover/Mapetla Ext. \'27.jpg',
+    imageAlt: 'Mapetla Ext. \'27 collection by Ezokhetho',
+    accent: '#FF6B00',
+    imagePosition: 'right' as const,
+  },
+  {
     id: 'entathakusa',
     handle: 'entathakusa',
     headline: 'Entathakusa',
@@ -109,17 +120,6 @@ const collections: CollectionCard[] = [
     image: '/images/cover/SophiaTown \'21.jpg',
     imageAlt: 'Sophiatown collection by Ezokhetho',
     accent: '#0033A0',
-  },
-  {
-    id: 'mapetla-ext-27',
-    handle: 'mapetla-ext-27',
-    headline: 'Mapetla Ext.',
-    subtitle: 'Ext. \'27',
-    description: optimizedMappings.collections['mapetla-ext-27']?.desc || 'A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.',
-    image: '/images/cover/Mapetla Ext. \'27.jpg',
-    imageAlt: 'Mapetla Ext. \'27 collection by Ezokhetho',
-    accent: '#FF6B00',
-    imagePosition: 'right' as const,
   }
 ]
 
@@ -159,7 +159,7 @@ function CollectionBlock({
             src={collection.image}
             alt={collection.imageAlt}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.div>
