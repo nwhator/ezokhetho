@@ -1,7 +1,7 @@
 [
     {
         "id":  6001,
-        "title":  "Entathakusa Runway Gown",
+        "title":  "Runway Gown",
         "handle":  "entathakusa-runway-gown",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -107,7 +107,7 @@
     },
     {
         "id":  6002,
-        "title":  "Zodwa Tailored Jacket",
+        "title":  "Tailored Jacket",
         "handle":  "zodwa-tailored-jacket",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -206,7 +206,7 @@
     },
     {
         "id":  6003,
-        "title":  "Ngithwale Wrap Coat",
+        "title":  "Wrap Coat",
         "handle":  "ngithwale-wrap-coat",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -305,7 +305,7 @@
     },
     {
         "id":  6004,
-        "title":  "Khumbulekhaya Silk Dress",
+        "title":  "Silk Dress",
         "handle":  "khumbulekhaya-silk-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -404,7 +404,7 @@
     },
     {
         "id":  6005,
-        "title":  "Izimbokodo Structured Blazer",
+        "title":  "Structured Blazer",
         "handle":  "izimbokodo-structured-blazer",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -503,7 +503,7 @@
     },
     {
         "id":  6006,
-        "title":  "Sophiatown Jazz Pants",
+        "title":  "Jazz Pants",
         "handle":  "sophiatown-jazz-pants",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -606,7 +606,7 @@
     },
     {
         "id":  6007,
-        "title":  "Inganekwane Printed Skirt",
+        "title":  "Printed Skirt",
         "handle":  "inganekwane-printed-skirt",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -705,7 +705,7 @@
     },
     {
         "id":  6008,
-        "title":  "Umkhathizwe Cape Coat",
+        "title":  "Cape Coat",
         "handle":  "umkhathizwe-cape-coat",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -805,7 +805,7 @@
     },
     {
         "id":  6009,
-        "title":  "Kwa-suka-sukela Statement Dress",
+        "title":  "Statement Dress",
         "handle":  "kwa-suka-sukela-statement-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -911,7 +911,7 @@
                                 "src":  "/images/ezokhetho/mapetla_1.jpg"
                             },
         "cost":  6800,
-        "title":  "Mapetla \u002726 Editorial Set",
+        "title":  "Editorial Set",
         "tags":  [
                      "Editorial",
                      "Set",
@@ -1108,7 +1108,7 @@
     },
     {
         "id":  7002,
-        "title":  "Zodwa Ostrich Feather Denim Jeans",
+        "title":  "Ostrich Feather Denim Jeans",
         "handle":  "zodwa-ostrich-feather-denim-jeans",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1209,7 +1209,7 @@
     },
     {
         "id":  7003,
-        "title":  "Inqina Unisex Shirt Blouse",
+        "title":  "Unisex Shirt Blouse",
         "handle":  "inqina-unisex-shirt-blouse",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1320,7 +1320,7 @@
     },
     {
         "id":  7004,
-        "title":  "Ezokhetho You People Tote Bag",
+        "title":  "You People Tote Bag",
         "handle":  "ezokhetho-you-people-tote-bag",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1397,7 +1397,7 @@
     },
     {
         "id":  7005,
-        "title":  "Inkosazana Denim Ostrich Dress",
+        "title":  "Denim Ostrich Dress",
         "handle":  "inkosazana-denim-ostrich-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1480,7 +1480,7 @@
     },
     {
         "id":  7006,
-        "title":  "Menswear Ingonyama Printed Suit",
+        "title":  "Printed Suit",
         "handle":  "menswear-ingonyama-printed-suit",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1567,7 +1567,7 @@
     },
     {
         "id":  7007,
-        "title":  "Ntombizonke Blue & Pink Polka Stripe Dress",
+        "title":  "Blue & Pink Polka Stripe Dress",
         "handle":  "ntombizonke-blue-pink-polka-stripe-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1649,7 +1649,7 @@
     },
     {
         "id":  7008,
-        "title":  "The Protest Bodysuit",
+        "title":  "Protest Bodysuit",
         "handle":  "the-protest-bodysuit",
         "vendor":  "Ezokhetho",
         "tags":  [
