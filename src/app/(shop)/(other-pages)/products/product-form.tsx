@@ -65,7 +65,7 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
         <Breadcrumb breadcrumbs={breadcrumbs} currentPage={title} />
 
         <Heading level={1} className="mt-4" title={title} bigger>
-          <span data-slot="italic">{currentColor}</span>
+          <span data-slot="italic" className="text-[14px]">{currentColor}</span>
           <br />
           <span className="lowercase" data-slot="dim">
             {title}

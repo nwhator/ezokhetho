@@ -45,7 +45,7 @@ export default function ProductCardHorizontal({ product, className, imageRatio =
             <span className="absolute inset-0"></span>
             {title}
           </TextLink>
-          <Text className="mt-0.5 text-xs text-zinc-500">{color ?? size ?? ''}</Text>
+          <Text className="mt-0.5 text-[14px] text-zinc-500">{color ?? size ?? ''}</Text>
           <Text className="mt-auto leading-tight sm:leading-6">${price.toFixed(2)}</Text>
         </div>
       </div>

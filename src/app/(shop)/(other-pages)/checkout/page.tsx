@@ -271,7 +271,7 @@ export default function Page() {
                           <h4 className="text-sm uppercase">{item.title}</h4>
                           <p className="text-sm font-semibold">{formatZAR(item.price * item.quantity)}</p>
                         </div>
-                        <p className="mt-1 text-xs text-zinc-500">{item.color} / {item.size}</p>
+                        <p className="mt-1 text-[14px] text-zinc-500">{item.color} / {item.size}</p>
                         <p className="mt-1 text-xs text-zinc-400">Qty: {item.quantity}</p>
                       </div>
                     </li>
