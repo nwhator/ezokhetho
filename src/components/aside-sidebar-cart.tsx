@@ -49,10 +49,10 @@ const AsideSidebarCart = ({ className = '' }: Props) => {
                         </h3>
                         <Text className="ms-4">{formatZAR(item.price * item.quantity)}</Text>
                       </div>
-                      <div className="mt-1 flex gap-1.5 text-[14px] text-zinc-500">
-                        <Text className="text-[14px]">{item.color}</Text>
-                        {item.size ? <Text className="text-[14px]">/</Text> : null}
-                        {item.size ? <Text className="text-[14px]">{item.size}</Text> : null}
+                      <div className="mt-1 flex gap-1.5 text-zinc-500">
+                        <Text>{item.color}</Text>
+                        {item.size ? <Text>/</Text> : null}
+                        {item.size ? <Text>{item.size}</Text> : null}
                       </div>
                       <Text className="mt-1 text-xs text-zinc-500">{formatZAR(item.price)} each</Text>
                       <div className="mt-auto flex items-center justify-between pt-2 text-sm">
