@@ -1,7 +1,7 @@
 [
     {
         "id":  6001,
-        "title":  "Runway Gown",
+        "title":  "Entathakusa Body Con Dress",
         "handle":  "entathakusa-runway-gown",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -305,7 +305,7 @@
     },
     {
         "id":  6004,
-        "title":  "Silk Dress",
+        "title":  "The Still No Dropped Waist Dress",
         "handle":  "khumbulekhaya-silk-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -503,7 +503,7 @@
     },
     {
         "id":  6006,
-        "title":  "Jazz Pants",
+        "title":  "The Pilani Shirt Dress",
         "handle":  "sophiatown-jazz-pants",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -606,7 +606,7 @@
     },
     {
         "id":  6007,
-        "title":  "Printed Skirt",
+        "title":  "The Inqina Shirt Dress",
         "handle":  "inganekwane-printed-skirt",
         "vendor":  "Ezokhetho",
         "tags":  [
