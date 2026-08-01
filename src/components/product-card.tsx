@@ -85,7 +85,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
             <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>
           )}
         </div>
-        <Text className="mt-0.5 text-xs text-zinc-400">{color ?? size ?? ''}</Text>
+        <Text className="mt-0.5 text-[14px] text-zinc-400">{color ?? size ?? ''}</Text>
       </div>
     </div>
   )
