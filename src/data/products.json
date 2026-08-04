@@ -107,7 +107,7 @@
     },
     {
         "id":  6002,
-        "title":  "Tailored Jacket",
+        "title":  "Zodwa",
         "handle":  "zodwa-tailored-jacket",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -118,38 +118,38 @@
         "price":  9800,
         "images":  [
                       {
-                          "alt":  "Zodwa Tailored Jacket View 1",
+                          "alt":  "Zodwa View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/zodwa_1.jpg"
                       },
                       {
-                          "alt":  "Zodwa Tailored Jacket View 2",
+                          "alt":  "Zodwa View 2",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/zodwa_2.jpg"
                       },
                       {
-                          "alt":  "Zodwa Tailored Jacket View 3",
+                          "alt":  "Zodwa View 3",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/zodwa_3.jpg"
                       },
                       {
-                          "alt":  "Zodwa Tailored Jacket View 4",
+                          "alt":  "Zodwa View 4",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/zodwa_4.jpg"
                       },
                       {
-                          "alt":  "Zodwa Tailored Jacket View 5",
+                          "alt":  "Zodwa View 5",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/zodwa_5.jpg"
                       }
                   ],
         "featured_image":  {
-                                "alt":  "Zodwa Tailored Jacket View 1",
+                                "alt":  "Zodwa View 1",
                                 "width":  1200,
                                 "height":  1600,
                                 "src":  "/images/ezokhetho/zodwa_1.jpg"
@@ -206,7 +206,7 @@
     },
     {
         "id":  6003,
-        "title":  "Wrap Coat",
+        "title":  "Ngithwale",
         "handle":  "ngithwale-wrap-coat",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -217,38 +217,38 @@
         "price":  12500,
         "images":  [
                       {
-                          "alt":  "Ngithwale Wrap Coat View 1",
+                          "alt":  "Ngithwale View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/ngithwale_1.jpg"
                       },
                       {
-                          "alt":  "Ngithwale Wrap Coat View 2",
+                          "alt":  "Ngithwale View 2",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/ngithwale_2.jpg"
                       },
                       {
-                          "alt":  "Ngithwale Wrap Coat View 3",
+                          "alt":  "Ngithwale View 3",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/ngithwale_3.jpg"
                       },
                       {
-                          "alt":  "Ngithwale Wrap Coat View 4",
+                          "alt":  "Ngithwale View 4",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/ngithwale_4.jpg"
                       },
                       {
-                          "alt":  "Ngithwale Wrap Coat View 5",
+                          "alt":  "Ngithwale View 5",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/ngithwale_5.jpg"
                       }
                   ],
         "featured_image":  {
-                                "alt":  "Ngithwale Wrap Coat View 1",
+                                "alt":  "Ngithwale View 1",
                                 "width":  1200,
                                 "height":  1600,
                                 "src":  "/images/ezokhetho/ngithwale_1.jpg"
@@ -805,7 +805,7 @@
     },
     {
         "id":  6009,
-        "title":  "Statement Dress",
+        "title":  "Kwa-suka-sukela",
         "handle":  "kwa-suka-sukela-statement-dress",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -816,38 +816,38 @@
         "price":  9800,
         "images":  [
                       {
-                          "alt":  "Kwa-suka-sukela Statement Dress View 1",
+                          "alt":  "Kwa-suka-sukela View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/kwa-suka-sukela_1.jpg"
                       },
                       {
-                          "alt":  "Kwa-suka-sukela Statement Dress View 2",
+                          "alt":  "Kwa-suka-sukela View 2",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/kwa-suka-sukela_2.jpg"
                       },
                       {
-                          "alt":  "Kwa-suka-sukela Statement Dress View 3",
+                          "alt":  "Kwa-suka-sukela View 3",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/kwa-suka-sukela_3.jpg"
                       },
                       {
-                          "alt":  "Kwa-suka-sukela Statement Dress View 4",
+                          "alt":  "Kwa-suka-sukela View 4",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/kwa-suka-sukela_4.jpg"
                       },
                       {
-                          "alt":  "Kwa-suka-sukela Statement Dress View 5",
+                          "alt":  "Kwa-suka-sukela View 5",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/ezokhetho/kwa-suka-sukela_5.jpg"
                       }
                   ],
         "featured_image":  {
-                                "alt":  "Kwa-suka-sukela Statement Dress View 1",
+                                "alt":  "Kwa-suka-sukela View 1",
                                 "width":  1200,
                                 "height":  1600,
                                 "src":  "/images/ezokhetho/kwa-suka-sukela_1.jpg"
@@ -905,13 +905,13 @@
     {
         "id":  6010,
         "featured_image":  {
-                                "alt":  "Mapetla \u002726 Editorial Set by Ezokhetho",
+                                "alt":  "Mapetla \u002726 Editorial by Ezokhetho",
                                 "width":  3000,
                                 "height":  4000,
                                 "src":  "/images/ezokhetho/mapetla_1.jpg"
                             },
         "cost":  6800,
-        "title":  "Editorial Set",
+        "title":  "Mapetla Ext '27",
         "tags":  [
                      "Editorial",
                      "Set",
