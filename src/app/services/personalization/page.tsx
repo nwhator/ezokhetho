@@ -217,7 +217,7 @@ export default function PersonalizationPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-                className="bg-[#F8F6F3] p-8 sm:p-12 rounded-xl"
+                className="bg-off-white p-8 sm:p-12 rounded-xl"
               >
                 {submitStatus === 'success' ? (
                   <div className="text-center py-12">

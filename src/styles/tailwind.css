@@ -88,6 +88,10 @@ html.dark .bg-white {
   background-color: #1c1917 !important; /* Stone-900 */
 }
 
+html.dark .bg-off-white {
+  background-color: #1c1917 !important; /* Stone-900 */
+}
+
 html.dark .text-zinc-950,
 html.dark .text-zinc-900,
 html.dark .text-zinc-800,
@@ -95,6 +99,7 @@ html.dark .text-zinc-700 {
   color: #f5f5f4 !important;
 }
 
+html.dark .text-zinc-600,
 html.dark .text-zinc-500,
 html.dark .text-zinc-400,
 html.dark .text-zinc-300 {

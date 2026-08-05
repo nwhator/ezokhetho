@@ -23,7 +23,7 @@ export default function EzkoFounder() {
     <section
       id="founder"
       ref={ref}
-      className="bg-[#F8F6F3] py-24 sm:py-32 lg:py-40"
+      className="bg-off-white py-24 sm:py-32 lg:py-40"
     >
       <div className="container">
         {/* Section label */}
@@ -118,7 +118,7 @@ export default function EzkoFounder() {
                 >
                   {/* Dot */}
                   <div className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center">
-                    <div className="h-3 w-3 rounded-full border-2 border-[#0033A0] bg-[#F8F6F3] transition-colors duration-300 group-hover:bg-[#0033A0]" />
+                    <div className="h-3 w-3 rounded-full border-2 border-[#0033A0] bg-off-white transition-colors duration-300 group-hover:bg-[#0033A0]" />
                   </div>
 
                   {/* Content */}

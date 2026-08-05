@@ -169,7 +169,7 @@ export default function CommissionsPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-24 sm:py-32 lg:py-40 bg-[#F8F6F3]">
+      <section className="py-24 sm:py-32 lg:py-40 bg-off-white">
         <div className="container">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
             {/* Info Column */}

@@ -106,7 +106,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── SUSTAINABLE COMMITMENT ── */}
-      <section className="bg-[#F8F6F3] py-20 sm:py-28">
+      <section className="bg-off-white py-20 sm:py-28">
         <div className="container">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="flex flex-col justify-center gap-8 lg:order-2">

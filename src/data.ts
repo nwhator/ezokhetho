@@ -785,7 +785,7 @@ export async function getFashionCollections() {
       description: 'Discover the full Ezokhetho range. Timeless design celebrating contemporary African luxury, heritage and storytelling.',
       updatedAt: '2026-07-14T00:00:00-04:00',
       image: '/images/cover/Mapetla Ext. \'27.jpg',
-      products,
+      products: await getShopProducts(),
     }
   ]
 }
@@ -856,7 +856,7 @@ export async function getCollectionByHandle(handle: string) {
         'Discover the full Ezokhetho range. Timeless design celebrating contemporary African luxury, heritage and storytelling.',
       updatedAt: '2026-07-09T00:00:00-04:00',
       image: '/images/ezokhetho/ngithwale.jpg',
-      products: await getFashionProducts(),
+      products: await getRunwayProducts(),
     }
   }
   const allCollections = await getCollections('all')
@@ -2054,6 +2054,22 @@ export const MAIN_COLLECTION_HANDLES = [
   'mapetla', 'entathakusa', 'zodwa', 'ngithwale', 'kwa-suka-sukela',
   'inganekwane', 'umkhathizwe', 'khumbulekhaya', 'izimbokodo', 'sophiatown',
 ]
+
+// Products belonging to the main runway collections (shown as "Contact us" / under Collections only)
+export function isRunwayProduct(product: any) {
+  return (product?.collections ?? []).some((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))
+}
+
+export async function getRunwayProducts() {
+  const all = await getFashionProducts()
+  return all.filter(isRunwayProduct)
+}
+
+// Products with visible prices (the "shop" / online store range)
+export async function getShopProducts() {
+  const all = await getFashionProducts()
+  return all.filter((p) => !isRunwayProduct(p))
+}
 
 // Cover images for main fashion collections (from /images/cover/)
 export const COLLECTION_COVER_IMAGES: Record<string, string> = {

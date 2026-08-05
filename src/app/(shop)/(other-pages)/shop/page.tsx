@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getCollectionByHandle, getFashionProducts } from '@/data'
+import { getCollectionByHandle, getShopProducts } from '@/data'
 
 export const metadata: Metadata = {
   title: 'Shop | Ezokhetho',
@@ -11,13 +11,11 @@ export const metadata: Metadata = {
 
 export default async function ShopPage() {
   const collection = await getCollectionByHandle('shop')
-  const products = await getFashionProducts()
+  const shopProducts = await getShopProducts()
 
   if (!collection) {
     notFound()
   }
-
-  const shopProducts = products
 
   return (
     <main className="pb-24">

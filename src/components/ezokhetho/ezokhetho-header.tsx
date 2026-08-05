@@ -11,7 +11,7 @@ import ThemeToggle from '@/components/theme-toggle'
 import { useCart } from '@/lib/cart-context'
 
 const navLinks = [
-  { name: 'Shop', href: '/collections/all' },
+  { name: 'Shop', href: '/shop' },
   { name: 'Collections', href: '/collections' },
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/#brand-story' },
