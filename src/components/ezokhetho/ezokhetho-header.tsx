@@ -96,7 +96,7 @@ const collectionsMenu = [
     name: "Sophiatown",
     href: '/collections/sophiatown',
     desc: 'Golden Era Jazz',
-    thumb: '/images/cover/Sophiatown \'21.jpg',
+    thumb: '/images/cover/SophiaTown \'21.jpg',
     year: "'21",
   },
   {

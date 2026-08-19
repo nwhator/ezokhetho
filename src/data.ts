@@ -673,16 +673,6 @@ export async function getFashionCollections() {
   const products = await getFashionProducts()
   return [
     {
-      id: 'mapetla',
-      title: 'Mapetla',
-      handle: 'mapetla',
-      description: 'A bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.',
-      updatedAt: '2026-07-10T00:00:00-04:00',
-      image: '/images/cover/Mapetla Ext. \'27.jpg',
-      galleryImages: COLLECTION_GALLERY_IMAGES['mapetla'],
-      products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
-    },
-    {
       id: 'entathakusa',
       title: "Entathakusa '26",
       handle: 'entathakusa',
@@ -768,7 +758,7 @@ export async function getFashionCollections() {
       handle: 'sophiatown',
       description: 'A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/cover/Sophiatown \'21.jpg',
+      image: '/images/cover/SophiaTown \'21.jpg',
       galleryImages: COLLECTION_GALLERY_IMAGES['sophiatown'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'sophiatown')),
     },
@@ -2099,12 +2089,6 @@ export const COLLECTION_GALLERY_IMAGES: Record<string, string[]> = (() => {
     if (Array.isArray(images) && images.length) {
       galleries[handle] = images
     }
-  }
-  if (!galleries.mapetla) {
-    galleries.mapetla = Array.from(
-      { length: 10 },
-      (_, i) => `/images/ezokhetho/mapetla/mapetla_${i + 1}.jpg`
-    )
   }
   return galleries
 })()
