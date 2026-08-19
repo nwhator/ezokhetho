@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getCollectionByHandle, getShopProducts } from '@/data'
+import { formatZAR } from '@/lib/currency'
 
 export const metadata: Metadata = {
   title: 'Shop | Ezokhetho',
@@ -73,7 +74,7 @@ export default async function ShopPage() {
                       {product.title}
                     </h3>
                     <p className="font-moderat text-sm font-medium text-zinc-900">
-                      R{product.price.toLocaleString()}
+                      {formatZAR(product.price)}
                     </p>
                     {product.madeToOrder && (
                       <span className="inline-block mt-1 px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-white bg-[#FF6B00] rounded">

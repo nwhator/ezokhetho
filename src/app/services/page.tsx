@@ -4,55 +4,38 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, PenTool, Gem, Sparkles, Heart, ArrowRight, Check, Mail } from 'lucide-react'
+import { Sparkles, Heart, ArrowRight, Check, Mail, Gem } from 'lucide-react'
 import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
 import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 const services = [
   {
-    id: 'consultation',
-    title: 'Book a Consultation',
-    description: 'Schedule a private meeting with our designer to discuss your vision, explore fabrics, and create a piece tailored to you.',
-    href: '/services/consultation',
-    icon: Calendar,
-    features: [
-      '60–90 minute private session',
-      'In-studio or virtual available',
-      'Fabric library access',
-      'Design proposal within 5 days',
-      'Measurements taken on-site',
-    ],
-    cta: 'Book Now',
-  },
-  {
-    id: 'personalization',
-    title: 'Personalization',
-    description: 'Add your unique touch with monogramming, custom embroidery, or bespoke alterations. Submit your request directly to our studio.',
-    href: '/services/personalization',
-    icon: PenTool,
-    features: [
-      'Monogramming from R350',
-      'Custom embroidery from R850',
-      'Bespoke alterations from R450',
-      '10–15 business day turnaround',
-      'Handcrafted in Johannesburg',
-    ],
-    cta: 'Request Quote',
-  },
-  {
-    id: 'commissions',
-    title: 'Private Commissions',
-    description: 'Collaborate with Mpumelelo to customize an existing Ezokhetho design with unique details — one-of-a-kind pieces made for you.',
+    id: 'custom',
+    title: 'Custom',
+    description: 'Collaborate with Mpumelelo to customize an existing Ezokhetho design with unique details — one-of-a-kind pieces made exclusively for you.',
     href: '/services/commissions',
     icon: Gem,
     features: [
       'Modify existing collection pieces',
       'Combine elements from multiple designs',
       'Custom fabric on proven patterns',
-      '6–10 week timeline',
-      'From R8,500 (modifications)',
+      'Handcrafted in Johannesburg',
     ],
-    cta: 'Start Commission',
+    cta: 'Enquire',
+  },
+  {
+    id: 'ready-to-wear',
+    title: 'Ready-to-Wear',
+    description: 'Discover and shop Ezokhetho pieces online — designed, cut and finished in our atelier, ready to wear.',
+    href: '/contact',
+    icon: Sparkles,
+    features: [
+      'Shop the full online range',
+      'Designed in South Africa',
+      'Quality fabrics and finishes',
+      'Delivery across South Africa',
+    ],
+    cta: 'Enquire',
   },
 ]
 
@@ -99,9 +82,8 @@ export default function ServicesPage() {
             </h1>
 
             <p className="mt-6 font-moderat text-lg leading-relaxed text-white/70 max-w-2xl">
-              Beyond our collections, we offer bespoke experiences tailored to your story.
-              From personal consultations to one-of-a-kind commissions, every service
-              is designed to bring your vision to life.
+              Two ways to wear Ezokhetho — order a ready-to-wear piece from our range,
+              or commission a custom creation made exclusively for you.
             </p>
           </motion.div>
         </div>
@@ -110,7 +92,7 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section ref={ref} className="py-24 sm:py-32 lg:py-40 bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {services.map((service, index) => (
               <motion.article
                 key={service.id}
@@ -247,10 +229,10 @@ export default function ServicesPage() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/services/consultation"
+                href="/services/commissions"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 font-moderat text-sm font-medium uppercase tracking-[0.2em] text-white bg-[#FF6B00] hover:bg-[#FF6B00]/90 transition-colors duration-300"
               >
-                Book a Consultation
+                Start a Commission
               </Link>
               <Link
                 href="/contact"

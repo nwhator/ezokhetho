@@ -55,18 +55,18 @@ export default function ReturnsPage() {
               <a href="mailto:info@ezokhetho.com">info@ezokhetho.com</a>.
             </p>
 
-            <h2>Damages and Issues</h2>
+            <h2 className="mt-12 mb-4">Damages and Issues</h2>
             <p className="leading-relaxed text-zinc-600">
               Please inspect your order upon delivery and contact us immediately if the item is
               defective, damaged, or if you have received the incorrect item. We will assess the
               issue and work with you to resolve it as quickly as possible.
             </p>
 
-            <h2>Exceptions / Non-Returnable Items</h2>
+            <h2 className="mt-12 mb-4">Exceptions / Non-Returnable Items</h2>
             <p className="leading-relaxed text-zinc-600">
               The following items are <strong>not eligible</strong> for return, exchange, or store credit:
             </p>
-            <ul className="text-zinc-600">
+            <ul className="my-4 text-zinc-600">
               <li>Sale or discounted items</li>
               <li>Gift cards</li>
               <li>Competition prizes or promotional giveaways</li>
@@ -77,20 +77,20 @@ export default function ReturnsPage() {
               <strong>Custom garments are strictly non-returnable and non-exchangeable.</strong>
             </p>
 
-            <h2>Return Shipping</h2>
+            <h2 className="mt-12 mb-4">Return Shipping</h2>
             <p className="leading-relaxed text-zinc-600">
               Customers are responsible for all return shipping costs. For international orders,
               any duties, taxes, or import fees associated with the return shipment are the
               responsibility of the customer.
             </p>
 
-            <h2>Exchanges</h2>
+            <h2 className="mt-12 mb-4">Exchanges</h2>
             <p className="leading-relaxed text-zinc-600">
               The quickest way to receive a different size or item is to return the original item
               (subject to approval) and place a new order once your return has been processed.
             </p>
 
-            <h2>Store Credit</h2>
+            <h2 className="mt-12 mb-4">Store Credit</h2>
             <p className="leading-relaxed text-zinc-600">
               Once we receive and inspect your returned item, we will notify you whether the return
               has been approved.

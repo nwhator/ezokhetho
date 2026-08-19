@@ -5,13 +5,12 @@ import Breadcrumb from '@/components/breadcrumb'
 import ButtonLargeWithIcon from '@/components/button-large-with-icon'
 import { Heading } from '@/components/heading'
 import InputNumber from '@/components/input-number'
-import { Text, TextLink } from '@/components/text'
+import { Text } from '@/components/text'
 import { TProductItem } from '@/data'
-import { StarIcon } from '@heroicons/react/24/solid'
 import { ShoppingBag03Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useCart } from '@/lib/cart-context'
 
 import { formatZAR } from '@/lib/currency'
@@ -20,7 +19,8 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
   const { open: openAside } = useAside()
   const { addItem } = useCart()
   const { options, selected_options, collections, title, price, id, images, handle } = product
-  const status = 'in stock'
+  const stock = (product as any).stock as Record<string, number> | undefined
+  const sizesToConfirm = (product as any).sizesToConfirm === true
 
   const collection = collections[0]
   const currentColor =
@@ -32,6 +32,15 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
   // You need to recalculate according to your data structure and project
   const [quantity, setQuantity] = useState(1)
   const [stateSelectedOption, setStateSelectedOption] = useState<{ name: string; value: string }[]>(selected_options)
+
+  const selectedSize = stateSelectedOption.find((opt) => opt.name === 'Size')?.value ?? ''
+  const maxQty = selectedSize && stock ? (stock[selectedSize] ?? 99) : 99
+
+  useEffect(() => {
+    if (quantity > maxQty) {
+      setQuantity(maxQty)
+    }
+  }, [maxQty, quantity])
 
   const handleAddToCart = () => {
     const color = stateSelectedOption.find((opt) => opt.name === 'Color')?.value ?? ''
@@ -82,17 +91,6 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
             <Text className="text-xl">{formatZAR(price)}</Text>
           )}
           <Text className="font-light text-zinc-400">/</Text>
-
-          {/* Reviews */}
-          <div className="flex items-center gap-1">
-            <span className="sr-only">4.94 rating</span>
-            <StarIcon className="size-5" />
-            <Text>4.94</Text>
-            <Text>·</Text>
-            <TextLink className="!capitalize underline" href={'#reviews'}>
-              172 reviews
-            </TextLink>
-          </div>
         </div>
       </div>
 
@@ -112,10 +110,8 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
                   )}
                 >
                   {optionValues.map(({ name, swatch }, index) => {
-                    // NOTE: this for demo ...
-                    // You need to recalculate according to your data structure and project
                     const selected = stateSelectedOption.some((opt) => opt.name === optionName && opt.value === name)
-                    const inStock = index !== 2
+                    const inStock = stock ? (stock[name] ?? 0) > 0 : true
                     const url = '#'
 
                     return (
@@ -167,14 +163,18 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
               <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Fabric Composition</p>
               <p className="mt-1 font-medium text-zinc-900">{product.fabricComposition ?? '—'}</p>
             </div>
-            <div>
-              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Detail Composition</p>
-              <p className="mt-1 font-medium text-zinc-900">{product.detailComposition ?? '—'}</p>
-            </div>
-            <div>
-              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Wash Care</p>
-              <p className="mt-1 font-medium text-zinc-900">{product.washCare ?? '—'}</p>
-            </div>
+            {product.detailComposition ? (
+              <div>
+                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Detail Composition</p>
+                <p className="mt-1 font-medium text-zinc-900">{product.detailComposition}</p>
+              </div>
+            ) : null}
+            {product.washCare ? (
+              <div>
+                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Wash Care</p>
+                <p className="mt-1 font-medium text-zinc-900">{product.washCare}</p>
+              </div>
+            ) : null}
             <div>
               <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Availability</p>
               <p className="mt-1 font-medium text-zinc-900">{product.availability ?? 'In Stock'}</p>
@@ -200,9 +200,21 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
               </svg>
               Contact us for inquiries
             </a>
+          ) : sizesToConfirm ? (
+            <>
+              <Text className="text-sm font-medium text-zinc-600">
+                Sizes to be confirmed. Enquire to find your fit.
+              </Text>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-3 bg-[#FF6B00] px-8 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white hover:bg-[#e05e00] transition-colors"
+              >
+                Enquire
+              </a>
+            </>
           ) : (
             <>
-              <InputNumber className="gap-x-5" label="Qty" defaultValue={quantity} onChange={setQuantity} />
+              <InputNumber className="gap-x-5" label="Qty" min={1} max={maxQty} defaultValue={quantity} onChange={setQuantity} />
               <ButtonLargeWithIcon
                 icon={<HugeiconsIcon icon={ShoppingBag03Icon} size={20} color="currentColor" strokeWidth={1.5} />}
                 onClick={handleAddToCart}

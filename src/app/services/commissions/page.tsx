@@ -217,9 +217,9 @@ export default function CommissionsPage() {
                       <Shield className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="font-butler text-lg font-medium text-zinc-900">Investment</h3>
+                      <h3 className="font-butler text-lg font-medium text-zinc-900">Made for You</h3>
                       <p className="mt-1 font-moderat text-sm text-zinc-500">
-                        Modifications from R8,500. Bespoke from R18,000. 50% deposit to begin, balance on completion.
+                        A 50% deposit begins the work; the balance is due on completion.
                       </p>
                     </div>
                   </div>
@@ -372,12 +372,12 @@ export default function CommissionsPage() {
                       <Field>
                         <Label>Budget Range</Label>
                         <Select name="budgetRange" value={formData.budgetRange} onChange={handleChange} disabled={isSubmitting}>
-                          <option value="">Select range</option>
-                          <option value="8500-12000">R8,500 – R12,000 (Simple modifications)</option>
-                          <option value="12000-18000">R12,000 – R18,000 (Moderate customization)</option>
-                          <option value="18000-25000">R18,000 – R25,000 (Complex modifications)</option>
-                          <option value="25000-40000">R25,000 – R40,000 (Extensive redesign)</option>
-                          <option value="40000+">R40,000+ (Fully bespoke)</option>
+                          <option value="">Select scale</option>
+                          <option value="simple">Simple modification</option>
+                          <option value="moderate">Moderate customization</option>
+                          <option value="complex">Complex modifications</option>
+                          <option value="extensive">Extensive redesign</option>
+                          <option value="bespoke">Fully bespoke</option>
                         </Select>
                       </Field>
 

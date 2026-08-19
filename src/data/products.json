@@ -10,6 +10,7 @@
                      "Entathakusa"
                  ],
         "price":  14500,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Entathakusa Runway Gown View 1",
@@ -55,16 +56,16 @@
                                               {
                                                   "name":  "Sunrise Ochre",
                                                   "swatch":  {
-                                                                     "color":  "#FF8C00",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#FF8C00",
+                                                                 "image":  null
+                                                             }
                                               },
                                               {
                                                   "name":  "Dawn Ivory",
                                                   "swatch":  {
-                                                                     "color":  "#FFFFF0",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#FFFFF0",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -116,6 +117,7 @@
                      "Zodwa"
                  ],
         "price":  9800,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Zodwa View 1",
@@ -161,9 +163,9 @@
                                               {
                                                   "name":  "Classic Black",
                                                   "swatch":  {
-                                                                     "color":  "#000000",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#000000",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -215,6 +217,7 @@
                      "Ngithwale"
                  ],
         "price":  12500,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Ngithwale View 1",
@@ -260,9 +263,9 @@
                                               {
                                                   "name":  "Heritage Royal Blue",
                                                   "swatch":  {
-                                                                     "color":  "#0033A0",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#0033A0",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -314,6 +317,7 @@
                      "Khumbulekhaya"
                  ],
         "price":  8900,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Khumbulekhaya Silk Dress View 1",
@@ -359,9 +363,9 @@
                                               {
                                                   "name":  "Terracotta",
                                                   "swatch":  {
-                                                                     "color":  "#E2725B",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#E2725B",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -413,6 +417,7 @@
                      "Izimbokodo"
                  ],
         "price":  11200,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Izimbokodo Structured Blazer View 1",
@@ -458,9 +463,9 @@
                                               {
                                                   "name":  "Obsidian",
                                                   "swatch":  {
-                                                                     "color":  "#1A1A1A",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#1A1A1A",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -512,6 +517,7 @@
                      "Sophiatown"
                  ],
         "price":  6800,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Sophiatown Jazz Pants View 1",
@@ -557,9 +563,9 @@
                                               {
                                                   "name":  "Midnight Navy",
                                                   "swatch":  {
-                                                                     "color":  "#1B1B3A",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#1B1B3A",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -615,6 +621,7 @@
                      "Inganekwane"
                  ],
         "price":  5600,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Inganekwane Printed Skirt View 1",
@@ -660,9 +667,9 @@
                                               {
                                                   "name":  "Folklore Multi",
                                                   "swatch":  {
-                                                                     "color":  "#C9A962",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#C9A962",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -715,6 +722,7 @@
                      "Umkhathizwe"
                  ],
         "price":  13500,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Umkhathizwe Cape Coat View 1",
@@ -760,9 +768,9 @@
                                               {
                                                   "name":  "Horizon Grey",
                                                   "swatch":  {
-                                                                     "color":  "#8A8A8A",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#8A8A8A",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -814,6 +822,7 @@
                      "Kwa-suka-sukela"
                  ],
         "price":  9800,
+        "runway":  true,
         "images":  [
                       {
                           "alt":  "Kwa-suka-sukela View 1",
@@ -859,9 +868,9 @@
                                               {
                                                   "name":  "Sunset Orange",
                                                   "swatch":  {
-                                                                     "color":  "#FF4500",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#FF4500",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -941,6 +950,7 @@
                       }
                   ],
         "price":  11500,
+        "runway":  true,
         "description":  "The latest chapter from Ezokhetho. The Mapetla \u002726 editorial collection \u2014 a bold exploration of African identity through sculptural form, rich texture, and deliberate craftsmanship.",
         "handle":  "mapetla-26-editorial-set",
         "images":  [
@@ -1022,32 +1032,34 @@
     },
     {
         "id":  7001,
-        "title":  "Full Cream Knitted Bodysuit",
-        "handle":  "full-cream-knitted-bodysuit",
+        "title":  "Protest Bodysuit",
+        "handle":  "the-protest-bodysuit",
         "vendor":  "Ezokhetho",
         "tags":  [
                      "Bodysuit",
-                     "Bodysuits",
-                     "Knitwear",
+                     "Protest",
+                     "Mapetla",
                      "Shop"
                  ],
-        "price":  6295,
-        "cost":  3147,
-        "madeToOrder":  true,
+        "price":  1950,
+        "cost":  975,
+        "runway":  false,
+        "madeToOrder":  false,
+        "sizesToConfirm":  true,
         "images":  [
                       {
-                          "alt":  "Full Cream Knitted Bodysuit View 1",
+                          "alt":  "Protest Bodysuit View 1",
                           "width":  1200,
                           "height":  1600,
-                          "src":  "/images/online/The Full Cream knitted Bodysuit-2.jpg"
+                          "src":  "/images/online/The protest bodysuit-1.jpg"
                       }
                   ],
         "featured_image":  {
-                              "alt":  "Full Cream Knitted Bodysuit View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The Full Cream knitted Bodysuit-2.jpg"
-                          },
+                                "alt":  "Protest Bodysuit View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The protest bodysuit-1.jpg"
+                            },
         "options":  [
                       {
                           "name":  "Color",
@@ -1055,15 +1067,441 @@
                                               {
                                                   "name":  "Print",
                                                   "swatch":  {
-                                                                     "color":  "#F5F5DC",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#1A1A1A",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "A bold protest-inspired bodysuit, pairing a striking graphic with a sculptural silhouette.",
+        "category":  "Bodysuit",
+        "colour":  "Print",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Stretch / Press Stud Opening",
+        "washCare":  "Cold Hand Wash",
+        "availability":  "Sizes to be confirmed"
+    },
+    {
+        "id":  7002,
+        "title":  "Mapetla Pixie",
+        "handle":  "mapetla-pixie",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "A-Line Dress",
+                     "Mapetla",
+                     "Dress",
+                     "Shop"
+                 ],
+        "price":  5950,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "45":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Mapetla Pixie View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-21.jpg"
+                      },
+                      {
+                          "alt":  "Mapetla Pixie View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-22.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Mapetla Pixie View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Ezoketho Mapetla _26-21.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                 "color":  "#8B5E3C",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
                       {
                           "name":  "Size",
                           "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "45"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "A sculptural A-line dress from the Mapetla collection, bringing bold print and confident tailoring into one silhouette.",
+        "category":  "A-Line Dress",
+        "colour":  "Print",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Zip Opening",
+        "washCare":  "Cold Hand Wash / Cool-Warm Iron",
+        "availability":  "In Stock"
+    },
+    {
+        "id":  7003,
+        "title":  "Mapetla One-Shoulder Asymmetric Bubble Dress",
+        "handle":  "mapetla-one-shoulder-asymmetric-bubble-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "A-Line Dress",
+                     "Mapetla",
+                     "Dress",
+                     "Shop"
+                 ],
+        "price":  5950,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Mapetla One-Shoulder Asymmetric Bubble Dress View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-25.jpg"
+                      },
+                      {
+                          "alt":  "Mapetla One-Shoulder Asymmetric Bubble Dress View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-29.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Mapetla One-Shoulder Asymmetric Bubble Dress View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Ezoketho Mapetla _26-25.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Green/Pink",
+                                                  "swatch":  {
+                                                                 "color":  "#C75D6D",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Green/Pink"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "An asymmetric bubble dress from the Mapetla collection designed with volume, balance and a striking colour story.",
+        "category":  "A-Line Dress",
+        "colour":  "Green/Pink",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Zip Opening",
+        "washCare":  "Dry Clean Only",
+        "availability":  "In Stock"
+    },
+    {
+        "id":  7004,
+        "title":  "Ezokhetho Ta-Da Trench Coat",
+        "handle":  "ezokhetho-ta-da-trench-coat",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Trench Coat",
+                     "Mapetla",
+                     "Outerwear",
+                     "Shop"
+                 ],
+        "price":  12950,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Ezokhetho Ta-Da Trench Coat View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-34.jpg"
+                      },
+                      {
+                          "alt":  "Ezokhetho Ta-Da Trench Coat View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Ezoketho Mapetla _26-5.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Ezokhetho Ta-Da Trench Coat View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Ezoketho Mapetla _26-34.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Green/Pink/Print",
+                                                  "swatch":  {
+                                                                 "color":  "#C44C78",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Green/Pink/Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "A sharply tailored trench coat from Mapetla, combining structure, softness and a statement print finish.",
+        "category":  "Trench Coat",
+        "colour":  "Green/Pink/Print",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Belt",
+        "washCare":  "Dry Clean Only",
+        "availability":  "In Stock"
+    },
+    {
+        "id":  7005,
+        "title":  "Inqina Mesh Bodysuit",
+        "handle":  "inqina-mesh-bodysuit",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Bodysuit",
+                     "Inqina",
+                     "Mapetla",
+                     "Shop"
+                 ],
+        "price":  2495,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "XS":  2,
+                      "S":  2,
+                      "M":  2,
+                      "L":  2,
+                      "XL":  2,
+                      "XXL":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Inqina Mesh Bodysuit View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                      },
+                      {
+                          "alt":  "Inqina Mesh Bodysuit View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-2.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Inqina Mesh Bodysuit View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Red/Black",
+                                                  "swatch":  {
+                                                                 "color":  "#8B0000",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "XS"
+                                              },
                                               {
                                                   "swatch":  null,
                                                   "name":  "S"
@@ -1090,7 +1528,7 @@
         "selected_options":  [
                                   {
                                       "name":  "Color",
-                                      "value":  "Print"
+                                      "value":  "Red/Black"
                                   },
                                   {
                                       "name":  "Size",
@@ -1099,159 +1537,62 @@
                               ],
         "collections":  [
                             {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
                             }
                         ],
-        "description":  "Ezokhetho Full Cream Knitted Bodysuit. Made from a premium cotton blend with press stud closure. Cold hand wash only. Made to order."
+        "description":  "A mesh bodysuit from the Mapetla collection, with a sleek finish and expressive edge.",
+        "category":  "Bodysuit",
+        "colour":  "Red/Black",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Stretch / Press Stud Buttons Opening",
+        "washCare":  "Cold Hand Wash",
+        "availability":  "In Stock"
     },
     {
-        "id":  7002,
-        "title":  "Ostrich Feather Denim Jeans",
-        "handle":  "zodwa-ostrich-feather-denim-jeans",
+        "id":  7006,
+        "title":  "Ezokhetho Mapetla Inqina Coat",
+        "handle":  "ezokhetho-mapetla-inqina-coat",
         "vendor":  "Ezokhetho",
         "tags":  [
-                     "Jeans",
-                     "Bottoms",
-                     "Denim",
-                     "Zodwa",
-                     "Shop"
-                 ],
-        "price":  8750,
-        "cost":  4375,
-        "madeToOrder":  true,
-        "images":  [
-                      {
-                          "alt":  "Zodwa Ostrich Feather Denim Jeans View 1",
-                          "width":  1200,
-                          "height":  1600,
-                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
-                      },
-                      {
-                          "alt":  "Zodwa Ostrich Feather Denim Jeans View 2",
-                          "width":  1200,
-                          "height":  1600,
-                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-2.jpg"
-                      }
-                  ],
-        "featured_image":  {
-                              "alt":  "Zodwa Ostrich Feather Denim Jeans View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
-                          },
-        "options":  [
-                      {
-                          "name":  "Color",
-                          "optionValues":  [
-                                              {
-                                                  "name":  "Print",
-                                                  "swatch":  {
-                                                                     "color":  "#8B4513",
-                                                                     "image":  null
-                                                                 }
-                                              }
-                                          ]
-                      },
-                      {
-                          "name":  "Size",
-                          "optionValues":  [
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "32"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "34"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "36"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "38"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "40"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "42"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "44"
-                                              }
-                                          ]
-                      }
-                  ],
-        "selected_options":  [
-                                  {
-                                      "name":  "Color",
-                                      "value":  "Print"
-                                  },
-                                  {
-                                      "name":  "Size",
-                                      "value":  "36"
-                                  }
-                              ],
-        "collections":  [
-                            {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
-                            }
-                        ],
-        "description":  "Ezokhetho Zodwa Ostrich Feather Denim Jeans. Cotton blend with centre fly-front zip and ostrich feather detailing. Dry clean only. Made to order."
-    },
-    {
-        "id":  7003,
-        "title":  "Unisex Shirt Blouse",
-        "handle":  "inqina-unisex-shirt-blouse",
-        "vendor":  "Ezokhetho",
-        "tags":  [
-                     "Shirt",
-                     "Blouse",
-                     "Tops",
-                     "Unisex",
+                     "Coat",
                      "Inqina",
+                     "Mapetla",
                      "Shop"
                  ],
-        "price":  4950,
-        "cost":  2475,
-        "madeToOrder":  true,
+        "price":  10950,
+        "runway":  false,
+        "madeToOrder":  false,
         "stock":  {
-                      "32":  1,
-                      "34":  1,
-                      "36":  1,
-                      "38":  1,
-                      "40":  1,
-                      "42":  1,
-                      "44":  1
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
                   },
         "images":  [
                       {
-                          "alt":  "Inqina Unisex Shirt Blouse View 1",
+                          "alt":  "Ezokhetho Mapetla Inqina Coat View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
                       },
                       {
-                          "alt":  "Inqina Unisex Shirt Blouse View 2",
+                          "alt":  "Ezokhetho Mapetla Inqina Coat View 2",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-2.jpg"
                       }
                   ],
         "featured_image":  {
-                              "alt":  "Inqina Unisex Shirt Blouse View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
-                          },
+                                "alt":  "Ezokhetho Mapetla Inqina Coat View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                            },
         "options":  [
                       {
                           "name":  "Color",
@@ -1259,9 +1600,9 @@
                                               {
                                                   "name":  "Print",
                                                   "swatch":  {
-                                                                     "color":  "#F5F5F5",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#6B4F3E",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -1311,16 +1652,303 @@
                               ],
         "collections":  [
                             {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
-}
-    ],
-        "description":  "Ezokhetho Inqina Unisex Shirt Blouse. 100% Polyester with centre front press studs. Cold hand wash. Made to order. Limited stock: 1 item available per size."
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "A structured coat from the Mapetla story, shaped with strong lines and a graphic finish.",
+        "category":  "Coat",
+        "colour":  "Print",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Slits",
+        "washCare":  "Dry Clean Only",
+        "availability":  "In Stock"
     },
     {
-        "id":  7004,
-        "title":  "You People Tote Bag",
+        "id":  7007,
+        "title":  "Ezokhetho Mapetla Inqina Polka Dot Jorts",
+        "handle":  "ezokhetho-mapetla-inqina-polka-dot-jorts",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Shorts / Jorts",
+                     "Inqina",
+                     "Mapetla",
+                     "Shop"
+                 ],
+        "price":  4950,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Ezokhetho Mapetla Inqina Polka Dot Jorts View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                      },
+                      {
+                          "alt":  "Ezokhetho Mapetla Inqina Polka Dot Jorts View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-2.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Ezokhetho Mapetla Inqina Polka Dot Jorts View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Polka Dots",
+                                                  "swatch":  {
+                                                                 "color":  "#A8D5BA",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Polka Dots"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "A graphic jort from the Mapetla collection, designed with a playful polka-dot finish.",
+        "category":  "Shorts / Jorts",
+        "colour":  "Polka Dots",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Bubble",
+        "washCare":  "Cold Hand Wash / Cool-Warm Iron",
+        "availability":  "In Stock"
+    },
+    {
+        "id":  7008,
+        "title":  "Inkhosazanq Ostrich Denim Dress",
+        "handle":  "inkhosazana-denim-ostrich-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Denim",
+                     "Ostrich Feather",
+                     "Zodwa",
+                     "Shop"
+                 ],
+        "price":  14950,
+        "cost":  7475,
+        "runway":  false,
+        "madeToOrder":  true,
+        "sizesToConfirm":  true,
+        "images":  [
+                      {
+                          "alt":  "Inkhosazanq Ostrich Denim Dress View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Inkhosazanq Ostrich Denim Dress View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Blue/White",
+                                                  "swatch":  {
+                                                                 "color":  "#4A90E2",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Blue/White"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Zodwa \u002725",
+                                "id":  "zodwa",
+                                "handle":  "zodwa"
+                            }
+                        ],
+        "description":  "A denim dress with ostrich-feather detailing from the Zodwa collection, combining utility and glamour.",
+        "category":  "Dress",
+        "colour":  "Blue/White",
+        "fabricComposition":  "Cotton Blend",
+        "detailComposition":  "Centre Back Zip / Ostrich Feathers",
+        "washCare":  "Dry Clean Only",
+        "availability":  "Sizes to be confirmed"
+    },
+    {
+        "id":  7009,
+        "title":  "Ntombizonke Blue & Pink Polka Stripe Dress",
+        "handle":  "ntombizonke-blue-pink-polka-stripe-dress",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Dress",
+                     "Ntombizonke",
+                     "Polka Stripe",
+                     "Shop"
+                 ],
+        "price":  11500,
+        "cost":  5750,
+        "runway":  false,
+        "madeToOrder":  true,
+        "stock":  {
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Blue & Pink Polka Stripe",
+                                                  "swatch":  {
+                                                                 "color":  "#E889C4",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Blue & Pink Polka Stripe"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Zodwa \u002725",
+                                "id":  "zodwa",
+                                "handle":  "zodwa"
+                            }
+                        ],
+        "description":  "A vivid polka-stripe dress from the Zodwa collection, balancing playful pattern and refined tailoring.",
+        "category":  "Dress",
+        "colour":  "Blue & Pink Polka Stripe",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Centre Back Zip / Lined",
+        "washCare":  "Cold Hand Wash",
+        "availability":  "Made to Order"
+    },
+    {
+        "id":  7010,
+        "title":  "You People Bag",
         "handle":  "ezokhetho-you-people-tote-bag",
         "vendor":  "Ezokhetho",
         "tags":  [
@@ -1329,23 +1957,27 @@
                      "Accessories",
                      "Shop"
                  ],
-        "price":  2850,
-        "cost":  1425,
-        "madeToOrder":  true,
+        "price":  3500,
+        "cost":  1750,
+        "runway":  false,
+        "madeToOrder":  false,
+        "stock":  {
+                      "One Size":  2
+                  },
         "images":  [
                       {
-                          "alt":  "Ezokhetho You People Tote Bag View 1",
+                          "alt":  "You People Bag View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/online/Ezokhetho_You People Tote Bag.jpg"
                       }
                   ],
         "featured_image":  {
-                              "alt":  "Ezokhetho You People Tote Bag View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/Ezokhetho_You People Tote Bag.jpg"
-                          },
+                                "alt":  "You People Bag View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Ezokhetho_You People Tote Bag.jpg"
+                            },
         "options":  [
                       {
                           "name":  "Color",
@@ -1353,16 +1985,16 @@
                                               {
                                                   "name":  "Print Black",
                                                   "swatch":  {
-                                                                     "color":  "#000000",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#000000",
+                                                                 "image":  null
+                                                             }
                                               },
                                               {
                                                   "name":  "Print White",
                                                   "swatch":  {
-                                                                     "color":  "#FFFFFF",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#FFFFFF",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -1388,125 +2020,57 @@
                               ],
         "collections":  [
                             {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
                             }
                         ],
-        "description":  "Ezokhetho You People Tote Bag. Canvas/leather with leather binding and heat press detailing. Dry clean only. One size. Available in Print Black or Print White."
+        "description":  "A statement tote bag from the Mapetla story, featuring a bold message and leather-bound finish.",
+        "category":  "Accessories",
+        "colour":  "Black or White",
+        "fabricComposition":  "Canvas / Leather",
+        "detailComposition":  "Leather Binding / Heat Press",
+        "washCare":  "Dry Clean Only",
+        "availability":  "In Stock"
     },
     {
-        "id":  7005,
-        "title":  "Denim Ostrich Dress",
-        "handle":  "inkosazana-denim-ostrich-dress",
-        "vendor":  "Ezokhetho",
-        "tags":  [
-                     "Dress",
-                     "Denim",
-                     "Ostrich Feather",
-                     "Inkosazana",
-                     "Shop"
-                 ],
-        "price":  12500,
-        "cost":  6250,
-        "madeToOrder":  true,
-        "images":  [
-                      {
-                          "alt":  "Inkosazana Denim Ostrich Dress View 1",
-                          "width":  1200,
-                          "height":  1600,
-                          "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
-                      }
-                  ],
-        "featured_image":  {
-                              "alt":  "Inkosazana Denim Ostrich Dress View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
-                          },
-        "options":  [
-                      {
-                          "name":  "Color",
-                          "optionValues":  [
-                                              {
-                                                  "name":  "Print",
-                                                  "swatch":  {
-                                                                     "color":  "#4A4A4A",
-                                                                     "image":  null
-                                                                 }
-                                              }
-                                          ]
-                      },
-                      {
-                          "name":  "Size",
-                          "optionValues":  [
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "S"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "M"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "L"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "XL"
-                                              }
-                                          ]
-                      }
-                  ],
-        "selected_options":  [
-                                  {
-                                      "name":  "Color",
-                                      "value":  "Print"
-                                  },
-                                  {
-                                      "name":  "Size",
-                                      "value":  "M"
-                                  }
-                              ],
-        "collections":  [
-                            {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
-                            }
-                        ],
-        "description":  "Ezokhetho Inkosazana Denim Ostrich Dress. Denim with ostrich feather detailing. Dry clean only. Made to order."
-    },
-    {
-        "id":  7006,
-        "title":  "Printed Suit",
-        "handle":  "menswear-ingonyama-printed-suit",
+        "id":  7011,
+        "title":  "The Ingonyama Printed Velvet Suit",
+        "handle":  "ingonyama-printed-velvet-suit",
         "vendor":  "Ezokhetho",
         "tags":  [
                      "Suit",
                      "Menswear",
-                     "Printed",
                      "Ingonyama",
+                     "Velvet",
                      "Shop"
                  ],
-        "price":  15500,
-        "cost":  7750,
+        "price":  20950,
+        "cost":  10475,
+        "runway":  false,
         "madeToOrder":  true,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2
+                  },
         "images":  [
                       {
-                          "alt":  "Menswear Ingonyama Printed Suit View 1",
+                          "alt":  "The Ingonyama Printed Velvet Suit View 1",
                           "width":  1200,
                           "height":  1600,
                           "src":  "/images/online/The menswear Ingonyama Printed Suit-5.jpg"
                       }
                   ],
         "featured_image":  {
-                              "alt":  "Menswear Ingonyama Printed Suit View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The menswear Ingonyama Printed Suit-5.jpg"
-                          },
+                                "alt":  "The Ingonyama Printed Velvet Suit View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The menswear Ingonyama Printed Suit-5.jpg"
+                            },
         "options":  [
                       {
                           "name":  "Color",
@@ -1514,15 +2078,27 @@
                                               {
                                                   "name":  "Print",
                                                   "swatch":  {
-                                                                     "color":  "#2D2D2D",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#7D4F2C",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
                       {
                           "name":  "Size",
                           "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
                                               {
                                                   "swatch":  null,
                                                   "name":  "38"
@@ -1534,14 +2110,6 @@
                                               {
                                                   "swatch":  null,
                                                   "name":  "42"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "44"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "46"
                                               }
                                           ]
                       }
@@ -1553,128 +2121,60 @@
                                   },
                                   {
                                       "name":  "Size",
-                                      "value":  "42"
+                                      "value":  "36"
                                   }
                               ],
         "collections":  [
                             {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
                             }
                         ],
-        "description":  "Ezokhetho Menswear Ingonyama Printed Suit. Printed suit with structured tailoring. Dry clean only. Made to order."
+        "description":  "A printed velvet suit, shaped with a bold and ceremonial feel.",
+        "category":  "Suit",
+        "colour":  "Print",
+        "fabricComposition":  "Cotton Blend",
+        "detailComposition":  "Centre Fly Front Zip / Lined Jacket",
+        "washCare":  "Dry Clean Only",
+        "availability":  "Made to Order"
     },
     {
-        "id":  7007,
-        "title":  "Blue & Pink Polka Stripe Dress",
-        "handle":  "ntombizonke-blue-pink-polka-stripe-dress",
-        "vendor":  "Ezokhetho",
-        "tags":  [
-                     "Dress",
-                     "Polka Stripe",
-                     "Ntombizonke",
-                     "Shop"
-                 ],
-        "price":  8950,
-        "cost":  4475,
-        "madeToOrder":  true,
-        "images":  [
-                      {
-                          "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
-                          "width":  1200,
-                          "height":  1600,
-                          "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
-                      }
-                  ],
-        "featured_image":  {
-                              "alt":  "Ntombizonke Blue & Pink Polka Stripe Dress View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The Ntombizonke Blue & Pink Polka Stripe Dress-5.jpg"
-                          },
-        "options":  [
-                      {
-                          "name":  "Color",
-                          "optionValues":  [
-                                              {
-                                                  "name":  "Blue & Pink Polka Stripe",
-                                                  "swatch":  {
-                                                                     "color":  "#4A90D9",
-                                                                     "image":  null
-                                                                 }
-                                              }
-                                          ]
-                      },
-                      {
-                          "name":  "Size",
-                          "optionValues":  [
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "S"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "M"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "L"
-                                              },
-                                              {
-                                                  "swatch":  null,
-                                                  "name":  "XL"
-                                              }
-                                          ]
-                      }
-                  ],
-        "selected_options":  [
-                                  {
-                                      "name":  "Color",
-                                      "value":  "Blue & Pink Polka Stripe"
-                                  },
-                                  {
-                                      "name":  "Size",
-                                      "value":  "M"
-                                  }
-                              ],
-        "collections":  [
-                            {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
-                            }
-                        ],
-        "description":  "Ezokhetho Ntombizonke Blue & Pink Polka Stripe Dress. Bold polka stripe print. Made to order."
-    },
-    {
-        "id":  7008,
-        "title":  "Protest Bodysuit",
-        "handle":  "the-protest-bodysuit",
+        "id":  7012,
+        "title":  "Full Cream Knitted Bodysuit",
+        "handle":  "full-cream-knitted-bodysuit",
         "vendor":  "Ezokhetho",
         "tags":  [
                      "Bodysuit",
-                     "Protest",
-                     "Statement",
+                     "Full Cream",
+                     "Knitted",
                      "Shop"
                  ],
-        "price":  5850,
-        "cost":  2925,
+        "price":  6295,
+        "cost":  3147,
+        "runway":  false,
         "madeToOrder":  true,
+        "stock":  {
+                      "S":  2,
+                      "M":  2,
+                      "L":  2,
+                      "XL":  2,
+                      "XXL":  2
+                  },
         "images":  [
                       {
-                          "alt":  "The Protest Bodysuit View 1",
+                          "alt":  "Full Cream Knitted Bodysuit View 1",
                           "width":  1200,
                           "height":  1600,
-                          "src":  "/images/online/The protest bodysuit-1.jpg"
+                          "src":  "/images/online/The Full Cream knitted Bodysuit-2.jpg"
                       }
                   ],
         "featured_image":  {
-                              "alt":  "The Protest Bodysuit View 1",
-                              "width":  1200,
-                              "height":  1600,
-                              "src":  "/images/online/The protest bodysuit-1.jpg"
-                          },
+                                "alt":  "Full Cream Knitted Bodysuit View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Full Cream knitted Bodysuit-2.jpg"
+                            },
         "options":  [
                       {
                           "name":  "Color",
@@ -1682,9 +2182,9 @@
                                               {
                                                   "name":  "Print",
                                                   "swatch":  {
-                                                                     "color":  "#1A1A1A",
-                                                                     "image":  null
-                                                                 }
+                                                                 "color":  "#C79B5B",
+                                                                 "image":  null
+                                                             }
                                               }
                                           ]
                       },
@@ -1726,11 +2226,251 @@
                               ],
         "collections":  [
                             {
-                                "title":  "Shop",
-                                "handle":  "shop",
-                                "id":  "shop"
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
                             }
                         ],
-        "description":  "Ezokhetho The Protest Bodysuit. Statement piece with bold messaging. Made to order."
+        "description":  "A full-cream knitted bodysuit with a refined, sculptural feel. Premium cotton blend with press stud closure. Cold hand wash only. Made to order.",
+        "category":  "Bodysuit",
+        "colour":  "Print",
+        "fabricComposition":  "Cotton Blend",
+        "detailComposition":  "Press Stud Closure",
+        "washCare":  "Cold Hand Wash",
+        "availability":  "Made to Order"
+    },
+    {
+        "id":  7013,
+        "title":  "Ostrich Feather Denim Jeans",
+        "handle":  "zodwa-ostrich-feather-denim-jeans",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Jeans",
+                     "Bottoms",
+                     "Denim",
+                     "Zodwa",
+                     "Shop"
+                 ],
+        "price":  8750,
+        "cost":  4375,
+        "runway":  false,
+        "madeToOrder":  true,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Ostrich Feather Denim Jeans View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                      },
+                      {
+                          "alt":  "Ostrich Feather Denim Jeans View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Ostrich Feather Denim Jeans View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/Inkosazana Denim Ostrich Dress-6.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                 "color":  "#444444",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Zodwa \u002725",
+                                "id":  "zodwa",
+                                "handle":  "zodwa"
+                            }
+                        ],
+        "description":  "A denim jean with ostrich-feather detail from the Zodwa collection, pairing edge with structure. Cotton blend with centre fly-front zip. Dry clean only. Made to order.",
+        "category":  "Jeans",
+        "colour":  "Print",
+        "fabricComposition":  "Cotton Blend",
+        "detailComposition":  "Centre Fly Front Zip / Ostrich Feathers",
+        "washCare":  "Dry Clean Only",
+        "availability":  "Made to Order"
+    },
+    {
+        "id":  7014,
+        "title":  "Inqina Unisex Shirt Blouse",
+        "handle":  "inqina-unisex-shirt-blouse",
+        "vendor":  "Ezokhetho",
+        "tags":  [
+                     "Shirt",
+                     "Blouse",
+                     "Unisex",
+                     "Inqina",
+                     "Shop"
+                 ],
+        "price":  4950,
+        "cost":  2475,
+        "runway":  false,
+        "madeToOrder":  true,
+        "stock":  {
+                      "32":  2,
+                      "34":  2,
+                      "36":  2,
+                      "38":  2,
+                      "40":  2,
+                      "42":  2,
+                      "44":  2
+                  },
+        "images":  [
+                      {
+                          "alt":  "Inqina Unisex Shirt Blouse View 1",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                      },
+                      {
+                          "alt":  "Inqina Unisex Shirt Blouse View 2",
+                          "width":  1200,
+                          "height":  1600,
+                          "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-2.jpg"
+                      }
+                  ],
+        "featured_image":  {
+                                "alt":  "Inqina Unisex Shirt Blouse View 1",
+                                "width":  1200,
+                                "height":  1600,
+                                "src":  "/images/online/The Inqina off-white Shirt and Ostrich Feather Paneled Denim Pants-1.jpg"
+                            },
+        "options":  [
+                      {
+                          "name":  "Color",
+                          "optionValues":  [
+                                              {
+                                                  "name":  "Print",
+                                                  "swatch":  {
+                                                                 "color":  "#BD8E4F",
+                                                                 "image":  null
+                                                             }
+                                              }
+                                          ]
+                      },
+                      {
+                          "name":  "Size",
+                          "optionValues":  [
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "32"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "34"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "36"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "38"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "40"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "42"
+                                              },
+                                              {
+                                                  "swatch":  null,
+                                                  "name":  "44"
+                                              }
+                                          ]
+                      }
+                  ],
+        "selected_options":  [
+                                  {
+                                      "name":  "Color",
+                                      "value":  "Print"
+                                  },
+                                  {
+                                      "name":  "Size",
+                                      "value":  "36"
+                                  }
+                              ],
+        "collections":  [
+                            {
+                                "title":  "Mapetla \u002726",
+                                "id":  "mapetla",
+                                "handle":  "mapetla"
+                            }
+                        ],
+        "description":  "An unisex shirt blouse from the Mapetla collection with a crisp, graphic finish. 100% Polyester with centre front press studs. Cold hand wash. Made to order.",
+        "category":  "Shirt / Blouse",
+        "colour":  "Print",
+        "fabricComposition":  "100% Polyester",
+        "detailComposition":  "Centre Front Press Studs",
+        "washCare":  "Cold Hand Wash",
+        "availability":  "Made to Order"
     }
 ]

@@ -16,12 +16,12 @@ import EzokhethoHeader from '@/components/ezokhetho/ezokhetho-header'
 import EzokhethoFooter from '@/components/ezokhetho/ezokhetho-footer'
 
 const personalizationTypes = [
-  { value: 'monogram', label: 'Monogramming', description: 'Initials or name embroidered on garment', basePrice: 'R350' },
-  { value: 'embroidery', label: 'Custom Embroidery', description: 'Bespoke motif, pattern, or artwork', basePrice: 'R850+' },
-  { value: 'alterations', label: 'Bespoke Alterations', description: 'Length, fit, sleeve, or structural changes', basePrice: 'R450+' },
-  { value: 'fabric', label: 'Fabric Substitution', description: 'Swap fabric on existing design', basePrice: 'Quote based' },
-  { value: 'colour', label: 'Colour Customisation', description: 'Dye or source fabric in custom colour', basePrice: 'R600+' },
-  { value: 'other', label: 'Other Request', description: 'Something unique — describe below', basePrice: 'Quote based' },
+  { value: 'monogram', label: 'Monogramming', description: 'Initials or name embroidered on garment' },
+  { value: 'embroidery', label: 'Custom Embroidery', description: 'Bespoke motif, pattern, or artwork' },
+  { value: 'alterations', label: 'Bespoke Alterations', description: 'Length, fit, sleeve, or structural changes' },
+  { value: 'fabric', label: 'Fabric Substitution', description: 'Swap fabric on existing design' },
+  { value: 'colour', label: 'Colour Customisation', description: 'Dye or source fabric in custom colour' },
+  { value: 'other', label: 'Other Request', description: 'Something unique — describe below' },
 ]
 
 export default function PersonalizationPage() {
@@ -189,13 +189,8 @@ export default function PersonalizationPage() {
                   <div className="space-y-2">
                     {personalizationTypes.map((type) => (
                       <div key={type.value} className="p-4 bg-white border border-zinc-100 rounded-lg">
-                        <div className="flex justify-between items-start">
-                          <div>
-                            <p className="font-medium text-zinc-900">{type.label}</p>
-                            <p className="text-sm text-zinc-500">{type.description}</p>
-                          </div>
-                          <span className="text-sm font-medium text-[#0033A0]">{type.basePrice}</span>
-                        </div>
+                        <p className="font-medium text-zinc-900">{type.label}</p>
+                        <p className="mt-1 text-sm text-zinc-500">{type.description}</p>
                       </div>
                     ))}
                   </div>
@@ -293,7 +288,7 @@ export default function PersonalizationPage() {
                       <Select name="personalizationType" value={formData.personalizationType} onChange={handleChange} required disabled={isSubmitting}>
                         {personalizationTypes.map((type) => (
                           <option key={type.value} value={type.value}>
-                            {type.label} ({type.basePrice})
+                            {type.label}
                           </option>
                         ))}
                       </Select>

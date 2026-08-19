@@ -1,9 +1,9 @@
 import { Divider } from '@/components/divider'
 import {
-  getFashionProducts,
   getProductByHandle,
+  getShopProducts,
   COLLECTION_COVER_IMAGES,
-  MAIN_COLLECTION_HANDLES,
+  isRunwayProduct,
   TProductItem,
 } from '@/data'
 import { Metadata } from 'next'
@@ -36,18 +36,15 @@ export default async function Product({ params }: { params: Promise<{ handle: st
     return notFound()
   }
 
-  // Fetch other products from the same collection for related section
-  const allProducts = await getFashionProducts()
+  // Related products at the bottom come from the /shop range only
   const collectionHandle = product.collections?.find((c: any) => c?.handle)?.handle
-  const hidePrice = MAIN_COLLECTION_HANDLES.includes(collectionHandle)
-  const relatedProducts = allProducts.filter((p) => {
-    if (p.id === product.id) return false
-    if (!collectionHandle) return false
-    return p.collections?.some((c: any) => c?.handle === collectionHandle)
-  }).slice(0, 5)
+  const hidePrice = isRunwayProduct(product)
+  const relatedProducts = (await getShopProducts())
+    .filter((p) => p.id !== product.id)
+    .slice(0, 5)
 
   let { images } = product
-  const coverSrc = collectionHandle ? COLLECTION_COVER_IMAGES[collectionHandle] : null
+  const coverSrc = hidePrice && collectionHandle ? COLLECTION_COVER_IMAGES[collectionHandle] : null
   if (coverSrc && images?.[0]?.src !== coverSrc) {
     images = [{ src: coverSrc, alt: product.title, width: 2000, height: 2500 }, ...(images || [])]
   }

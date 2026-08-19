@@ -7,37 +7,22 @@ import Image from 'next/image'
 
 const services = [
   {
-    id: 'consultation',
-    title: 'Book a Consultation',
-    description: 'Schedule a private meeting with our designer to discuss your vision, explore fabrics, and create a piece tailored to you.',
-    href: '/services/consultation',
-    icon: 'calendar',
-  },
-  {
-    id: 'personalization',
-    title: 'Personalization',
-    description: 'Add your unique touch with monogramming, custom embroidery, or bespoke alterations. Submit your request directly to our studio.',
-    href: '/services/personalization',
-    icon: 'pen',
-  },
-  {
-    id: 'commissions',
-    title: 'Private Commissions',
-    description: 'Collaborate with Mpumelelo to customize an existing Ezokhetho design with unique details — one-of-a-kind pieces made for you.',
+    id: 'custom',
+    title: 'Custom',
+    description: 'Collaborate with Mpumelelo to customize an existing Ezokhetho design with unique details — one-of-a-kind pieces made exclusively for you.',
     href: '/services/commissions',
     icon: 'gem',
+  },
+  {
+    id: 'ready-to-wear',
+    title: 'Ready-to-Wear',
+    description: 'Discover and shop Ezokhetho pieces online — designed, cut and finished in our atelier, ready to wear.',
+    href: '/contact',
+    icon: 'pen',
   },
 ]
 
 const icons = {
-  calendar: (
-    <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-      <line x1="16" y1="2" x2="16" y2="6" />
-      <line x1="8" y1="2" x2="8" y2="6" />
-      <line x1="3" y1="10" x2="21" y2="10" />
-    </svg>
-  ),
   pen: (
     <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
       <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" />
@@ -84,14 +69,13 @@ export default function EzokhethoServices() {
             <em className="font-extralight italic">Services</em>
           </h2>
           <p className="mt-6 font-moderat text-[15px] leading-relaxed text-zinc-500">
-            Beyond our collections, we offer bespoke experiences tailored to your story.
-            From personal consultations to one-of-a-kind commissions, every service
-            is designed to bring your vision to life.
+            Two ways to wear Ezokhetho — order a ready-to-wear piece from our range,
+            or commission a custom creation made exclusively for you.
           </p>
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {services.map((service, index) => (
             <motion.article
               key={service.id}
@@ -124,7 +108,7 @@ export default function EzokhethoServices() {
                 href={service.href}
                 className="mt-auto inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.15em] text-[#0033A0] hover:text-[#FF6B00] transition-colors duration-300"
               >
-                Explore
+                Enquire
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

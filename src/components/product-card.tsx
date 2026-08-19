@@ -1,6 +1,5 @@
-import { COLLECTION_COVER_IMAGES, MAIN_COLLECTION_HANDLES, TProductItem } from '@/data'
+import { COLLECTION_COVER_IMAGES, isRunwayProduct, TProductItem } from '@/data'
 import { formatZAR } from '@/lib/currency'
-import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { Text, TextLink } from './text'
@@ -14,9 +13,11 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, className, imageRatio = 'aspect-3/4', hidePrice }: ProductCardProps) {
   const { title, price, featured_image, handle, images, selected_options, vendor, collections } = product
-  const isMainCollection = collections?.some?.((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))
+  const isMainCollection = isRunwayProduct(product)
   const shouldHidePrice = hidePrice ?? isMainCollection
-  const collectionHandle = collections?.find?.((c: any) => MAIN_COLLECTION_HANDLES.includes(c?.handle))?.handle
+  const collectionHandle = isMainCollection
+    ? collections?.find?.((c: any) => COLLECTION_COVER_IMAGES[c?.handle])?.handle
+    : undefined
 
   // Safely get image src — handles both string and object formats
   const getImgSrc = (img: unknown): string => {
@@ -62,13 +63,6 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
       <div className="absolute top-3 left-3">
         <div className="bg-white px-2.5 py-1 text-[9px] uppercase tracking-[0.2em] text-[#0033A0]">
           {isMainCollection ? 'Collections' : 'Online Store'}
-        </div>
-      </div>
-
-      {/* Cart icon */}
-      <div className="absolute top-3 right-3 opacity-0 transition-opacity duration-300 group-hover/prd:opacity-100">
-        <div className="flex h-8 w-8 items-center justify-center bg-[#0033A0] text-white transition-colors hover:bg-[#FF6B00]">
-          <ShoppingBagIcon className="h-3.5 w-3.5" />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { updateTransactionStatus } from '@/lib/transactions'
+import { updateTransactionStatus, getTransactions } from '@/lib/transactions'
+import { sendOrderAcknowledgement } from '@/lib/acknowledgement-email'
 
 /**
  * PayFast ITN (Instant Transaction Notification) handler.
@@ -25,10 +26,18 @@ export async function POST(request: NextRequest) {
         updateTransactionStatus(mPaymentId, 'COMPLETE', pfPaymentId)
         console.log(`[PayFast] Transaction ${mPaymentId} marked as COMPLETE.`)
 
-        // Send confirmation email to customer (stubbed implementation)
-        const email = data['email_address'] || ''
-        const amountGross = data['amount_gross'] || '0.00'
-        console.log(`[PayFast Email Sent] Customer receipt sent to ${email} for amount R${amountGross}`)
+        // Send order acknowledgement email to the customer
+        const transaction = getTransactions().find((t) => t.id === mPaymentId)
+        if (transaction) {
+          const sent = await sendOrderAcknowledgement(transaction)
+          console.log(
+            sent
+              ? `[PayFast] Acknowledgement email sent to ${transaction.email}`
+              : `[PayFast] Acknowledgement email not sent (see log above)`
+          )
+        } else {
+          console.log(`[PayFast] No stored transaction found for ${mPaymentId} — email not sent.`)
+        }
       } else if (paymentStatus === 'FAILED') {
         updateTransactionStatus(mPaymentId, 'FAILED', pfPaymentId)
         console.log(`[PayFast] Transaction ${mPaymentId} marked as FAILED.`)

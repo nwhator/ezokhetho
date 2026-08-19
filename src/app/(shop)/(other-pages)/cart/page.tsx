@@ -46,7 +46,7 @@ export default function Page() {
             {items.length === 0 ? (
               <div className="border-t border-b border-zinc-900/10 py-16 text-center">
                 <Text className="text-zinc-500 mb-6">Your shopping cart is currently empty.</Text>
-                <Button href="/collections/all">Explore Collections</Button>
+                <Button href="/shop">Browse the Shop</Button>
               </div>
             ) : (
               <ul role="list" className="divide-y divide-zinc-900/10 border-t border-b border-zinc-900/10">
@@ -155,7 +155,7 @@ export default function Page() {
                 <span className="text-xs">
                   or{' '}
                   <span className="text-xs font-medium text-zinc-900 uppercase">
-                    <Link href="/collections/all">Continue Shopping</Link>
+                    <Link href="/shop">Continue Shopping</Link>
                     <span aria-hidden="true"> →</span>
                   </span>
                 </span>

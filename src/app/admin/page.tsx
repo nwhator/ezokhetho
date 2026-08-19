@@ -172,7 +172,7 @@ export default function AdminPage() {
     }
 
     const updatedList = editing
-      ? products.map(p => p.id === editing.id ? newProduct : p)
+      ? products.map(p => p.id === editing.id ? { ...p, ...newProduct } : p)
       : [...products, newProduct]
 
     await saveProductsList(updatedList)

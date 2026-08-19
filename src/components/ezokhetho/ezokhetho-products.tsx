@@ -6,31 +6,14 @@ import Link from 'next/link'
 import { Heart, ArrowRight } from 'lucide-react'
 import { useRef, useState, useEffect } from 'react'
 import { formatZAR } from '@/lib/currency'
-
-const MAIN_COLLECTION_HANDLES = [
-  'mapetla', 'entathakusa', 'zodwa', 'ngithwale', 'kwa-suka-sukela',
-  'inganekwane', 'umkhathizwe', 'khumbulekhaya', 'izimbokodo', 'sophiatown',
-]
-
-const COLLECTION_COVER_IMAGES: Record<string, string> = {
-  entathakusa: "/images/cover/Entathakusa '26.jpg",
-  zodwa: "/images/cover/ZODWA '25.jpg",
-  ngithwale: "/images/cover/Ngithwale - Carry Me '24.jpg",
-  'kwa-suka-sukela': "/images/cover/Kwa-suka-sukela '24.jpg",
-  inganekwane: "/images/cover/Inganekwane- Inqina le nkukhu '23.jpg",
-  umkhathizwe: "/images/cover/Umkhathizwe - The Horizon '23.jpg",
-  khumbulekhaya: "/images/cover/Khumbulekhaya '22.jpg",
-  izimbokodo: "/images/cover/Izmibokodo '22.jpg",
-  sophiatown: "/images/cover/SophiaTown '21.jpg",
-  mapetla: "/images/cover/Mapetla Ext. '27.jpg",
-  'mapetla-ext-27': "/images/cover/Mapetla Ext. '27.jpg",
-}
+import { COLLECTION_COVER_IMAGES } from '@/data'
 
 type Product = {
   id: number
   title: string
   handle: string
   price: number
+  runway?: boolean
   images: { src: string; alt: string }[]
   collections: { title: string; handle: string }[]
 }
@@ -40,9 +23,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   const inView = useInView(ref, { once: true, margin: '-60px' })
   const [wished, setWished] = useState(false)
 
-  const collection = product.collections?.[0]
-  const isMainCollection = product.collections?.some?.((c) => MAIN_COLLECTION_HANDLES.includes(c.handle))
-  const collectionHandle = product.collections?.find?.((c) => MAIN_COLLECTION_HANDLES.includes(c.handle))?.handle
+  const isMainCollection = product.runway === true
+  const collectionHandle = isMainCollection
+    ? product.collections?.find?.((c) => COLLECTION_COVER_IMAGES[c.handle])?.handle
+    : undefined
   const coverSrc = collectionHandle ? COLLECTION_COVER_IMAGES[collectionHandle] : null
   const imageSrc = coverSrc || product.images?.[0]?.src
   const imageAlt = product.images?.[0]?.alt || product.title
@@ -156,7 +140,7 @@ export default function EzkoFeaturedProducts() {
             </h2>
           </div>
           <Link
-            href="/collections/all"
+            href="/shop"
             id="view-all-products"
             className="group flex w-fit items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#0033A0]"
           >

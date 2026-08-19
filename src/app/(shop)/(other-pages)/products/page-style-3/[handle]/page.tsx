@@ -7,6 +7,7 @@ import {
   getHijabProducts,
   getProductByHandle,
   getProductReviews,
+  getShopProducts,
   getSkincareProducts,
   TProductItem,
 } from '@/data'
@@ -54,7 +55,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
     otherProducts = await getHijabProducts()
   }
   const combineProduct = otherProducts?.[1]
-  const relatedProducts = otherProducts?.slice(1, 6)
+  const relatedProducts = (await getShopProducts()).slice(0, 5)
   const productReviews = await getProductReviews()
 
   const { images, description } = product
