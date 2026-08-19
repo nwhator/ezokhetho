@@ -135,7 +135,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
       {/* Editorial slideshow */}
       {collection.galleryImages?.length ? (
         <div className="container pt-14">
-          <ProductGallery media={collection.galleryImages.map((src: string) => ({ src }))} />
+          <ProductGallery media={collection.galleryImages.map((src: string) => ({ src }))} className="mx-auto w-full lg:w-1/2" />
         </div>
       ) : null}
 
@@ -150,6 +150,22 @@ export default async function Collection({ params }: { params: Promise<{ handle:
           <p className="mt-6 font-moderat text-lg leading-relaxed text-zinc-600">
             {collection.description}
           </p>
+        </div>
+      </div>
+
+      {/* Enquire about this collection */}
+      <div className="container pt-16">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-5 border-t border-zinc-200 pt-14 text-center">
+          <p className="font-moderat text-sm text-zinc-500">
+            Interested in pieces from {collection.title}? Tell us what you have in mind and our studio will be in touch.
+          </p>
+          <Link
+            href={`/contact?subject=${encodeURIComponent(`Collection Enquiry — ${collection.title}`)}`}
+            className="inline-flex items-center gap-3 bg-[#FF6B00] px-8 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#e05e00]"
+          >
+            Enquire about this collection
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
 
