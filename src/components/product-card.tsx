@@ -71,11 +71,9 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
         <div className="flex items-start justify-between gap-2">
           <TextLink href={`/products/${handle}`}>
             <span className="absolute inset-0" />
-            {title}
+            {isMainCollection ? (collections?.[0]?.title || title) : title}
           </TextLink>
-          {shouldHidePrice ? (
-            <span className="shrink-0 text-[11px] font-medium uppercase tracking-[0.15em] text-[#FF6B00]">Contact us</span>
-          ) : (
+          {!shouldHidePrice && (
             <Text className="shrink-0 font-medium text-[#0033A0]">{formatZAR(price)}</Text>
           )}
         </div>

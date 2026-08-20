@@ -255,14 +255,18 @@ function ProductOptionSwatch({
       <div
         className={clsx(
           inStock ? 'cursor-pointer focus:outline-hidden' : 'cursor-not-allowed opacity-25',
-          'flex shrink items-center justify-center rounded-md bg-white px-3 py-3 hover:bg-zinc-50 data-focus:ring-offset-2 sm:min-w-24 sm:flex-1',
-          isSelected ? 'ring-2 ring-zinc-900' : 'ring-1 ring-zinc-200'
+          'flex shrink items-center justify-center rounded-md px-4 py-2.5 transition-all sm:min-w-16',
+          isSelected
+            ? 'bg-zinc-900 text-white shadow-sm ring-1 ring-zinc-900'
+            : 'bg-white text-zinc-800 ring-1 ring-zinc-200 hover:border-zinc-400 hover:bg-zinc-50'
         )}
         title={inStock ? name : 'Out of stock'}
         aria-disabled={!inStock}
         aria-label={name}
       >
-        <Text className="line-clamp-1 font-medium">{name}</Text>
+        <span className={clsx('text-xs uppercase tracking-wider font-semibold', isSelected ? 'text-white' : 'text-zinc-900')}>
+          {name}
+        </span>
       </div>
     )
   }

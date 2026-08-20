@@ -78,18 +78,16 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 
       {/* Info */}
       <div className="flex flex-col gap-1">
-          <span className="text-[10px] uppercase tracking-[0.2em] text-[#0033A0]">
-            {isMainCollection ? 'Collections' : 'Online Store'}
-          </span>
+        <span className="text-[10px] uppercase tracking-[0.2em] text-[#0033A0]">
+          {isMainCollection ? 'Collections' : 'Online Store'}
+        </span>
         <div className="flex items-start justify-between gap-2">
           <Link href={`/products/${product.handle}`}>
             <h3 className="font-butler text-sm font-medium text-zinc-900 hover:text-[#0033A0] transition-colors">
-              {product.title}
+              {isMainCollection ? (product.collections?.[0]?.title || product.title) : product.title}
             </h3>
           </Link>
-          {isMainCollection ? (
-            <span className="shrink-0 text-[11px] font-medium uppercase tracking-[0.15em] text-[#FF6B00]">Contact us</span>
-          ) : (
+          {!isMainCollection && (
             <span className="shrink-0 font-moderat text-sm text-[#0033A0] font-medium">
               {formatZAR(product.price)}
             </span>
@@ -144,7 +142,7 @@ export default function EzkoFeaturedProducts() {
             id="view-all-products"
             className="group flex w-fit items-center gap-2 text-sm uppercase tracking-[0.15em] text-zinc-400 transition-colors hover:text-[#0033A0]"
           >
-            Shop all pieces
+            View All Pieces
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
           </Link>
         </motion.div>
