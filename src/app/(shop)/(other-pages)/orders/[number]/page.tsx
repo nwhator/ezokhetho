@@ -27,7 +27,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
   if (!order) {
     return notFound()
   }
-  const products = order.products
+  const products: any[] = order.products || []
 
   return (
     <div className="container">
@@ -62,7 +62,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
           <h2 className="sr-only">Products purchased</h2>
 
           <div className="space-y-10">
-            {products.map((product) => (
+            {products.map((product: any) => (
               <div key={product.id} className="border-t border-b border-zinc-200 bg-white sm:rounded-lg sm:border">
                 <div className="px-4 py-6 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:p-8">
                   <div className="sm:flex lg:col-span-7">

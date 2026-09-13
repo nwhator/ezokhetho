@@ -252,7 +252,7 @@ export default function AdminPage() {
                 { label: 'Vendor', key: 'vendor', placeholder: 'Ezokhetho' },
                 { label: 'Color', key: 'color', placeholder: 'e.g. Midnight Blue' },
                 { label: 'Sizes (comma-separated)', key: 'sizes', placeholder: 'S, M, L, XL' },
-                { label: 'Image URL or /images/... path', key: 'imageUrl', placeholder: '/images/fashion/coat.jpg' },
+                { label: 'Image URL or /images/... path', key: 'imageUrl', placeholder: '/images/products/Online Store/...' },
               ].map(({ label, key, placeholder }) => (
                 <div key={key}>
                   <label className="mb-1 block text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-500">{label}</label>

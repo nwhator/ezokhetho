@@ -4,10 +4,11 @@ import Link from 'next/link'
 const footerLinks = {
   shop: [
     { name: 'All Collections', href: '/collections/all' },
-    { name: 'Ngithwale', href: '/collections/ngithwale' },
-    { name: 'Izimbokodo', href: '/collections/izimbokodo' },
     { name: 'Khumbulekhaya', href: '/collections/khumbulekhaya' },
-    { name: 'Mapetla Ext. \'27', href: '/collections/mapetla-ext-27' },
+    { name: 'Entathakusa', href: '/collections/entathakusa' },
+    { name: 'Sophiatown', href: '/collections/sophiatown' },
+    { name: 'Zodwa', href: '/collections/zodwa' },
+    { name: 'Izimbokodo', href: '/collections/izimbokodo' },
   ],
   explore: [
     { name: 'About', href: '#brand-story' },

@@ -1,124 +1,105 @@
 {
   "collections": {
-    "sophiatown": {
-      "id": "sophiatown",
-      "title": "Sophiatown '21",
-      "desc": "A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.",
+    "khumbulekhaya": {
+      "id": "khumbulekhaya",
+      "title": "Khumbulekhaya '22",
+      "desc": "A celebration of reconnecting with family, culture and heritage. Home is not a place — it is a feeling carried within.",
+      "cover": "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp",
       "images": [
-        "/images/cover/SophiaTown '21.jpg",
-        "/images/ezokhetho/sophiatown_2.jpg",
-        "/images/ezokhetho/sophiatown_3.jpg",
-        "/images/ezokhetho/sophiatown_4.jpg",
-        "/images/ezokhetho/sophiatown_5.jpg"
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-002.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-003.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-004.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-005.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-006.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-007.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-009.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-010.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-011.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-012.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-013.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-014-2.webp",
+        "/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-014.webp"
       ]
     },
-    "mapetla-ext-27": {
-      "id": "mapetla-ext-27",
-      "title": "Mapetla Ext. '27",
-      "desc": "A bold extension of the Mapetla story, bringing sculptural form, rich texture and contemporary African luxury into a striking new chapter.",
+    "entathakusa": {
+      "id": "entathakusa",
+      "title": "Entathakusa - SAMW-TWF",
+      "desc": "Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.",
+      "cover": "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp",
       "images": [
-        "/images/cover/Mapetla Ext. '27.jpg",
-        "/images/ezokhetho/mapetla/mapetla_1.jpg",
-        "/images/ezokhetho/mapetla/mapetla_2.jpg",
-        "/images/ezokhetho/mapetla/mapetla_3.jpg",
-        "/images/ezokhetho/mapetla/mapetla_4.jpg",
-        "/images/ezokhetho/mapetla/mapetla_5.jpg"
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2890.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2891.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2892.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2893.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2894.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2895.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2899.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2900.webp",
+        "/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2901.webp"
+      ]
+    },
+    "sophiatown": {
+      "id": "sophiatown",
+      "title": "Sophiatown",
+      "desc": "A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.",
+      "cover": "/images/products/Collections/Sophiatown/Ezokhetho.webp",
+      "images": [
+        "/images/products/Collections/Sophiatown/Ezokhetho-19.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-24.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-26.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-43.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-57.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-73.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-95.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho-103.webp",
+        "/images/products/Collections/Sophiatown/Ezokhetho.webp"
+      ]
+    },
+    "zodwa": {
+      "id": "zodwa",
+      "title": "Zodwa",
+      "desc": "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
+      "cover": "/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp",
+      "images": [
+        "/images/products/Collections/Zodwa/Ezokhetho x Ouma1771.webp",
+        "/images/products/Collections/Zodwa/Ezokhetho x Ouma1773.webp",
+        "/images/products/Collections/Zodwa/Ezokhetho x Ouma1775.webp",
+        "/images/products/Collections/Zodwa/Ingonyama Ezokhetho Pinstripe Suit-1.webp",
+        "/images/products/Collections/Zodwa/Inkosazana Denim Ostrich Dress-6.webp",
+        "/images/products/Collections/Zodwa/Ostrich Feather LOOK-1.webp",
+        "/images/products/Collections/Zodwa/The 2-tone Ndile skirt with the Ndile mesh bodysuit -1.webp",
+        "/images/products/Collections/Zodwa/The 3 layer Zodwa Pleated Skirt with the mesh bodysuit-1.webp",
+        "/images/products/Collections/Zodwa/The Catherine Asymmetric Apron Dress-1.webp",
+        "/images/products/Collections/Zodwa/The Full Cream knitted Bodysuit-1.webp",
+        "/images/products/Collections/Zodwa/The Inqina Knitted Jersey and Ostrich Feather Paneled Denim Pants -4.webp",
+        "/images/products/Collections/Zodwa/The Ntombizonke Blue & Pink Polka Stripe Dress-5.webp",
+        "/images/products/Collections/Zodwa/The protest bodysuit-1.webp",
+        "/images/products/Collections/Zodwa/The Uluthando 2.0 Faux Leather Dress-5.webp",
+        "/images/products/Collections/Zodwa/The Zo Denim Wash Paper skirt with the printed mesh bodysuit-6.webp",
+        "/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp"
       ]
     },
     "izimbokodo": {
       "id": "izimbokodo",
       "title": "Izimbokodo '22",
-      "desc": "Inspired by the courage and resilience of Black South African women, exploring femininity and traditional South African identity.",
+      "desc": "Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.",
+      "cover": "/images/products/Collections/izmibokodo _22/DSC_2085.webp",
       "images": [
-        "/images/cover/Izmibokodo '22.jpg",
-        "/images/ezokhetho/izimbokodo_2.jpg",
-        "/images/ezokhetho/izimbokodo_3.jpg",
-        "/images/ezokhetho/izimbokodo_4.jpg",
-        "/images/ezokhetho/izimbokodo_5.jpg"
-      ]
-    },
-    "khumbulekhaya": {
-      "id": "khumbulekhaya",
-      "title": "Khumbulekhaya '22",
-      "desc": "A celebration of reconnecting with family, culture and heritage. Home is not a place \u2014 it is a feeling carried within.",
-      "images": [
-        "/images/cover/Khumbulekhaya '22.jpg",
-        "/images/ezokhetho/khumbulekhaya_2.jpg",
-        "/images/ezokhetho/khumbulekhaya_3.jpg",
-        "/images/ezokhetho/khumbulekhaya_4.jpg",
-        "/images/ezokhetho/khumbulekhaya_5.jpg"
-      ]
-    },
-    "umkhathizwe": {
-      "id": "umkhathizwe",
-      "title": "Umkhathizwe \u2014 The Horizon '23",
-      "desc": "Debuted at Lagos Fashion Week. A futuristic exploration of African fashion reaching beyond boundaries into the global horizon.",
-      "images": [
-        "/images/ezokhetho/umkhathizwe_1.jpg",
-        "/images/ezokhetho/umkhathizwe_2.jpg",
-        "/images/ezokhetho/umkhathizwe_3.jpg",
-        "/images/ezokhetho/umkhathizwe_4.jpg",
-        "/images/ezokhetho/umkhathizwe_5.jpg"
-      ]
-    },
-    "inganekwane": {
-      "id": "inganekwane",
-      "title": "Inganekwane '23",
-      "desc": "Inspired by traditional folklore and childhood stories, combining playful proportions with rich woven heritage textiles.",
-      "images": [
-        "/images/cover/Inganekwane- Inqina le nkukhu '23.jpg",
-        "/images/ezokhetho/inganekwane_2.jpg",
-        "/images/ezokhetho/inganekwane_3.jpg",
-        "/images/ezokhetho/inganekwane_4.jpg",
-        "/images/ezokhetho/inganekwane_5.jpg"
-      ]
-    },
-    "kwa-suka-sukela": {
-      "id": "kwa-suka-sukela",
-      "title": "Kwa-suka-sukela '24",
-      "desc": "A tribute to oral storytelling traditions, featuring bold silhouettes, structural details, and contemporary pattern work.",
-      "images": [
-        "/images/cover/Kwa-suka-sukela '24.jpg",
-        "/images/ezokhetho/kwa-suka-sukela_2.jpg",
-        "/images/ezokhetho/kwa-suka-sukela_3.jpg",
-        "/images/ezokhetho/kwa-suka-sukela_4.jpg",
-        "/images/ezokhetho/kwa-suka-sukela_5.jpg"
-      ]
-    },
-    "ngithwale": {
-      "id": "ngithwale",
-      "title": "Ngithwale \u2014 Carry Me '24",
-      "desc": "This collection honours mothers and the generations of women whose sacrifices, prayers and strength continue to carry us.",
-      "images": [
-        "/images/cover/Ngithwale - Carry Me '24.jpg",
-        "/images/ezokhetho/ngithwale_2.jpg",
-        "/images/ezokhetho/ngithwale_3.jpg",
-        "/images/ezokhetho/ngithwale_4.jpg",
-        "/images/ezokhetho/ngithwale_5.jpg"
-      ]
-    },
-    "zodwa": {
-      "id": "zodwa",
-      "title": "Zodwa '25",
-      "desc": "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
-      "images": [
-        "/images/cover/ZODWA '25.jpg",
-        "/images/ezokhetho/zodwa_2.jpg",
-        "/images/ezokhetho/zodwa_3.jpg",
-        "/images/ezokhetho/zodwa_4.jpg",
-        "/images/ezokhetho/zodwa_5.jpg"
-      ]
-    },
-    "entathakusa": {
-      "id": "entathakusa",
-      "title": "Entathakusa '26",
-      "desc": "Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.",
-      "images": [
-        "/images/ezokhetho/entathakusa_2.jpg",
-        "/images/ezokhetho/entathakusa_1.jpg",
-        "/images/ezokhetho/entathakusa_3.jpg",
-        "/images/ezokhetho/entathakusa_4.jpg",
-        "/images/ezokhetho/entathakusa_5.jpg"
+        "/images/products/Collections/izmibokodo _22/DSC_2085.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2225.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2361.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2434.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2454.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2534.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2611.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2638.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2780.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_2922.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_3016.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_3035.webp",
+        "/images/products/Collections/izmibokodo _22/DSC_3063.webp"
       ]
     }
   },

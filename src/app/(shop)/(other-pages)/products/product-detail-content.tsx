@@ -15,7 +15,7 @@ const ProductDetailContent = ({ content, className, imageAlt, imageSrc }: Produc
       <div className="flex flex-col-reverse justify-between gap-14 lg:flex-row lg:gap-12 xl:gap-20 2xl:gap-32">
         <div className="flex flex-3/7">
           <Image
-            src={imageSrc || '/images/hijab/feature-1-2.png'}
+            src={imageSrc || '/images/placeholder.webp'}
             width={494}
             height={529}
             alt={imageAlt || 'product-detail-content'}

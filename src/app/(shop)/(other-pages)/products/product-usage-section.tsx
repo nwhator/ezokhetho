@@ -42,7 +42,7 @@ const ProductUsageSection = ({ className, imageAlt, imageSrc, faqs = demo_faqs }
     <div className={clsx('flex flex-col-reverse justify-between gap-8 lg:flex-row', className)}>
       <div className="relative flex-1/2 2xl:flex-3/7">
         <Image
-          src={imageSrc || '/images/hijab/product-detail-img.webp'}
+          src={imageSrc || '/images/placeholder.webp'}
           width={662}
           height={653}
           alt={imageAlt || 'product-faqs'}

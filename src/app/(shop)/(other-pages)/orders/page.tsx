@@ -49,7 +49,7 @@ export default async function Page() {
               </div>
 
               <div className="mt-6 -mb-6 flow-root divide-y divide-zinc-200 border-t border-zinc-200">
-                {order.products.map((product) => (
+                {(order.products as any[])?.map((product: any) => (
                   <div key={product.id} className="py-6 sm:flex">
                     <div className="flex space-x-4 sm:min-w-0 sm:flex-1 sm:space-x-6 lg:space-x-8">
                       <div className="relative aspect-3/4 w-20 flex-none sm:w-40">
