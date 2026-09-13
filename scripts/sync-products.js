@@ -49,7 +49,7 @@ const collectionsMeta = [
     id: 'izimbokodo',
     handle: 'izimbokodo',
     title: "Izimbokodo '22",
-    folder: 'izmibokodo _22',
+    folder: 'izimbokodo _22',
     subtitle: "Strength of Stone '22",
     desc: 'Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.',
     accent: '#FF6B00',
@@ -433,6 +433,109 @@ const onlineProductsMeta = [
   }
 ];
 
+const DIRECTION_LABELS_MAP = {
+  'ezokhetho-mapetla-inqina-coat': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View',
+    'Movement View'
+  ],
+  'ezokhetho-mapetla-inqina-polka-dot-jorts': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View'
+  ],
+  'ezokhetho-ta-da-trench-coat': [
+    'Front View',
+    'Front Pose View',
+    'Side Profile View',
+    'Lining Detail View'
+  ],
+  'full-cream-knitted-bodysuit': [
+    'Front View',
+    'Front View (Straight)',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View'
+  ],
+  'ingonyama-printed-velvet-suit': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View',
+    'Detail View'
+  ],
+  'inkhosazana-ostrich-denim-dress': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View',
+    'Back Three-Quarter View',
+    'Movement View'
+  ],
+  'inqina-mesh-bodysuit': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View'
+  ],
+  'inqina-unisex-shirt-blouse': [
+    'Front View',
+    'Three-Quarter View',
+    'Back View',
+    'Detail View',
+    'Movement View'
+  ],
+  'mapetla-one-shoulder-asymmetric-bubble-dress': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View',
+    'Seated Detail View'
+  ],
+  'mapetla-pixie': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View'
+  ],
+  'ntombizonke-blue-and-pink-polka-stripe-dress': [
+    'Front View',
+    'Three-Quarter View',
+    'Side Profile View',
+    'Back View',
+    'Movement View'
+  ],
+  'the-protest-bodysuit': [
+    'Front View',
+    'Front View (Straight)',
+    'Side Profile View',
+    'Back View',
+    'Styling View'
+  ],
+  'zodwa-ostrich-feather-denim-jeans': [
+    'Front View',
+    'Three-Quarter View',
+    'Back View',
+    'Detail View',
+    'Movement View'
+  ],
+  'ezokhetho-you-people-message-tote-bag': [
+    'Front View'
+  ]
+};
+
+const DEFAULT_DIRECTIONS = [
+  'Front View',
+  'Three-Quarter View',
+  'Side Profile View',
+  'Back View',
+  'Detail View',
+  'Movement View'
+];
+
 let shopProducts = onlineProductsMeta.map(p => {
   const prodDir = path.join(onlineBaseDir, p.folder);
   let files = [];
@@ -441,8 +544,9 @@ let shopProducts = onlineProductsMeta.map(p => {
     files.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   }
 
+  const labels = DIRECTION_LABELS_MAP[p.handle] || DEFAULT_DIRECTIONS;
   const images = files.map((f, i) => ({
-    alt: `${p.title} - View ${i + 1}`,
+    alt: `${p.title} - ${labels[i] || `View ${i + 1}`}`,
     width: 1200,
     height: 1600,
     src: `/images/products/Online Store/${p.folder}/${f}`
