@@ -4,7 +4,7 @@ import Link from 'next/link'
 const footerLinks = {
   shop: [
     { name: 'All Collections', href: '/collections/all' },
-    { name: 'Mapetla', href: '/collections/mapetla' },
+    { name: 'Mapetla EXT', href: '/collections/mapetla' },
     { name: 'Entathakusa', href: '/collections/entathakusa' },
     { name: 'Zodwa', href: '/collections/zodwa' },
     { name: 'Khumbulekhaya', href: '/collections/khumbulekhaya' },

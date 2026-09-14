@@ -4,7 +4,7 @@ import { Logo } from '@/app/logo'
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { ShoppingBag, Search, Menu, X, ArrowRight } from 'lucide-react'
 import ThemeToggle from '@/components/theme-toggle'
@@ -20,7 +20,7 @@ const navLinks = [
   { name: 'Contact', href: '/contact' },
 ]
 
-// Collections menu with thumbnails from optimized images
+// Collections menu with thumbnails from cover images
 const collectionsMenu = [
   {
     name: 'All Collections',
@@ -30,45 +30,45 @@ const collectionsMenu = [
     year: '',
   },
   {
-    name: 'Mapetla',
+    name: 'Mapetla EXT',
     href: '/collections/mapetla',
     desc: 'Soweto Heritage',
-    thumb: '/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp',
-    year: "'26",
+    thumb: "/images/cover/Mapetla Ext. '27.jpg",
+    year: "'27",
   },
   {
     name: 'Entathakusa',
     href: '/collections/entathakusa',
     desc: 'Robb Report & SAMW',
-    thumb: '/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp',
-    year: 'SAMW',
+    thumb: "/images/cover/Entathakusa '26.jpg",
+    year: "'26",
   },
   {
     name: 'Zodwa',
     href: '/collections/zodwa',
     desc: 'Signature Tailoring',
-    thumb: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
+    thumb: "/images/cover/ZODWA '25.jpg",
     year: "'25",
   },
   {
     name: 'Khumbulekhaya',
     href: '/collections/khumbulekhaya',
     desc: 'Remember Home',
-    thumb: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
+    thumb: "/images/cover/Khumbulekhaya '22.jpg",
     year: "'22",
   },
   {
     name: 'Izimbokodo',
     href: '/collections/izimbokodo',
     desc: 'Strength of Stone',
-    thumb: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
+    thumb: "/images/cover/Izmibokodo '22.jpg",
     year: "'22",
   },
   {
     name: 'Sophiatown',
     href: '/collections/sophiatown',
     desc: 'Golden Era Jazz',
-    thumb: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
+    thumb: "/images/cover/SophiaTown '21.jpg",
     year: "'21",
   },
 ]
@@ -87,6 +87,17 @@ export default function EzkoHeader() {
 
   const isHomePage = pathname === '/'
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileOpen])
+
   useMotionValueEvent(scrollY, 'change', (latest) => {
     setScrolled(latest > 60)
   })
@@ -97,7 +108,7 @@ export default function EzkoHeader() {
     <>
       <motion.header
         id="site-header"
-        className="fixed inset-x-0 top-0 z-50"
+        className="fixed inset-x-0 top-0 z-50 w-full overflow-x-clip"
         animate={{
           backgroundColor: isSolid ? 'rgba(255,255,255,0.97)' : 'rgba(0,0,0,0)',
           backdropFilter: isSolid ? 'blur(16px)' : 'blur(0px)',
@@ -109,12 +120,12 @@ export default function EzkoHeader() {
       >
         <nav className="container flex items-center justify-between py-5 lg:py-6">
           {/* Logo */}
-          <Link href="/" aria-label="Ezokhetho Home" className="-m-1 p-1">
+          <Link href="/" aria-label="Ezokhetho Home" className="-m-1 p-1 shrink-0">
             <Logo variant={isSolid ? 'dark' : 'light'} />
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden items-center gap-8 lg:flex">
+          <div className="hidden items-center gap-3.5 lg:flex xl:gap-6 2xl:gap-8 shrink min-w-0">
             {navLinks.map((link) => {
               if (link.name === 'Collections') {
                 return (
@@ -125,7 +136,7 @@ export default function EzkoHeader() {
                     onMouseLeave={() => setCollectionsOpen(false)}
                   >
                     <button
-                      className={`text-[11px] font-medium uppercase tracking-[0.2em] transition-colors duration-300 ${
+                      className={`whitespace-nowrap text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] xl:tracking-[0.2em] transition-colors duration-300 ${
                         isSolid ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
                       }`}
                     >
@@ -217,7 +228,7 @@ export default function EzkoHeader() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-[11px] font-medium uppercase tracking-[0.2em] transition-colors duration-300 ${
+                  className={`whitespace-nowrap text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] xl:tracking-[0.2em] transition-colors duration-300 ${
                     isSolid ? 'text-[#0033A0] hover:text-[#FF6B00]' : 'text-white/80 hover:text-white'
                   }`}
                 >
@@ -228,7 +239,7 @@ export default function EzkoHeader() {
           </div>
 
           {/* Right Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 xl:gap-4 shrink-0">
             <button
               aria-label="Search"
               className={`hidden transition-colors lg:flex ${
@@ -250,7 +261,7 @@ export default function EzkoHeader() {
             >
               <ShoppingBag className="h-4.5 w-4.5" />
               {count > 0 && (
-                <span className="absolute -top-1.5 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-[#FF6B00] text-[9px] font-bold text-white">
+                <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#FF6B00] text-[9px] font-bold text-white">
                   {count}
                 </span>
               )}
@@ -271,76 +282,78 @@ export default function EzkoHeader() {
       </motion.header>
 
       {/* Mobile Menu Overlay */}
-      {mobileOpen && (
-        <motion.div
-          initial={{ opacity: 0, x: '100%' }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: '100%' }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] as const }}
-          className="fixed inset-0 z-[100] flex flex-col bg-[#0033A0]"
-        >
-          <div className="container flex items-center justify-between py-5">
-            <Logo variant="light" />
-            <button
-              aria-label="Close menu"
-              onClick={() => setMobileOpen(false)}
-              className="text-white/70 hover:text-white transition-colors"
-            >
-              <X className="h-5 w-5" />
-            </button>
-          </div>
-
-          <div className="container flex flex-1 flex-col justify-center gap-1">
-            {navLinks.map((link, i) => (
-              <motion.div
-                key={link.name}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.06, duration: 0.4 }}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] as const }}
+            className="fixed inset-0 z-[100] flex flex-col bg-[#0033A0] overflow-y-auto overflow-x-hidden"
+          >
+            <div className="container flex items-center justify-between py-5">
+              <Logo variant="light" />
+              <button
+                aria-label="Close menu"
+                onClick={() => setMobileOpen(false)}
+                className="text-white/70 hover:text-white transition-colors"
               >
-                <Link
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="group flex items-center gap-3 py-3 font-butler text-3xl font-light text-white/80 transition-colors hover:text-[#FF6B00]"
-                >
-                  {link.name}
-                  <span className="h-px w-0 bg-[#FF6B00] transition-all duration-300 group-hover:w-8" />
-                </Link>
-              </motion.div>
-            ))}
+                <X className="h-5 w-5" />
+              </button>
+            </div>
 
-            {/* Mobile collection links */}
-            <div className="mt-6 border-t border-white/10 pt-4">
-              <span className="mb-3 block text-[10px] uppercase tracking-[0.3em] text-white/30">Collections</span>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                {collectionsMenu.map((item) => (
+            <div className="container flex flex-1 flex-col justify-center gap-1 py-4">
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.06, duration: 0.4 }}
+                >
                   <Link
-                    key={item.href}
-                    href={item.href}
+                    href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="text-[12px] text-white/60 hover:text-white transition-colors py-1"
+                    className="group flex items-center gap-3 py-3 font-butler text-3xl font-light text-white/80 transition-colors hover:text-[#FF6B00]"
                   >
-                    {item.name} {item.year}
+                    {link.name}
+                    <span className="h-px w-0 bg-[#FF6B00] transition-all duration-300 group-hover:w-8" />
                   </Link>
-                ))}
+                </motion.div>
+              ))}
+
+              {/* Mobile collection links */}
+              <div className="mt-6 border-t border-white/10 pt-4">
+                <span className="mb-3 block text-[10px] uppercase tracking-[0.3em] text-white/30">Collections</span>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                  {collectionsMenu.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-[12px] text-white/60 hover:text-white transition-colors py-1"
+                    >
+                      {item.name} {item.year}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="container flex items-center justify-between py-8 border-t border-white/10">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-white/30">
-              Contemporary African Luxury
-            </span>
-            <Link
-              href="/cart"
-              onClick={() => setMobileOpen(false)}
-              className="flex items-center gap-2 text-white/50 hover:text-white transition-colors"
-            >
-              <ShoppingBag className="h-4 w-4" />
-            </Link>
-          </div>
-        </motion.div>
-      )}
+            <div className="container flex items-center justify-between py-8 border-t border-white/10">
+              <span className="text-[10px] uppercase tracking-[0.25em] text-white/30">
+                Contemporary African Luxury
+              </span>
+              <Link
+                href="/cart"
+                onClick={() => setMobileOpen(false)}
+                className="flex items-center gap-2 text-white/50 hover:text-white transition-colors"
+              >
+                <ShoppingBag className="h-4 w-4" />
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   )
 }

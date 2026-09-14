@@ -317,11 +317,11 @@ export async function getFashionCollections() {
   return [
     {
       id: 'mapetla',
-      title: 'Mapetla',
+      title: 'Mapetla EXT',
       handle: 'mapetla',
       description: "An ode to Soweto's Mapetla township — celebrating cultural vibrancy, fearless self-expression, and the timeless evolution of modern African identity.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp',
+      image: "/images/cover/Mapetla Ext. '27.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['mapetla'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'mapetla')),
     },
@@ -331,7 +331,7 @@ export async function getFashionCollections() {
       handle: 'entathakusa',
       description: 'Celebrating the morning dawn, new beginnings, and the progression of contemporary South African design.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp',
+      image: "/images/cover/Entathakusa '26.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['entathakusa'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'entathakusa')),
     },
@@ -341,7 +341,7 @@ export async function getFashionCollections() {
       handle: 'zodwa',
       description: "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
+      image: "/images/cover/ZODWA '25.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['zodwa'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'zodwa')),
     },
@@ -351,7 +351,7 @@ export async function getFashionCollections() {
       handle: 'khumbulekhaya',
       description: "A celebration of reconnecting with family, culture and heritage through contemporary South African aesthetics. Home is not a place — it is a feeling carried within.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
+      image: "/images/cover/Khumbulekhaya '22.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['khumbulekhaya'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'khumbulekhaya')),
     },
@@ -361,7 +361,7 @@ export async function getFashionCollections() {
       handle: 'izimbokodo',
       description: "Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
+      image: "/images/cover/Izmibokodo '22.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['izimbokodo'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'izimbokodo')),
     },
@@ -371,7 +371,7 @@ export async function getFashionCollections() {
       handle: 'sophiatown',
       description: 'A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.',
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
+      image: "/images/cover/SophiaTown '21.jpg",
       galleryImages: COLLECTION_GALLERY_IMAGES['sophiatown'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'sophiatown')),
     },
@@ -461,12 +461,12 @@ export async function getShopProducts() {
 
 // Cover images for main fashion collections (from /images/products/Collections/)
 export const COLLECTION_COVER_IMAGES: Record<string, string> = {
-  mapetla: '/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp',
-  entathakusa: '/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp',
-  zodwa: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
-  khumbulekhaya: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
-  izimbokodo: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
-  sophiatown: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
+  mapetla: "/images/cover/Mapetla Ext. '27.jpg",
+  entathakusa: "/images/cover/Entathakusa '26.jpg",
+  zodwa: "/images/cover/ZODWA '25.jpg",
+  khumbulekhaya: "/images/cover/Khumbulekhaya '22.jpg",
+  izimbokodo: "/images/cover/Izmibokodo '22.jpg",
+  sophiatown: "/images/cover/SophiaTown '21.jpg",
 }
 
 // Editorial slideshow images per fashion collection (from optimized_mappings.json)
