@@ -5156,5 +5156,67 @@
     "detailComposition": "Leather Binding / Heat Press",
     "washCare": "Dry Clean Only",
     "availability": "In Stock"
+  },
+  {
+    "id": 7015,
+    "title": "Ezokhetho Payment Test Product",
+    "handle": "ezokhetho-payment-test-product",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Test",
+      "Payments",
+      "Shop"
+    ],
+    "price": 10,
+    "runway": false,
+    "madeToOrder": false,
+    "stock": {
+      "One Size": 100
+    },
+    "images": [
+      {
+        "alt": "Ezokhetho Payment Test Product - Front View",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Online Store/Ezokhetho_You People Tote Bag/You People bag.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Ezokhetho Payment Test Product - Front View",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Online Store/Ezokhetho_You People Tote Bag/You People bag.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "One Size",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "One Size"
+      }
+    ],
+    "collections": [
+      {
+        "id": "shop",
+        "title": "Shop",
+        "handle": "shop"
+      }
+    ],
+    "description": "Low-value item created for payment gateway testing.",
+    "category": "Test Product",
+    "colour": "N/A",
+    "fabricComposition": "N/A",
+    "detailComposition": "Payment Test",
+    "washCare": "N/A",
+    "availability": "In Stock"
   }
 ]
