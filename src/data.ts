@@ -361,7 +361,7 @@ export async function getFashionCollections() {
       handle: 'izimbokodo',
       description: "Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.",
       updatedAt: '2026-07-09T00:00:00-04:00',
-      image: '/images/products/Collections/izmibokodo _22/DSC_2085.webp',
+      image: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
       galleryImages: COLLECTION_GALLERY_IMAGES['izimbokodo'],
       products: products.filter(p => p.collections.some((c: any) => c.handle === 'izimbokodo')),
     },
@@ -455,7 +455,7 @@ export const COLLECTION_COVER_IMAGES: Record<string, string> = {
   entathakusa: '/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp',
   sophiatown: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
   zodwa: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
-  izimbokodo: '/images/products/Collections/izmibokodo _22/DSC_2085.webp',
+  izimbokodo: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
 }
 
 // Editorial slideshow images per fashion collection (from optimized_mappings.json)

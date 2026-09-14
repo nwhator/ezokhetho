@@ -107,8 +107,8 @@ export default function EzkoFeaturedProducts() {
     fetch('/api/admin/products')
       .then(r => r.json())
       .then((data: Product[]) => {
-        // Show 6 latest products
-        setProducts(data.slice(0, 6))
+        // Show 6 latest online-store products only
+        setProducts(data.filter((product) => product.runway !== true).slice(0, 6))
       })
       .catch(() => setProducts([]))
   }, [])

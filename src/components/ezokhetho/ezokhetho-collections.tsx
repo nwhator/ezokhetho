@@ -67,7 +67,7 @@ const collections: CollectionCard[] = [
     headline: 'Izimbokodo',
     subtitle: 'Strength of Stone \'22',
     description: (optimizedMappings as any).collections.izimbokodo?.desc || 'Inspired by the courage and resilience of Black South African women. The collection explores femininity beyond social constructs.',
-    image: '/images/products/Collections/izmibokodo _22/DSC_2085.webp',
+    image: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
     imageAlt: 'Izimbokodo collection by Ezokhetho',
     accent: '#FF6B00',
   },
