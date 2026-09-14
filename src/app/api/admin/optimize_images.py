@@ -18,7 +18,7 @@ collections_map = [
     {
         "id": "izimbokodo",
         "title": "Izimbokodo '22",
-        "path": "2. izmibokodo _22",
+        "path": "2. izimbokodo _22",
         "desc": "Inspired by the courage and resilience of Black South African women, exploring femininity and traditional South African identity."
     },
     {
