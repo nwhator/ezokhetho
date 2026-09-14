@@ -61,7 +61,7 @@ const collectionsMenu = [
     name: "Izimbokodo",
     href: '/collections/izimbokodo',
     desc: 'Strength of Stone',
-    thumb: '/images/products/Collections/izmibokodo _22/DSC_2085.webp',
+    thumb: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
     year: "'22",
   },
 ]
