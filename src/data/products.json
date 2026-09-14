@@ -3410,6 +3410,666 @@
     "madeToOrder": true
   },
   {
+    "id": 6063,
+    "title": "Mapetla — Look 1",
+    "handle": "mapetla-look-1",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 1 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-1.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 1 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-1.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6064,
+    "title": "Mapetla — Look 2",
+    "handle": "mapetla-look-2",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 2 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-6.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 2 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-6.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6065,
+    "title": "Mapetla — Look 3",
+    "handle": "mapetla-look-3",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 3 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-8.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 3 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-8.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6066,
+    "title": "Mapetla — Look 4",
+    "handle": "mapetla-look-4",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 4 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-10.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 4 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-10.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6067,
+    "title": "Mapetla — Look 5",
+    "handle": "mapetla-look-5",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 5 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-13.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 5 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-13.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6068,
+    "title": "Mapetla — Look 6",
+    "handle": "mapetla-look-6",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 6 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-17.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 6 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-17.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6069,
+    "title": "Mapetla — Look 7",
+    "handle": "mapetla-look-7",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 7 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-21.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 7 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-21.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6070,
+    "title": "Mapetla — Look 8",
+    "handle": "mapetla-look-8",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 8 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-25.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 8 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-25.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6071,
+    "title": "Mapetla — Look 9",
+    "handle": "mapetla-look-9",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 9 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-33.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 9 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-33.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6072,
+    "title": "Mapetla — Look 10",
+    "handle": "mapetla-look-10",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 10 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 10 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6073,
+    "title": "Mapetla — Look 11",
+    "handle": "mapetla-look-11",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 11 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-39.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 11 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-39.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
+    "id": 6074,
+    "title": "Mapetla — Look 12",
+    "handle": "mapetla-look-12",
+    "vendor": "Ezokhetho",
+    "tags": [
+      "Runway",
+      "Mapetla",
+      "Collection"
+    ],
+    "price": 0,
+    "runway": true,
+    "images": [
+      {
+        "alt": "Mapetla — Look 12 - Ezokhetho",
+        "width": 1200,
+        "height": 1600,
+        "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-43.webp"
+      }
+    ],
+    "featured_image": {
+      "alt": "Mapetla — Look 12 - Ezokhetho",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-43.webp"
+    },
+    "options": [
+      {
+        "name": "Size",
+        "optionValues": [
+          {
+            "name": "Custom Fit / Made to Measure",
+            "swatch": null
+          }
+        ]
+      }
+    ],
+    "selected_options": [
+      {
+        "name": "Size",
+        "value": "Custom Fit / Made to Measure"
+      }
+    ],
+    "collections": [
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
+      }
+    ],
+    "description": "Mapetla runway piece. Handcrafted contemporary African luxury by Ezokhetho. Available for custom enquiry and atelier fitting.",
+    "category": "Runway Piece",
+    "availability": "Made to Order / Enquiry Only",
+    "madeToOrder": true
+  },
+  {
     "id": 7001,
     "title": "Ezokhetho Mapetla Inqina Coat",
     "handle": "ezokhetho-mapetla-inqina-coat",
@@ -3532,6 +4192,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "A striking statement coat featuring bold signature prints with elegant side slits and tailored silhouette.",
@@ -3540,7 +4205,8 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Slits",
     "washCare": "Dry-Clean Only",
-    "availability": "In Stock"
+    "availability": "In Stock",
+    "notes": "Corset belt sold separately(enquire upon order)"
   },
   {
     "id": 7002,
@@ -3654,6 +4320,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "Playful yet architectural polka dot bubble jorts offering a sculptural form with relaxed volume.",
@@ -3781,6 +4452,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "A showstopping trench coat featuring a striking multi-colour print harmony, defined belted waist, and sharp tailored collar.",
@@ -4286,6 +4962,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "Vibrant stretch mesh bodysuit in striking red and black print, designed with high comfort and seamless layering in mind.",
@@ -4420,6 +5101,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "A crisp, modern unisex shirt blouse featuring African graphic heritage prints and sleek centre-front press studs.",
@@ -4553,6 +5239,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "An architectural one-shoulder asymmetric dress featuring bubble volume and a striking green and pink palette.",
@@ -4680,6 +5371,11 @@
         "id": "shop",
         "title": "Shop",
         "handle": "shop"
+      },
+      {
+        "id": "mapetla",
+        "title": "Mapetla",
+        "handle": "mapetla"
       }
     ],
     "description": "A sculptural A-line mini silhouette from the Mapetla collection, bringing bold print and confident tailoring into one iconic piece.",

@@ -179,10 +179,25 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
               <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Availability</p>
               <p className="mt-1 font-medium text-zinc-900">{product.availability ?? 'In Stock'}</p>
             </div>
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-zinc-400">Shipping</p>
+              <p className="mt-1 font-medium text-zinc-900">3-5 working days upon order completion</p>
+            </div>
+            {(product as any).notes ? (
+              <div className="sm:col-span-2 rounded-md border border-amber-200/80 bg-amber-50/70 p-3.5">
+                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-amber-800">Note / Disclaimer</p>
+                <p className="mt-1 text-xs font-medium text-amber-950">{(product as any).notes}</p>
+              </div>
+            ) : null}
           </div>
           {product.madeToOrder ? (
-            <div className="mt-4 inline-flex rounded-full bg-[#FF6B00] px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white">
-              Made to Order
+            <div className="mt-5 space-y-1.5 rounded-md border border-[#FF6B00]/30 bg-[#FF6B00]/5 p-3.5">
+              <span className="inline-flex rounded-full bg-[#FF6B00] px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white">
+                Made to Order
+              </span>
+              <p className="text-xs leading-relaxed text-zinc-700">
+                Please note that the item will be made and completed between the period of 4-6 weeks.
+              </p>
             </div>
           ) : null}
         </div>

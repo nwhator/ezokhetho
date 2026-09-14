@@ -38,7 +38,7 @@ export default function ReturnsPage() {
               </div>
               <h3 className="font-butler text-lg font-medium text-zinc-900">Standard Shipping</h3>
               <p className="mt-2 font-moderat text-sm leading-relaxed text-zinc-600">
-                <strong>R150 standard shipping</strong> applies to all domestic deliveries throughout South Africa.
+                <strong>R150 standard shipping</strong> applies to all domestic deliveries throughout South Africa. 3-5 working days upon order completion.
               </p>
             </div>
 

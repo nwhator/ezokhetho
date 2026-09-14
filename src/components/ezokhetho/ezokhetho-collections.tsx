@@ -21,13 +21,13 @@ type CollectionCard = {
 
 const collections: CollectionCard[] = [
   {
-    id: 'khumbulekhaya',
-    handle: 'khumbulekhaya',
-    headline: 'Khumbulekhaya',
-    subtitle: 'Remember Home \'22',
-    description: (optimizedMappings as any).collections.khumbulekhaya?.desc || 'A celebration of reconnecting with family, culture and heritage through contemporary South African aesthetics.',
-    image: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
-    imageAlt: 'Khumbulekhaya — Remember Home collection by Ezokhetho',
+    id: 'mapetla',
+    handle: 'mapetla',
+    headline: 'Mapetla',
+    subtitle: 'Soweto Heritage',
+    description: (optimizedMappings as any).collections.mapetla?.desc || "An ode to Soweto's Mapetla township — celebrating cultural vibrancy, fearless self-expression, and the timeless evolution of modern African identity.",
+    image: '/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp',
+    imageAlt: 'Mapetla collection by Ezokhetho',
     accent: '#FF6B00',
     imagePosition: 'left' as const,
   },
@@ -42,16 +42,6 @@ const collections: CollectionCard[] = [
     accent: '#0033A0',
   },
   {
-    id: 'sophiatown',
-    handle: 'sophiatown',
-    headline: 'Sophiatown',
-    subtitle: 'Golden Era \'21',
-    description: (optimizedMappings as any).collections.sophiatown?.desc || 'A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.',
-    image: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
-    imageAlt: 'Sophiatown collection by Ezokhetho',
-    accent: '#FF6B00',
-  },
-  {
     id: 'zodwa',
     handle: 'zodwa',
     headline: 'Zodwa',
@@ -59,6 +49,16 @@ const collections: CollectionCard[] = [
     description: (optimizedMappings as any).collections.zodwa?.desc || "Ezokhetho's signature collection celebrating modern tailoring, flowing drapes, and timeless structured designs.",
     image: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
     imageAlt: 'Zodwa collection by Ezokhetho',
+    accent: '#FF6B00',
+  },
+  {
+    id: 'khumbulekhaya',
+    handle: 'khumbulekhaya',
+    headline: 'Khumbulekhaya',
+    subtitle: 'Remember Home \'22',
+    description: (optimizedMappings as any).collections.khumbulekhaya?.desc || 'A celebration of reconnecting with family, culture and heritage through contemporary South African aesthetics.',
+    image: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
+    imageAlt: 'Khumbulekhaya — Remember Home collection by Ezokhetho',
     accent: '#0033A0',
   },
   {
@@ -70,6 +70,16 @@ const collections: CollectionCard[] = [
     image: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
     imageAlt: 'Izimbokodo collection by Ezokhetho',
     accent: '#FF6B00',
+  },
+  {
+    id: 'sophiatown',
+    handle: 'sophiatown',
+    headline: 'Sophiatown',
+    subtitle: 'Golden Era \'21',
+    description: (optimizedMappings as any).collections.sophiatown?.desc || 'A nostalgic look at the vibrant musical, style and cultural hub of Sophiatown during its golden era, celebrating resilience and style.',
+    image: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
+    imageAlt: 'Sophiatown collection by Ezokhetho',
+    accent: '#0033A0',
   },
 ]
 

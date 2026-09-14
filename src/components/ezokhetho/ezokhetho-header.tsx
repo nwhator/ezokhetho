@@ -20,7 +20,7 @@ const navLinks = [
   { name: 'Contact', href: '/contact' },
 ]
 
-// The 9 collections with thumbnails from optimized images
+// Collections menu with thumbnails from optimized images
 const collectionsMenu = [
   {
     name: 'All Collections',
@@ -30,39 +30,46 @@ const collectionsMenu = [
     year: '',
   },
   {
-    name: "Khumbulekhaya",
-    href: '/collections/khumbulekhaya',
-    desc: 'Remember Home',
-    thumb: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
-    year: "'22",
+    name: 'Mapetla',
+    href: '/collections/mapetla',
+    desc: 'Soweto Heritage',
+    thumb: '/images/products/Collections/MAPETLA EXT/Ezoketho Mapetla _26-34.webp',
+    year: "'26",
   },
   {
-    name: "Entathakusa",
+    name: 'Entathakusa',
     href: '/collections/entathakusa',
     desc: 'Robb Report & SAMW',
     thumb: '/images/products/Collections/Entathakusa - SAMW-TWF/IMG_2889.webp',
     year: 'SAMW',
   },
   {
-    name: "Sophiatown",
-    href: '/collections/sophiatown',
-    desc: 'Golden Era Jazz',
-    thumb: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
-    year: "'21",
-  },
-  {
-    name: "Zodwa",
+    name: 'Zodwa',
     href: '/collections/zodwa',
     desc: 'Signature Tailoring',
     thumb: '/images/products/Collections/Zodwa/The Zodwa Printed 2 piece Suit-2.webp',
     year: "'25",
   },
   {
-    name: "Izimbokodo",
+    name: 'Khumbulekhaya',
+    href: '/collections/khumbulekhaya',
+    desc: 'Remember Home',
+    thumb: '/images/products/Collections/3. Khumbulekhaya _22/EZOKHTHO_2022-001.webp',
+    year: "'22",
+  },
+  {
+    name: 'Izimbokodo',
     href: '/collections/izimbokodo',
     desc: 'Strength of Stone',
     thumb: '/images/products/Collections/izimbokodo _22/DSC_2085.webp',
     year: "'22",
+  },
+  {
+    name: 'Sophiatown',
+    href: '/collections/sophiatown',
+    desc: 'Golden Era Jazz',
+    thumb: '/images/products/Collections/Sophiatown/Ezokhetho.webp',
+    year: "'21",
   },
 ]
 

@@ -5,7 +5,7 @@ import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
 
 const deliveryMethods = [
-  { id: 1, title: 'Standard Courier', turnaround: '3–5 business days', price: 'R150.00' },
+  { id: 1, title: 'Standard Courier', turnaround: '3–5 working days upon order completion', price: 'R150.00' },
 ]
 
 const DeliveryRadio = () => {
