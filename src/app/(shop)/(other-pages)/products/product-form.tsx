@@ -196,7 +196,7 @@ export function ProductForm({ product, hidePrice }: { product: TProductItem; hid
                 Made to Order
               </span>
               <p className="text-xs leading-relaxed text-zinc-700">
-                Please note that the item will be made and completed between the period of 4-6 weeks.
+                Please note that the item will be made and completed between the period of 4-6 weeks. Shipping is 3-5 working days upon order completion.
               </p>
             </div>
           ) : null}

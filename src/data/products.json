@@ -4082,7 +4082,7 @@
     ],
     "price": 10950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "32": 5,
       "34": 5,
@@ -4205,7 +4205,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Slits",
     "washCare": "Dry-Clean Only",
-    "availability": "In Stock",
+    "availability": "Made to Order",
     "notes": "Corset belt sold separately(enquire upon order)"
   },
   {
@@ -4221,7 +4221,7 @@
     ],
     "price": 4950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "32": 5,
       "34": 5,
@@ -4333,7 +4333,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Bubble",
     "washCare": "Cold Handwash / Cool-Warm Iron",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7003,
@@ -4348,7 +4348,7 @@
     ],
     "price": 12950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "32": 5,
       "34": 5,
@@ -4465,7 +4465,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Belt",
     "washCare": "Dry-Clean Only",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7004,
@@ -4863,7 +4863,7 @@
     ],
     "price": 2495,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "XS": 5,
       "S": 5,
@@ -4975,7 +4975,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Stretch / Press Studs - Buttons Opening",
     "washCare": "Cold Hand Wash",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7008,
@@ -5129,7 +5129,7 @@
     ],
     "price": 5950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "32": 5,
       "34": 5,
@@ -5252,7 +5252,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Zip Opening",
     "washCare": "Dry-Clean Only",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7010,
@@ -5267,7 +5267,7 @@
     ],
     "price": 5950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "32": 5,
       "34": 5,
@@ -5384,7 +5384,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Zip Opening",
     "washCare": "Cold Hand Wash / Cool-Warm Iron",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7011,
@@ -5526,7 +5526,7 @@
     ],
     "price": 1950,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "XS": 5,
       "S": 5,
@@ -5639,7 +5639,7 @@
     "fabricComposition": "100% Polyester",
     "detailComposition": "Stretch / Press Studs Opening",
     "washCare": "Cold Hand Wash",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   },
   {
     "id": 7013,
@@ -5787,7 +5787,7 @@
     ],
     "price": 3500,
     "runway": false,
-    "madeToOrder": false,
+    "madeToOrder": true,
     "stock": {
       "One Size": 5
     },
@@ -5851,6 +5851,6 @@
     "fabricComposition": "Canvas / Leather",
     "detailComposition": "Leather Binding / Heat Press",
     "washCare": "Dry Clean Only",
-    "availability": "In Stock"
+    "availability": "Made to Order"
   }
 ]

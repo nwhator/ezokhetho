@@ -160,7 +160,7 @@ const onlineProductsMeta = [
     price: 10950,
     tags: ['Coat', 'Outerwear', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Print',
     colourHex: '#8B5E3C',
     category: 'Coat',
@@ -168,7 +168,7 @@ const onlineProductsMeta = [
     detailComposition: 'Slits',
     washCare: 'Dry-Clean Only',
     sizes: ['32', '34', '36', '38', '40', '42', '44'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'A striking statement coat featuring bold signature prints with elegant side slits and tailored silhouette.'
   },
   {
@@ -180,7 +180,7 @@ const onlineProductsMeta = [
     price: 4950,
     tags: ['Jorts', 'Bottoms', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Polka Dots',
     colourHex: '#1A1A1A',
     category: 'Bubble Jorts',
@@ -188,7 +188,7 @@ const onlineProductsMeta = [
     detailComposition: 'Bubble',
     washCare: 'Cold Handwash / Cool-Warm Iron',
     sizes: ['32', '34', '36', '38', '40', '42'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'Playful yet architectural polka dot bubble jorts offering a sculptural form with relaxed volume.'
   },
   {
@@ -200,7 +200,7 @@ const onlineProductsMeta = [
     price: 12950,
     tags: ['Trench Coat', 'Outerwear', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Green/Pink/Print',
     colourHex: '#2E5A44',
     category: 'Trench Coat',
@@ -208,7 +208,7 @@ const onlineProductsMeta = [
     detailComposition: 'Belt',
     washCare: 'Dry-Clean Only',
     sizes: ['32', '34', '36', '38', '40', '42', '44'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'A showstopping trench coat featuring a striking multi-colour print harmony, defined belted waist, and sharp tailored collar.'
   },
   {
@@ -280,7 +280,7 @@ const onlineProductsMeta = [
     price: 2495,
     tags: ['Bodysuit', 'Mesh', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Red/Black',
     colourHex: '#8B0000',
     category: 'Mesh Bodysuit',
@@ -288,7 +288,7 @@ const onlineProductsMeta = [
     detailComposition: 'Stretch / Press Studs - Buttons Opening',
     washCare: 'Cold Hand Wash',
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'Vibrant stretch mesh bodysuit in striking red and black print, designed with high comfort and seamless layering in mind.'
   },
   {
@@ -320,7 +320,7 @@ const onlineProductsMeta = [
     price: 5950,
     tags: ['A-Line Dress', 'Dress', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Green/Pink',
     colourHex: '#C75D6D',
     category: 'A-Line Dress',
@@ -328,7 +328,7 @@ const onlineProductsMeta = [
     detailComposition: 'Zip Opening',
     washCare: 'Dry-Clean Only',
     sizes: ['32', '34', '36', '38', '40', '42', '44'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'An architectural one-shoulder asymmetric dress featuring bubble volume and a striking green and pink palette.'
   },
   {
@@ -340,7 +340,7 @@ const onlineProductsMeta = [
     price: 5950,
     tags: ['A-Line Dress', 'Dress', 'Mapetla', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Print',
     colourHex: '#8B5E3C',
     category: 'A-Line Dress',
@@ -348,7 +348,7 @@ const onlineProductsMeta = [
     detailComposition: 'Zip Opening',
     washCare: 'Cold Hand Wash / Cool-Warm Iron',
     sizes: ['32', '34', '36', '38', '40', '42', '45'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'A sculptural A-line mini silhouette from the Mapetla collection, bringing bold print and confident tailoring into one iconic piece.'
   },
   {
@@ -380,7 +380,7 @@ const onlineProductsMeta = [
     price: 1950,
     tags: ['Bodysuit', 'Protest', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Print/Black',
     colourHex: '#1A1A1A',
     category: 'Bodysuit',
@@ -388,7 +388,7 @@ const onlineProductsMeta = [
     detailComposition: 'Stretch / Press Studs Opening',
     washCare: 'Cold Hand Wash',
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'A bold protest-inspired bodysuit, pairing a striking graphic print with a sculptural silhouette and press stud opening.'
   },
   {
@@ -420,7 +420,7 @@ const onlineProductsMeta = [
     price: 3500,
     tags: ['Tote Bag', 'Accessories', 'Shop'],
     runway: false,
-    madeToOrder: false,
+    madeToOrder: true,
     colour: 'Print Black or White',
     colourHex: '#111111',
     category: 'Tote Bag',
@@ -428,7 +428,7 @@ const onlineProductsMeta = [
     detailComposition: 'Leather Binding / Heat Press',
     washCare: 'Dry Clean Only',
     sizes: ['One Size'],
-    availability: 'In Stock',
+    availability: 'Made to Order',
     description: 'A heavy-duty canvas and leather statement tote bag with premium leather binding and heat-pressed Ezokhetho message typography.'
   }
 ];
