@@ -298,7 +298,7 @@ const onlineProductsMeta = [
     handle: 'inqina-unisex-shirt-blouse',
     vendor: 'Ezokhetho',
     price: 4950,
-    tags: ['Shirt', 'Blouse', 'Unisex', 'Mapetla', 'Shop'],
+    tags: ['Shirt', 'Blouse', 'Unisex', 'Zodwa', 'Shop'],
     runway: false,
     madeToOrder: true,
     colour: 'Print',

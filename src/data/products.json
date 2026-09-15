@@ -4986,7 +4986,7 @@
       "Shirt",
       "Blouse",
       "Unisex",
-      "Mapetla",
+      "Zodwa",
       "Shop"
     ],
     "price": 4950,
@@ -5103,9 +5103,9 @@
         "handle": "shop"
       },
       {
-        "id": "mapetla",
-        "title": "Mapetla",
-        "handle": "mapetla"
+        "id": "zodwa",
+        "title": "Zodwa",
+        "handle": "zodwa"
       }
     ],
     "description": "A crisp, modern unisex shirt blouse featuring African graphic heritage prints and sleek centre-front press studs.",
